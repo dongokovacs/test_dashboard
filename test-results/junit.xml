@@ -1,0 +1,1195 @@
+<testsuites id="" name="" tests="73" failures="0" skipped="5" errors="0" time="442.798078">
+<testsuite name="dictionary\newDomesticPartner\newPartnerContract.spec.ts" timestamp="2026-02-13T06:33:40.490Z" hostname="smokeui" tests="12" failures="0" skipped="1" time="54.319" errors="0">
+<testcase name="New Domestic Beneficiary - UI Contract Validation (SSR DOM Inspection) › Required fields have proper backend validation contracts" classname="dictionary\newDomesticPartner\newPartnerContract.spec.ts" time="5.472">
+<properties>
+<property name="specification" value="https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR">
+</property>
+<property name="feature" value="New Domestic Partner">
+</property>
+<property name="test-category" value="UI CONTRACT - Validates SSR-rendered HTML structure">
+</property>
+<property name="requirement" value="REQ-DIC-NEWD-UIC-001">
+</property>
+</properties>
+<system-out>
+<![CDATA[🔐 Starting API login process...
+username: dani
+Step 0: Clearing existing session data...
+Step 1: Getting login page to establish session...
+Login page response: 200
+Step 2: Submitting credentials...
+Login response: 200
+Step 3: Getting OTP page...
+OTP page response: 200
+Step 4: Submitting OTP code...
+OTP response: 200
+✅ API login successful! Found 2 auth cookies
+✅ Name field contract verified
+✅ Account field contract verified
+✅ Identification value contract verified
+]]>
+</system-out>
+</testcase>
+<testcase name="New Domestic Beneficiary - UI Contract Validation (SSR DOM Inspection) › Optional fields have proper backend model bindings" classname="dictionary\newDomesticPartner\newPartnerContract.spec.ts" time="4.749">
+<properties>
+<property name="specification" value="https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR">
+</property>
+<property name="feature" value="New Domestic Partner">
+</property>
+<property name="test-category" value="UI CONTRACT - Validates SSR-rendered HTML structure">
+</property>
+<property name="requirement" value="REQ-DIC-NEWD-UIC-002">
+</property>
+</properties>
+<system-out>
+<![CDATA[✅ Short name field exists but is optional (no data-val-required)
+✅ Contact person name field has backend binding
+✅ Contact phone field has backend binding
+]]>
+</system-out>
+</testcase>
+<testcase name="New Domestic Beneficiary - UI Contract Validation (SSR DOM Inspection) › Validate IBAN account field has proper backend validation" classname="dictionary\newDomesticPartner\newPartnerContract.spec.ts" time="4.737">
+<properties>
+<property name="specification" value="https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR">
+</property>
+<property name="feature" value="New Domestic Partner">
+</property>
+<property name="test-category" value="UI CONTRACT - Validates SSR-rendered HTML structure">
+</property>
+<property name="requirement" value="REQ-DIC-NEWD-UIC-003">
+</property>
+</properties>
+<system-out>
+<![CDATA[✅ SSR IBAN field contract verified: Input.BnAccount
+   Country: UA, Max length: 29
+]]>
+</system-out>
+</testcase>
+<testcase name="New Domestic Beneficiary - UI Contract Validation (SSR DOM Inspection) › Validate character set restrictions for text fields" classname="dictionary\newDomesticPartner\newPartnerContract.spec.ts" time="4.731">
+<properties>
+<property name="specification" value="https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR">
+</property>
+<property name="feature" value="New Domestic Partner">
+</property>
+<property name="test-category" value="UI CONTRACT - Validates SSR-rendered HTML structure">
+</property>
+<property name="requirement" value="REQ-DIC-NEWD-UIC-004">
+</property>
+</properties>
+<system-out>
+<![CDATA[locator('[name="Input.BnName"]')
+Allowed characters from backend: 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzАБВГҐДЕЁЖЗИЙІЇКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄабвгґдеёжзийіїклмнопрстуфхцчшщъыьэюяє !"#$%&'()*-+,/:;.=?_№'’‘`()?+№#/%&-,.:!$;\|_=<>[]{}”“"«»*@^~
+✅ Character set verified in backend allowed chars: 0123456789
+----------------------------------------
+✅ Character set verified in backend allowed chars: ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz
+----------------------------------------
+✅ Character set verified in backend allowed chars: АБВГҐДЕЁЖЗИЙІЇКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄабвгґдеёжзийіїклмнопрстуфхцчшщъыьэюяє
+----------------------------------------
+✅ Name field character set contract verified
+locator('[name="Input.ShortName"]')
+Allowed characters from backend: 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzАБВГҐДЕЁЖЗИЙІЇКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄабвгґдеёжзийіїклмнопрстуфхцчшщъыьэюяє !"#$%&'()*-+,/:;.=?_№
+✅ Character set verified in backend allowed chars: 0123456789
+----------------------------------------
+✅ Character set verified in backend allowed chars: ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz
+----------------------------------------
+✅ Character set verified in backend allowed chars: АБВГҐДЕЁЖЗИЙІЇКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄабвгґдеёжзийіїклмнопрстуфхцчшщъыьэюяє
+----------------------------------------
+✅ Short name character set contract verified
+]]>
+</system-out>
+</testcase>
+<testcase name="New Domestic Beneficiary - UI Contract Validation (SSR DOM Inspection) › Validate ASPSP conditional field contracts" classname="dictionary\newDomesticPartner\newPartnerContract.spec.ts" time="4.587">
+<properties>
+<property name="specification" value="https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR">
+</property>
+<property name="feature" value="New Domestic Partner">
+</property>
+<property name="test-category" value="UI CONTRACT - Validates SSR-rendered HTML structure">
+</property>
+<property name="requirement" value="REQ-DIC-NEWD-UIC-005">
+</property>
+</properties>
+<system-out>
+<![CDATA[✅ ASPSP mode field exists, current value: false
+✅ ASPSP agent code: max 6 characters
+]]>
+</system-out>
+</testcase>
+<testcase name="New Domestic Beneficiary - UI Contract Validation (SSR DOM Inspection) › Validate identification type field contracts" classname="dictionary\newDomesticPartner\newPartnerContract.spec.ts" time="4.839">
+<properties>
+<property name="specification" value="https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR">
+</property>
+<property name="feature" value="New Domestic Partner">
+</property>
+<property name="test-category" value="UI CONTRACT - Validates SSR-rendered HTML structure">
+</property>
+<property name="requirement" value="REQ-DIC-NEWD-UIC-006">
+</property>
+</properties>
+<system-out>
+<![CDATA[✅ Identification value validated based on type field: Input_CreditorIdType
+✅ Passport numbers auto-uppercase via Knockout binding
+]]>
+</system-out>
+</testcase>
+<testcase name="New Domestic Beneficiary - UI Contract Validation (SSR DOM Inspection) › Validate address and birth data checkbox contract" classname="dictionary\newDomesticPartner\newPartnerContract.spec.ts" time="5.804">
+<properties>
+<property name="specification" value="https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR">
+</property>
+<property name="feature" value="New Domestic Partner">
+</property>
+<property name="test-category" value="UI CONTRACT - Validates SSR-rendered HTML structure">
+</property>
+<property name="requirement" value="REQ-DIC-NEWD-UIC-007">
+</property>
+</properties>
+<system-out>
+<![CDATA[✅ ASP.NET MVC checkbox pattern: visible checkbox + hidden false field
+✅ Checkbox is required (must explicitly check or uncheck)
+]]>
+</system-out>
+</testcase>
+<testcase name="New Domestic Beneficiary - UI Contract Validation (SSR DOM Inspection) › Validate conditional required address field contracts" classname="dictionary\newDomesticPartner\newPartnerContract.spec.ts" time="5.192">
+<properties>
+<property name="specification" value="https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR">
+</property>
+<property name="feature" value="New Domestic Partner">
+</property>
+<property name="test-category" value="UI CONTRACT - Validates SSR-rendered HTML structure">
+</property>
+<property name="requirement" value="REQ-DIC-NEWD-UIC-008">
+</property>
+</properties>
+<system-out>
+<![CDATA[✅ SSR Complex conditional requirement verified: Input.BuildingNumber
+   Depends on: Input_StreetName, Input_BuildingNumber, Input_CityName
+✅ SSR Complex conditional requirement verified: Input.CityName
+   Depends on: Input_BuildingNumber, Input_StreetName, Input_CountryId
+✅ Address country field exists and is part of address group
+]]>
+</system-out>
+</testcase>
+<testcase name="New Domestic Beneficiary - UI Contract Validation (SSR DOM Inspection) › Validate conditional required birth data field contracts" classname="dictionary\newDomesticPartner\newPartnerContract.spec.ts" time="4.743">
+<properties>
+<property name="specification" value="https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR">
+</property>
+<property name="feature" value="New Domestic Partner">
+</property>
+<property name="test-category" value="UI CONTRACT - Validates SSR-rendered HTML structure">
+</property>
+<property name="requirement" value="REQ-DIC-NEWD-UIC-009">
+</property>
+</properties>
+<system-out>
+<![CDATA[✅ SSR Complex conditional requirement verified: Input.BirthDate
+   Depends on: Input_BirthDate, Input_BirthCity, Input_BirthCountryId
+   Logic: ||
+✅ SSR Complex conditional requirement verified: Input.BirthCountryId
+   Depends on: Input_BirthDate, Input_BirthCity, Input_BirthCountryId
+   Logic: ||
+✅ SSR Complex conditional requirement verified: Input.BirthCity
+   Depends on: Input_BirthDate, Input_BirthCity, Input_BirthCountryId
+   Logic: ||
+]]>
+</system-out>
+</testcase>
+<testcase name="New Domestic Beneficiary - UI Contract Validation (SSR DOM Inspection) › Validate international phone number field contract" classname="dictionary\newDomesticPartner\newPartnerContract.spec.ts" time="4.609">
+<properties>
+<property name="specification" value="https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR">
+</property>
+<property name="feature" value="New Domestic Partner">
+</property>
+<property name="test-category" value="UI CONTRACT - Validates SSR-rendered HTML structure">
+</property>
+<property name="requirement" value="REQ-DIC-NEWD-UIC-010">
+</property>
+</properties>
+</testcase>
+<testcase name="New Domestic Beneficiary - UI Contract Validation (SSR DOM Inspection) › Validate hidden system field contracts" classname="dictionary\newDomesticPartner\newPartnerContract.spec.ts" time="4.856">
+<properties>
+<property name="specification" value="https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR">
+</property>
+<property name="feature" value="New Domestic Partner">
+</property>
+<property name="test-category" value="UI CONTRACT - Validates SSR-rendered HTML structure">
+</property>
+<property name="requirement" value="REQ-DIC-NEWD-UIC-011">
+</property>
+</properties>
+<system-out>
+<![CDATA[✅ RowId GUID field contract verified
+✅ Form is in CREATE mode (IsNew=True)
+✅ LastMod timestamp: 0001-01-01T00:00:00.0000000
+✅ PartnerType: 0 (Domestic)
+]]>
+</system-out>
+</testcase>
+<testcase name="New Domestic Beneficiary - UI Contract Validation (SSR DOM Inspection) › DISCOVERY NEW DOMESTIC BENEFICIARY - Log all form field name attributes for Angular migration" classname="dictionary\newDomesticPartner\newPartnerContract.spec.ts" time="0">
+<properties>
+<property name="specification" value="https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR">
+</property>
+<property name="feature" value="New Domestic Partner">
+</property>
+<property name="test-category" value="UI CONTRACT - Validates SSR-rendered HTML structure">
+</property>
+<property name="requirement" value="REQ-DIC-NEWD-UIC-012">
+</property>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="dictionary\newDomesticPartner\newPartnerFunctional.spec.ts" timestamp="2026-02-13T06:33:40.490Z" hostname="smokeui" tests="14" failures="0" skipped="0" time="88.359" errors="0">
+<testcase name="New Domestic Beneficiary - Form functional tests › Validate beneficiary name is required" classname="dictionary\newDomesticPartner\newPartnerFunctional.spec.ts" time="5.701">
+<properties>
+<property name="specification" value="https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR">
+</property>
+<property name="feature" value="New Domestic Partner">
+</property>
+<property name="requirement" value="REQ-DIC-NEWD-UIF-001">
+</property>
+</properties>
+<system-out>
+<![CDATA[🔧 UIAdapter mode: SSR
+]]>
+</system-out>
+</testcase>
+<testcase name="New Domestic Beneficiary - Form functional tests › Validate beneficiary account is required" classname="dictionary\newDomesticPartner\newPartnerFunctional.spec.ts" time="5.069">
+<properties>
+<property name="specification" value="https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR">
+</property>
+<property name="feature" value="New Domestic Partner">
+</property>
+<property name="requirement" value="REQ-DIC-NEWD-UIF-002">
+</property>
+</properties>
+<system-out>
+<![CDATA[🔧 UIAdapter mode: SSR
+]]>
+</system-out>
+</testcase>
+<testcase name="New Domestic Beneficiary - Form functional tests › Validate account rejects invalid IBAN format" classname="dictionary\newDomesticPartner\newPartnerFunctional.spec.ts" time="5.855">
+<properties>
+<property name="specification" value="https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR">
+</property>
+<property name="feature" value="New Domestic Partner">
+</property>
+<property name="requirement" value="REQ-DIC-NEWD-UIF-003">
+</property>
+</properties>
+<system-out>
+<![CDATA[🔧 UIAdapter mode: SSR
+]]>
+</system-out>
+</testcase>
+<testcase name="New Domestic Beneficiary - Form functional tests › Validate identification value is required" classname="dictionary\newDomesticPartner\newPartnerFunctional.spec.ts" time="5.646">
+<properties>
+<property name="specification" value="https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR">
+</property>
+<property name="feature" value="New Domestic Partner">
+</property>
+<property name="requirement" value="REQ-DIC-NEWD-UIF-004">
+</property>
+</properties>
+<system-out>
+<![CDATA[🔧 UIAdapter mode: SSR
+]]>
+</system-out>
+</testcase>
+<testcase name="New Domestic Beneficiary - Form functional tests › Validate short name is optional field" classname="dictionary\newDomesticPartner\newPartnerFunctional.spec.ts" time="5.788">
+<properties>
+<property name="specification" value="https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR">
+</property>
+<property name="feature" value="New Domestic Partner">
+</property>
+<property name="requirement" value="REQ-DIC-NEWD-UIF-005">
+</property>
+</properties>
+<system-out>
+<![CDATA[🔧 UIAdapter mode: SSR
+]]>
+</system-out>
+</testcase>
+<testcase name="New Domestic Beneficiary - Form functional tests › Validate account owner dropdown loads available accounts" classname="dictionary\newDomesticPartner\newPartnerFunctional.spec.ts" time="5.333">
+<properties>
+<property name="specification" value="https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR">
+</property>
+<property name="feature" value="New Domestic Partner">
+</property>
+<property name="requirement" value="REQ-DIC-NEWD-UIF-006">
+</property>
+</properties>
+<system-out>
+<![CDATA[🔧 UIAdapter mode: SSR
+✅ Account owner dropdown loaded 2 options
+]]>
+</system-out>
+</testcase>
+<testcase name="New Domestic Beneficiary - Form functional tests › Validate identification code dropdown has standard options" classname="dictionary\newDomesticPartner\newPartnerFunctional.spec.ts" time="5.442">
+<properties>
+<property name="specification" value="https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR">
+</property>
+<property name="feature" value="New Domestic Partner">
+</property>
+<property name="requirement" value="REQ-DIC-NEWD-UIF-007">
+</property>
+</properties>
+<system-out>
+<![CDATA[🔧 UIAdapter mode: SSR
+✅ Dropdown contains 7 options
+]]>
+</system-out>
+</testcase>
+<testcase name="New Domestic Beneficiary - Form functional tests › Validate contact phone accepts international format" classname="dictionary\newDomesticPartner\newPartnerFunctional.spec.ts" time="6.954">
+<properties>
+<property name="specification" value="https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR">
+</property>
+<property name="feature" value="New Domestic Partner">
+</property>
+<property name="requirement" value="REQ-DIC-NEWD-UIF-008">
+</property>
+</properties>
+<system-out>
+<![CDATA[🔧 UIAdapter mode: SSR
+✅ System accepted valid input: "+380501234567"
+]]>
+</system-out>
+</testcase>
+<testcase name="New Domestic Beneficiary - Form functional tests › Validate contact phone no accepts wrong format" classname="dictionary\newDomesticPartner\newPartnerFunctional.spec.ts" time="6.707">
+<properties>
+<property name="specification" value="https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR">
+</property>
+<property name="feature" value="New Domestic Partner">
+</property>
+<property name="requirement" value="REQ-DIC-NEWD-UIF-009">
+</property>
+</properties>
+<system-out>
+<![CDATA[🔧 UIAdapter mode: SSR
+✅ System rejected invalid input: "+3805012345671" with error: "Invalid data"
+]]>
+</system-out>
+</testcase>
+<testcase name="New Domestic Beneficiary - Form functional tests › Validate country dropdown loads country options (252 countries)" classname="dictionary\newDomesticPartner\newPartnerFunctional.spec.ts" time="5.287">
+<properties>
+<property name="specification" value="https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR">
+</property>
+<property name="feature" value="New Domestic Partner">
+</property>
+<property name="requirement" value="REQ-DIC-NEWD-UIF-010">
+</property>
+</properties>
+<system-out>
+<![CDATA[🔧 UIAdapter mode: SSR
+✅ Dropdown contains 252 options (minimum 252 required)
+✅ All sample options verified: Ukraine, Poland, Hungary
+]]>
+</system-out>
+</testcase>
+<testcase name="New Domestic Beneficiary - Form functional tests › Validate name field accepts Cyrillic characters" classname="dictionary\newDomesticPartner\newPartnerFunctional.spec.ts" time="7.928">
+<properties>
+<property name="specification" value="https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR">
+</property>
+<property name="feature" value="New Domestic Partner">
+</property>
+<property name="requirement" value="REQ-DIC-NEWD-UIF-011">
+</property>
+</properties>
+<system-out>
+<![CDATA[🔧 UIAdapter mode: SSR
+✅ System accepted valid input: "ТОВ "Українська Компанія" №123"
+]]>
+</system-out>
+</testcase>
+<testcase name="New Domestic Beneficiary - Form functional tests › Validate address section visibility controlled by checkbox" classname="dictionary\newDomesticPartner\newPartnerFunctional.spec.ts" time="5.618">
+<properties>
+<property name="specification" value="https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR">
+</property>
+<property name="feature" value="New Domestic Partner">
+</property>
+<property name="requirement" value="REQ-DIC-NEWD-UIF-012">
+</property>
+</properties>
+<system-out>
+<![CDATA[🔧 UIAdapter mode: SSR
+✅ Address section hidden by default
+✅ Address section visible after checkbox checked
+]]>
+</system-out>
+</testcase>
+<testcase name="New Domestic Beneficiary - Form functional tests › Validate building and city required when address partially filled" classname="dictionary\newDomesticPartner\newPartnerFunctional.spec.ts" time="9.01">
+<properties>
+<property name="specification" value="https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR">
+</property>
+<property name="feature" value="New Domestic Partner">
+</property>
+<property name="requirement" value="REQ-DIC-NEWD-UIF-013">
+</property>
+</properties>
+<system-out>
+<![CDATA[🔧 UIAdapter mode: SSR
+✅ System requires Building when Street filled
+✅ System requires City when Building filled
+]]>
+</system-out>
+</testcase>
+<testcase name="New Domestic Beneficiary - Form functional tests › Validate birth city required when birth date filled" classname="dictionary\newDomesticPartner\newPartnerFunctional.spec.ts" time="8.021">
+<properties>
+<property name="specification" value="https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR">
+</property>
+<property name="feature" value="New Domestic Partner">
+</property>
+<property name="requirement" value="REQ-DIC-NEWD-UIF-014">
+</property>
+</properties>
+<system-out>
+<![CDATA[🔧 UIAdapter mode: SSR
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="dictionary\newDomesticPartner\newPartnerWorkflow.spec.ts" timestamp="2026-02-13T06:33:40.490Z" hostname="smokeui" tests="2" failures="0" skipped="1" time="9.871" errors="0">
+<testcase name="New Domestic Beneficiary - Workflow Tests › Create minimal domestic beneficiary with required fields only" classname="dictionary\newDomesticPartner\newPartnerWorkflow.spec.ts" time="9.871">
+<properties>
+<property name="specification" value="https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR">
+</property>
+<property name="feature" value="New Domestic Partner - End-to-End Workflows">
+</property>
+<property name="requirement" value="REQ-DIC-NEWD-WF-001">
+</property>
+</properties>
+<system-out>
+<![CDATA[🔧 UIAdapter mode: SSR
+✅ Redirected to edit page after save
+✅ IBAN persisted: UA 79 300614 1211115144432424581
+✅ Redirected to partner list after delete
+✅ Deleted beneficiary: King - Corkery LLC
+]]>
+</system-out>
+</testcase>
+<testcase name="New Domestic Beneficiary - Workflow Tests › Create full domestic beneficiary with all optional fields" classname="dictionary\newDomesticPartner\newPartnerWorkflow.spec.ts" time="0">
+<properties>
+<property name="specification" value="https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR">
+</property>
+<property name="feature" value="New Domestic Partner - End-to-End Workflows">
+</property>
+<property name="requirement" value="REQ-DIC-NEWD-WF-002">
+</property>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="dictionary\newForeignPartner\foreignContract.spec.ts" timestamp="2026-02-13T06:33:40.490Z" hostname="smokeui" tests="7" failures="0" skipped="1" time="29.334" errors="0">
+<testcase name="New Foreign Beneficiary - UI Contract Validation (SSR DOM Inspection) › Validate SSR renders required fields with proper data-val metadata in DOM" classname="dictionary\newForeignPartner\foreignContract.spec.ts" time="5.116">
+<properties>
+<property name="specification" value="https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/Foreign-Partner-Spec">
+</property>
+<property name="feature" value="New Foreign Partner">
+</property>
+<property name="test-category" value="UI CONTRACT - Validates SSR-rendered HTML structure">
+</property>
+<property name="requirement" value="REQ-DIC-NEWF-UIC-001">
+</property>
+</properties>
+<system-out>
+<![CDATA[✅ SSR rendered Account owner dropdown with required validation metadata
+✅ Max length 66 found in SWIFT validation (data-val-wocontrolsstringlength-len)
+✅ Beneficiary name field contract verified (SWIFT MT103 max 66)
+✅ Max length 66 found in SWIFT validation (data-val-wocontrolsstringlength-len)
+✅ Beneficiary address field contract verified (SWIFT MT103 max 66)
+✅ Max length 70 found in SWIFT validation (data-val-wocontrolsstringlength-len)
+✅ Account field dual structure verified (hidden + formatted)
+✅ BIC maturity dropdown contract verified
+]]>
+</system-out>
+</testcase>
+<testcase name="New Foreign Beneficiary - UI Contract Validation (SSR DOM Inspection) › Validate SSR renders optional fields without required validation metadata" classname="dictionary\newForeignPartner\foreignContract.spec.ts" time="5.151">
+<properties>
+<property name="specification" value="https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/Foreign-Partner-Spec">
+</property>
+<property name="feature" value="New Foreign Partner">
+</property>
+<property name="test-category" value="UI CONTRACT - Validates SSR-rendered HTML structure">
+</property>
+<property name="requirement" value="REQ-DIC-NEWF-UIC-002">
+</property>
+</properties>
+<system-out>
+<![CDATA[✅ Max length 32 found in: data-val-length-max maxlength
+✅ SSR optional field verified: Input.ShortName (max 32 chars, not required)
+✅ Short name field is optional with max 32 chars
+✅ Max length 10 found in: data-val-length-max maxlength
+✅ SSR optional field verified: Input.BnZipCode (max 10 chars, not required)
+✅ Zip code field is optional with max 10 chars
+✅ Residency radio group verified (default: Non-resident)
+]]>
+</system-out>
+</testcase>
+<testcase name="New Foreign Beneficiary - UI Contract Validation (SSR DOM Inspection) › Validate SSR renders allowed character set metadata for SWIFT fields" classname="dictionary\newForeignPartner\foreignContract.spec.ts" time="4.791">
+<properties>
+<property name="specification" value="https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/Foreign-Partner-Spec">
+</property>
+<property name="feature" value="New Foreign Partner">
+</property>
+<property name="test-category" value="UI CONTRACT - Validates SSR-rendered HTML structure">
+</property>
+<property name="requirement" value="REQ-DIC-NEWF-UIC-003">
+</property>
+</properties>
+<system-out>
+<![CDATA[locator('[name="Input.BnName"]')
+Allowed characters from backend: ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 0123456789АБВГҐДЕЁЖЗИЙІЇКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄабвгґдеёжзийіїклмнопрстуфхцчшщъыьэюяє'’‘`()?+№#/%&-,.:!$;\|_=<>[]{}”“"«»*@^~
+✅ Character set verified in backend allowed chars: ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz
+----------------------------------------
+✅ Character set verified in backend allowed chars: 0123456789
+----------------------------------------
+✅ Character set verified in backend allowed chars: АБВГҐДЕЁЖЗИЙІЇКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄабвгґдеёжзийіїклмнопрстуфхцчшщъыьэюяє
+----------------------------------------
+✅ Character set verified in backend allowed chars: ()?+№#/%&-,.:!$;\|_=<>[]{}
+----------------------------------------
+✅ Name field character set contract verified (SWIFT MT103 compatible)
+locator('[name="Input.BnAddress"]')
+Allowed characters from backend: ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 0123456789АБВГҐДЕЁЖЗИЙІЇКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄабвгґдеёжзийіїклмнопрстуфхцчшщъыьэюяє'’‘`()?+№#/%&-,.:!$;\|_=<>[]{}”“"«»*@^~
+✅ Character set verified in backend allowed chars: ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz
+----------------------------------------
+✅ Character set verified in backend allowed chars: 0123456789
+----------------------------------------
+✅ Character set verified in backend allowed chars: АБВГҐДЕЁЖЗИЙІЇКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄабвгґдеёжзийіїклмнопрстуфхцчшщъыьэюяє
+----------------------------------------
+✅ Character set verified in backend allowed chars: ()?+№#/%&-,.:!$;\|_=<>[]{}
+----------------------------------------
+✅ Address field character set contract verified (SWIFT MT103 address)
+locator('[name="Input.BnAccount"]')
+Allowed characters from backend: ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 0123456789/ -?:().,'+
+✅ Character set verified in backend allowed chars: ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz
+----------------------------------------
+✅ Character set verified in backend allowed chars: 0123456789
+----------------------------------------
+✅ Character set verified in backend allowed chars:  -?:().,'
+----------------------------------------
+✅ Account field character set validated (alphanumeric + SWIFT special chars)
+locator('[name="Input.BnCityOrTown"]')
+Allowed characters from backend: ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 0123456789АБВГҐДЕЁЖЗИЙІЇКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄабвгґдеёжзийіїклмнопрстуфхцчшщъыьэюяє'’‘`()?+№#/%&-,.:!$;\|_=<>[]{}”“"«»*@^~
+✅ Character set verified in backend allowed chars: 0123456789
+----------------------------------------
+✅ Character set verified in backend allowed chars: ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz
+----------------------------------------
+✅ Character set verified in backend allowed chars: АБВГҐДЕЁЖЗИЙІЇКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄабвгґдеёжзийіїклмнопрстуфхцчшщъыьэюяє
+----------------------------------------
+✅ City/Town field character set contract verified
+]]>
+</system-out>
+</testcase>
+<testcase name="New Foreign Beneficiary - UI Contract Validation (SSR DOM Inspection) › Validate SSR renders conditional BIC maturity validation metadata" classname="dictionary\newForeignPartner\foreignContract.spec.ts" time="4.825">
+<properties>
+<property name="specification" value="https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/Foreign-Partner-Spec">
+</property>
+<property name="feature" value="New Foreign Partner">
+</property>
+<property name="test-category" value="UI CONTRACT - Validates SSR-rendered HTML structure">
+</property>
+<property name="requirement" value="REQ-DIC-NEWF-UIC-004">
+</property>
+</properties>
+<system-out>
+<![CDATA[✅ BIC maturity dropdown contract verified (With BIC / Without BIC)
+✅ Max length 140 found in:  data-val-wocontrolsstringlength-len
+✅ SSR optional field verified: Input.BnBankNameAndAddress (max 140 chars, not required)
+✅ Bank Name and Address field validated (max 140 chars for 4 lines x 35 chars)
+]]>
+</system-out>
+</testcase>
+<testcase name="New Foreign Beneficiary - UI Contract Validation (SSR DOM Inspection) › Validate SSR renders dual Account field structure (hidden + formatted)" classname="dictionary\newForeignPartner\foreignContract.spec.ts" time="4.736">
+<properties>
+<property name="specification" value="https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/Foreign-Partner-Spec">
+</property>
+<property name="feature" value="New Foreign Partner">
+</property>
+<property name="test-category" value="UI CONTRACT - Validates SSR-rendered HTML structure">
+</property>
+<property name="requirement" value="REQ-DIC-NEWF-UIC-005">
+</property>
+</properties>
+<system-out>
+<![CDATA[✅ Hidden Account field contract verified (max 34 chars for IBAN/other formats)
+]]>
+</system-out>
+</testcase>
+<testcase name="New Foreign Beneficiary - UI Contract Validation (SSR DOM Inspection) › Validate SSR renders hidden tax identification fields (INN, KPP)" classname="dictionary\newForeignPartner\foreignContract.spec.ts" time="4.715">
+<properties>
+<property name="specification" value="https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/Foreign-Partner-Spec">
+</property>
+<property name="feature" value="New Foreign Partner">
+</property>
+<property name="test-category" value="UI CONTRACT - Validates SSR-rendered HTML structure">
+</property>
+<property name="requirement" value="REQ-DIC-NEWF-UIC-006">
+</property>
+</properties>
+<system-out>
+<![CDATA[✅ Max length 12 found in: data-val-length-max
+✅ SSR optional field verified: Input.Inn (max 12 chars, not required)
+✅ INN field contract verified (max 12 digits for Russian tax ID)
+✅ Max length 9 found in: data-val-length-max
+✅ SSR optional field verified: Input.Kpp (max 9 chars, not required)
+✅ KPP field contract verified (exactly 9 digits for Russian tax registration)
+]]>
+</system-out>
+</testcase>
+<testcase name="New Foreign Beneficiary - UI Contract Validation (SSR DOM Inspection) › DISCOVERY - Log all SSR-rendered form fields from DOM" classname="dictionary\newForeignPartner\foreignContract.spec.ts" time="0">
+<properties>
+<property name="specification" value="https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/Foreign-Partner-Spec">
+</property>
+<property name="feature" value="New Foreign Partner">
+</property>
+<property name="test-category" value="UI CONTRACT - Validates SSR-rendered HTML structure">
+</property>
+<property name="requirement" value="REQ-DIC-NEWF-DISC-001">
+</property>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="dictionary\newForeignPartner\foreignFunctional.spec.ts" timestamp="2026-02-13T06:33:40.490Z" hostname="smokeui" tests="14" failures="0" skipped="0" time="91.052" errors="0">
+<testcase name="New Foreign Beneficiary - Form Validation Tests › Validate beneficiary name is required" classname="dictionary\newForeignPartner\foreignFunctional.spec.ts" time="5.833">
+<properties>
+<property name="requirement" value="REQ-DIC-NEWF-UIF-001">
+</property>
+</properties>
+<system-out>
+<![CDATA[🔧 UIAdapter mode: SSR
+✅ System rejects empty beneficiary name
+]]>
+</system-out>
+</testcase>
+<testcase name="New Foreign Beneficiary - Form Validation Tests › Validate beneficiary address is required" classname="dictionary\newForeignPartner\foreignFunctional.spec.ts" time="5.74">
+<properties>
+<property name="requirement" value="REQ-DIC-NEWF-UIF-002">
+</property>
+</properties>
+<system-out>
+<![CDATA[🔧 UIAdapter mode: SSR
+✅ System rejects empty beneficiary address
+]]>
+</system-out>
+</testcase>
+<testcase name="New Foreign Beneficiary - Form Validation Tests › Validate country selection is required" classname="dictionary\newForeignPartner\foreignFunctional.spec.ts" time="4.777">
+<properties>
+<property name="requirement" value="REQ-DIC-NEWF-UIF-003">
+</property>
+</properties>
+<system-out>
+<![CDATA[🔧 UIAdapter mode: SSR
+Country value: "804"
+✅ Country field has validation logic
+]]>
+</system-out>
+</testcase>
+<testcase name="New Foreign Beneficiary - Form Validation Tests › Validate city or town is required" classname="dictionary\newForeignPartner\foreignFunctional.spec.ts" time="5.585">
+<properties>
+<property name="requirement" value="REQ-DIC-NEWF-UIF-004">
+</property>
+</properties>
+<system-out>
+<![CDATA[🔧 UIAdapter mode: SSR
+✅ System rejects empty city/town
+]]>
+</system-out>
+</testcase>
+<testcase name="New Foreign Beneficiary - Form Validation Tests › Validate beneficiary account is required" classname="dictionary\newForeignPartner\foreignFunctional.spec.ts" time="6.109">
+<properties>
+<property name="requirement" value="REQ-DIC-NEWF-UIF-005">
+</property>
+</properties>
+<system-out>
+<![CDATA[🔧 UIAdapter mode: SSR
+✅ System rejects empty beneficiary account
+]]>
+</system-out>
+</testcase>
+<testcase name="New Foreign Beneficiary - Form Validation Tests › Validate beneficiary name enforces max 66 characters" classname="dictionary\newForeignPartner\foreignFunctional.spec.ts" time="7.657">
+<properties>
+<property name="requirement" value="REQ-DIC-NEWF-UIF-006">
+</property>
+</properties>
+<system-out>
+<![CDATA[🔧 UIAdapter mode: SSR
+]]>
+</system-out>
+</testcase>
+<testcase name="New Foreign Beneficiary - Form Validation Tests › Validate beneficiary address enforces max 66 characters" classname="dictionary\newForeignPartner\foreignFunctional.spec.ts" time="6.612">
+<properties>
+<property name="requirement" value="REQ-DIC-NEWF-UIF-007">
+</property>
+</properties>
+<system-out>
+<![CDATA[🔧 UIAdapter mode: SSR
+]]>
+</system-out>
+</testcase>
+<testcase name="New Foreign Beneficiary - Form Validation Tests › Validate city and country combined length enforced" classname="dictionary\newForeignPartner\foreignFunctional.spec.ts" time="10.351">
+<properties>
+<property name="requirement" value="REQ-DIC-NEWF-UIF-008">
+</property>
+</properties>
+<system-out>
+<![CDATA[🔧 UIAdapter mode: SSR
+✅ System rejected invalid input: "CЭЮ№CЭЮ№CЭЮ№CЭЮ№CЭЮ№CЭЮ№CЭЮ№CЭЮ№CЭЮ№CЭЮ№CЭЮ№CЭЮ№CЭЮ№CЭЮ№CЭЮ№CЭЮ№Ukraine" with error: "The field City/Town must be a string with a maximum length of 70"
+]]>
+</system-out>
+</testcase>
+<testcase name="New Foreign Beneficiary - Form Validation Tests › Validate account owner dropdown loads options" classname="dictionary\newForeignPartner\foreignFunctional.spec.ts" time="5.372">
+<properties>
+<property name="requirement" value="REQ-DIC-NEWF-UIF-009">
+</property>
+</properties>
+<system-out>
+<![CDATA[🔧 UIAdapter mode: SSR
+✅ Account owner dropdown loaded 2 accounts
+]]>
+</system-out>
+</testcase>
+<testcase name="New Foreign Beneficiary - Form Validation Tests › Validate country dropdown loads country options" classname="dictionary\newForeignPartner\foreignFunctional.spec.ts" time="5.376">
+<properties>
+<property name="requirement" value="REQ-DIC-NEWF-UIF-010">
+</property>
+</properties>
+<system-out>
+<![CDATA[🔧 UIAdapter mode: SSR
+✅ Dropdown contains 252 options (minimum 252 required)
+✅ All sample options verified: Ukraine, Poland, Hungary
+]]>
+</system-out>
+</testcase>
+<testcase name="New Foreign Beneficiary - Form Validation Tests › Validate BIC maturity dropdown has correct options" classname="dictionary\newForeignPartner\foreignFunctional.spec.ts" time="5.292">
+<properties>
+<property name="requirement" value="REQ-DIC-NEWF-UIF-011">
+</property>
+</properties>
+<system-out>
+<![CDATA[🔧 UIAdapter mode: SSR
+✅ BIC maturity dropdown has 2 options
+]]>
+</system-out>
+</testcase>
+<testcase name="New Foreign Beneficiary - Form Validation Tests › Validate BIC field required for banks with BIC code" classname="dictionary\newForeignPartner\foreignFunctional.spec.ts" time="6.645">
+<properties>
+<property name="requirement" value="REQ-DIC-NEWF-UIF-012">
+</property>
+</properties>
+<system-out>
+<![CDATA[🔧 UIAdapter mode: SSR
+]]>
+</system-out>
+</testcase>
+<testcase name="New Foreign Beneficiary - Form Validation Tests › Validate BIC field accepts valid 8 or 11 character codes" classname="dictionary\newForeignPartner\foreignFunctional.spec.ts" time="9.65">
+<properties>
+<property name="requirement" value="REQ-DIC-NEWF-UIF-013">
+</property>
+</properties>
+<system-out>
+<![CDATA[🔧 UIAdapter mode: SSR
+✅ System accepts 8-character BIC code
+✅ System accepts 11-character BIC code
+]]>
+</system-out>
+</testcase>
+<testcase name="New Foreign Beneficiary - Form Validation Tests › Bank bic have to valid" classname="dictionary\newForeignPartner\foreignFunctional.spec.ts" time="6.053">
+<properties>
+<property name="requirement" value="REQ-DIC-NEWF-UIF-014">
+</property>
+</properties>
+<system-out>
+<![CDATA[🔧 UIAdapter mode: SSR
+✅ System rejected invalid input: "22345" with error: "BIC code length must be 8 or 11 (9 in case of RUB payments)"
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="dictionary\newForeignPartner\foreignWorkflow.spec.ts" timestamp="2026-02-13T06:33:40.490Z" hostname="smokeui" tests="3" failures="0" skipped="0" time="33.722" errors="0">
+<testcase name="New Foreign Beneficiary - End-to-End Workflow Tests › Create foreign beneficiary with BIC code and verify data persistence" classname="dictionary\newForeignPartner\foreignWorkflow.spec.ts" time="14.461">
+<properties>
+<property name="requirement" value="REQ-DIC-NEWF-E2E-001">
+</property>
+</properties>
+<system-out>
+<![CDATA[🔧 UIAdapter mode: SSR
+✅ Filled foreign partner: Spencer - Corwin Inc.
+✅ All data persisted correctly - Backend saved and re-rendered fields
+]]>
+</system-out>
+</testcase>
+<testcase name="New Foreign Beneficiary - End-to-End Workflow Tests › Validate system prevents save when required fields are empty" classname="dictionary\newForeignPartner\foreignWorkflow.spec.ts" time="5.215">
+<properties>
+<property name="requirement" value="REQ-DIC-NEWF-E2E-002">
+</property>
+</properties>
+<system-out>
+<![CDATA[🔧 UIAdapter mode: SSR
+✅ System correctly prevents save and shows validation errors
+]]>
+</system-out>
+</testcase>
+<testcase name="New Foreign Beneficiary - End-to-End Workflow Tests › Create foreign beneficiary without BIC code using bank name and address" classname="dictionary\newForeignPartner\foreignWorkflow.spec.ts" time="14.046">
+<properties>
+<property name="requirement" value="REQ-DIC-NEWF-E2E-003">
+</property>
+</properties>
+<system-out>
+<![CDATA[🔧 UIAdapter mode: SSR
+✅ Selected: Beneficiary Bank without BIC code
+✅ Filled bank name and address manually
+account number: GB82WEST12345698765432
+✅ Backend accepted partner without BIC code (using bank name/address)
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="dictionary\partners\listContract.spec.ts" timestamp="2026-02-13T06:33:40.490Z" hostname="smokeui" tests="4" failures="0" skipped="1" time="11.86" errors="0">
+<testcase name="Partner List - UI Filter Capability Contract › DISCOVERY - Technology-Agnostic Grid Validation" classname="dictionary\partners\listContract.spec.ts" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Partner List - UI Filter Capability Contract › Validate Partner List grid business contracts" classname="dictionary\partners\listContract.spec.ts" time="4.033">
+<properties>
+<property name="requirement ID" value="REQ-DIC-PARTNER-001">
+</property>
+<property name="requirement ID" value="REQ-DIC-PARTNER-002">
+</property>
+<property name="requirement ID" value="REQ-DIC-PARTNER-003">
+</property>
+<property name="requirement ID" value="REQ-DIC-PARTNER-004">
+</property>
+<property name="requirement ID" value="REQ-DIC-PARTNER-005">
+</property>
+<property name="requirement ID" value="REQ-DIC-PARTNER-006">
+</property>
+<property name="requirement ID" value="REQ-DIC-PARTNER-007">
+</property>
+<property name="requirement ID" value="REQ-DIC-PARTNER-008">
+</property>
+<property name="requirement ID" value="REQ-DIC-PARTNER-009">
+</property>
+</properties>
+</testcase>
+<testcase name="Partner List - UI Filter Capability Contract › Validate backend ComboBox filter bindings for Partner List grid" classname="dictionary\partners\listContract.spec.ts" time="4.017">
+<system-out>
+<![CDATA[
+📦 Grid Technology: DevExpress/Knockout
+]]>
+</system-out>
+</testcase>
+<testcase name="Partner List - UI Filter Capability Contract › Validate grid pager backend contracts" classname="dictionary\partners\listContract.spec.ts" time="3.81">
+</testcase>
+</testsuite>
+<testsuite name="dictionary\partners\listFunctional.spec.ts" timestamp="2026-02-13T06:33:40.490Z" hostname="smokeui" tests="11" failures="0" skipped="0" time="70.026" errors="0">
+<testcase name="Partner List - Filter Functional Validation › Validate State filter shows only selected state partners" classname="dictionary\partners\listFunctional.spec.ts" time="6.55">
+<properties>
+<property name="specification" value="https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR">
+</property>
+<property name="feature" value="Partner List Grid Filters">
+</property>
+<property name="requirement" value="REQ-DIC-PARTNER-FUNC-001">
+</property>
+</properties>
+<system-out>
+<![CDATA[Detected grid type: DevExpress
+✅ Verified 1 of 1 rows match State = Authorized
+✅ Filters cleared
+]]>
+</system-out>
+</testcase>
+<testcase name="Partner List - Filter Functional Validation › Validate Beneficiary type filter distinguishes Domestic/Foreign partners" classname="dictionary\partners\listFunctional.spec.ts" time="8.141">
+<properties>
+<property name="specification" value="https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR">
+</property>
+<property name="feature" value="Partner List Grid Filters">
+</property>
+<property name="requirement" value="REQ-DIC-PARTNER-FUNC-002">
+</property>
+</properties>
+<system-out>
+<![CDATA[Detected grid type: DevExpress
+✅ Verified 10 of 25 rows match Domestic type
+✅ Verified Foreign beneficiary type filter
+✅ Filters cleared
+]]>
+</system-out>
+</testcase>
+<testcase name="Partner List - Filter Functional Validation › Validate Account column shows IBAN format for Domestic partners" classname="dictionary\partners\listFunctional.spec.ts" time="6.032">
+<properties>
+<property name="specification" value="https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR">
+</property>
+<property name="feature" value="Partner List Grid Filters">
+</property>
+<property name="requirement" value="REQ-DIC-PARTNER-FUNC-003">
+</property>
+</properties>
+<system-out>
+<![CDATA[Detected grid type: DevExpress
+✅ Verified IBAN format: UA 25 300614 14...
+✅ Filters cleared
+]]>
+</system-out>
+</testcase>
+<testcase name="Partner List - Filter Functional Validation › Validate Short name filter performs partial text search" classname="dictionary\partners\listFunctional.spec.ts" time="4.862">
+<properties>
+<property name="specification" value="https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR">
+</property>
+<property name="feature" value="Partner List Grid Filters">
+</property>
+<property name="requirement" value="REQ-DIC-PARTNER-FUNC-004">
+</property>
+</properties>
+<system-out>
+<![CDATA[Detected grid type: DevExpress
+✅ Verified 1 of 1 rows match Short Name "autotestshortname"
+✅ Filters cleared
+]]>
+</system-out>
+</testcase>
+<testcase name="Partner List - Filter Functional Validation › Validate Trusted signature group type filter" classname="dictionary\partners\listFunctional.spec.ts" time="6.132">
+<properties>
+<property name="specification" value="https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR">
+</property>
+<property name="feature" value="Partner List Grid Filters">
+</property>
+<property name="requirement" value="REQ-DIC-PARTNER-FUNC-005">
+</property>
+</properties>
+<system-out>
+<![CDATA[Detected grid type: DevExpress
+✅ Verified 2 of 2 rows match Trusted signature group type
+✅ Filters cleared
+]]>
+</system-out>
+</testcase>
+<testcase name="Partner List - Filter Functional Validation › Validate grid shows &quot;No data&quot; when filter has no matches" classname="dictionary\partners\listFunctional.spec.ts" time="6.497">
+<properties>
+<property name="specification" value="https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR">
+</property>
+<property name="feature" value="Partner List Grid Filters">
+</property>
+<property name="requirement" value="REQ-DIC-PARTNER-FUNC-006">
+</property>
+</properties>
+<system-out>
+<![CDATA[Detected grid type: DevExpress
+✅ Verified "No data" message appears for no matching filter results
+✅ Filters cleared
+]]>
+</system-out>
+</testcase>
+<testcase name="Partner List - Filter Functional Validation › Validate multiple filters work together (AND logic)" classname="dictionary\partners\listFunctional.spec.ts" time="7.954">
+<properties>
+<property name="specification" value="https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR">
+</property>
+<property name="feature" value="Partner List Grid Filters">
+</property>
+<property name="requirement" value="REQ-DIC-PARTNER-FUNC-007">
+</property>
+</properties>
+<system-out>
+<![CDATA[Detected grid type: DevExpress
+⏭️  No Authorized Domestic partners in test data Validate multiple filters work together (AND logic)
+✅ Filters cleared
+]]>
+</system-out>
+</testcase>
+<testcase name="Partner List - Filter Functional Validation › Validate Account Owner filter performs exact match search just for searched display" classname="dictionary\partners\listFunctional.spec.ts" time="6.352">
+<properties>
+<property name="specification" value="https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR">
+</property>
+<property name="feature" value="Partner List Grid Filters">
+</property>
+<property name="requirement" value="REQ-DIC-PARTNER-FUNC-008">
+</property>
+</properties>
+<system-out>
+<![CDATA[Detected grid type: DevExpress
+✅ Verified 18 of 18 rows match Account Owner
+✅ Filters cleared
+]]>
+</system-out>
+</testcase>
+<testcase name="Partner List - Filter Functional Validation › Validate Group Name filter performs partial text search" classname="dictionary\partners\listFunctional.spec.ts" time="6.17">
+<properties>
+<property name="specification" value="https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR">
+</property>
+<property name="feature" value="Partner List Grid Filters">
+</property>
+<property name="requirement" value="REQ-DIC-PARTNER-FUNC-010">
+</property>
+</properties>
+<system-out>
+<![CDATA[Detected grid type: DevExpress
+🔍 Verifying Group groupNameCells filter results for "locator('.dxgvDataRow_DxCLIC td:nth-child(5)')"
+✅ Verified 1 of 1 rows match Group Name
+✅ Filters cleared
+]]>
+</system-out>
+</testcase>
+<testcase name="Partner List - Filter Functional Validation › Validate Identification Code filter performs exact match search" classname="dictionary\partners\listFunctional.spec.ts" time="6.383">
+<properties>
+<property name="specification" value="https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR">
+</property>
+<property name="feature" value="Partner List Grid Filters">
+</property>
+<property name="requirement" value="REQ-DIC-PARTNER-FUNC-011">
+</property>
+</properties>
+<system-out>
+<![CDATA[Detected grid type: DevExpress
+✅ Verified 14 of 14 rows match Identification Code
+✅ Filters cleared
+]]>
+</system-out>
+</testcase>
+<testcase name="Partner List - Filter Functional Validation › Validate Partner selector checkbox functionality" classname="dictionary\partners\listFunctional.spec.ts" time="4.953">
+<properties>
+<property name="specification" value="https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR">
+</property>
+<property name="feature" value="Partner List Grid Filters">
+</property>
+<property name="requirement" value="REQ-DIC-PARTNER-FUNC-012">
+</property>
+</properties>
+<system-out>
+<![CDATA[Detected grid type: DevExpress
+✅ Select All checkbox selected successfully
+✅ Select All checkbox deselected - all 26 checkboxes unchecked
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="dictionary\partners\listWorkflow.spec.ts" timestamp="2026-02-13T06:33:40.490Z" hostname="smokeui" tests="6" failures="0" skipped="1" time="47.045" errors="0">
+<testcase name="Partner List Actions - Workflow Action Validation › Export partners downloads file with correct data" classname="dictionary\partners\listWorkflow.spec.ts" time="8.093">
+<properties>
+<property name="specification" value="https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR">
+</property>
+<property name="feature" value="Partner List Actions">
+</property>
+<property name="requirement" value="REQ-DIC-PARTNER-FLOW-002">
+</property>
+</properties>
+<system-out>
+<![CDATA[🔍 DB Config - Server: cua-test-db Database: (default)
+🔌 Attempting database connection...
+   Server: cua-test-db
+   Database: (default)
+   User: sa
+   Encrypt: false
+   TrustServerCertificate: true
+✅ Database connected successfully
+   Connected to: default database on cua-test-db
+🔍 Testing database read...
+✅ Database read successful!
+   Account ID: 12345678901234
+   IBAN: UA083006141234567890123456789
+   Alias: null
+🔧 Creating test data...
+Detected grid type: DevExpress
+✅ Applied State = Authorized filter
+✅ File saved to: C:\GIT\CORPEX\Testing\cueweb\test-downloads\partnerlistname.XML
+📁 Files in directory: [partnerlistname.XML]
+ℹ️ File partnerlistname.XML matches format XML
+ℹ️ File found: partnerlistname.XML (1284 bytes)
+✅ File deleted: C:\GIT\CORPEX\Testing\cueweb\test-downloads\partnerlistname.XML
+]]>
+</system-out>
+</testcase>
+<testcase name="Partner List Actions - Workflow Action Validation › Edit partner updates information in grid" classname="dictionary\partners\listWorkflow.spec.ts" time="10.47">
+<properties>
+<property name="specification" value="https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR">
+</property>
+<property name="feature" value="Partner List Actions">
+</property>
+<property name="requirement" value="REQ-DIC-PARTNER-FLOW-003">
+</property>
+</properties>
+<system-out>
+<![CDATA[Detected grid type: DevExpress
+✅ Filters cleared
+locator('.dxgvDataRow_DxCLIC td:nth-child(2)')
+✅ Opened edit for: "EN АТ КАРГІЛЛ ТОВ 1212345678901234
+✅ Changed short name: "EN АТ КАРГІЛЛ ТОВ 1212345678901234 → UPDATED_1770964830186
+✅ Backend saved changes: 302
+✅ Grid shows updated name: UPDATED_1770964830186
+]]>
+</system-out>
+</testcase>
+<testcase name="Partner List Actions - Workflow Action Validation › Select multiple partners and perform bulk move group and remove from" classname="dictionary\partners\listWorkflow.spec.ts" time="11.208">
+<properties>
+<property name="specification" value="https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR">
+</property>
+<property name="feature" value="Partner List Actions">
+</property>
+<property name="requirement" value="REQ-DIC-PARTNER-FLOW-004">
+</property>
+</properties>
+<system-out>
+<![CDATA[Detected grid type: DevExpress
+✅ Filters cleared
+✅ Selected 3 partners
+]]>
+</system-out>
+</testcase>
+<testcase name="Partner List Actions - Workflow Action Validation › Import partner from file search it then delete" classname="dictionary\partners\listWorkflow.spec.ts" time="10.53">
+<properties>
+<property name="specification" value="https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR">
+</property>
+<property name="feature" value="Partner List Actions">
+</property>
+<property name="requirement" value="REQ-DIC-PARTNER-FLOW-006">
+</property>
+</properties>
+<system-out>
+<![CDATA[Detected grid type: DevExpress
+✅ Import dialog opened
+]]>
+</system-out>
+</testcase>
+<testcase name="Partner List Actions - Workflow Action Validation › Assign comment to selected partner" classname="dictionary\partners\listWorkflow.spec.ts" time="6.744">
+<properties>
+<property name="specification" value="https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR">
+</property>
+<property name="feature" value="Partner List Actions">
+</property>
+<property name="requirement" value="REQ-DIC-PARTNER-FLOW-007">
+</property>
+</properties>
+<system-out>
+<![CDATA[Detected grid type: DevExpress
+✅ Filters cleared
+✅ Selected partner for comment
+]]>
+</system-out>
+</testcase>
+<testcase name="Partner List Actions - Workflow Action Validation › Revert authorized partner back to edit state" classname="dictionary\partners\listWorkflow.spec.ts" time="0">
+<properties>
+<property name="specification" value="https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR">
+</property>
+<property name="feature" value="Partner List Actions">
+</property>
+<property name="requirement" value="REQ-DIC-PARTNER-FLOW-009">
+</property>
+<property name="fixme" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+</testsuites>
