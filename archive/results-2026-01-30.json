@@ -1,0 +1,2289 @@
+{
+  "config": {
+    "configFile": "C:\\GIT\\CORPEX\\Testing\\cueweb\\playwright.config.ts",
+    "rootDir": "C:/GIT/CORPEX/Testing/cueweb/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/GIT/CORPEX/Testing/cueweb/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "smokeui",
+        "name": "smokeui",
+        "testDir": "C:/GIT/CORPEX/Testing/cueweb/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 0
+      },
+      {
+        "outputDir": "C:/GIT/CORPEX/Testing/cueweb/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "login",
+        "name": "login",
+        "testDir": "C:/GIT/CORPEX/Testing/cueweb/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 0
+      },
+      {
+        "outputDir": "C:/GIT/CORPEX/Testing/cueweb/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "payment",
+        "name": "payment",
+        "testDir": "C:/GIT/CORPEX/Testing/cueweb/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 0
+      },
+      {
+        "outputDir": "C:/GIT/CORPEX/Testing/cueweb/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "forex",
+        "name": "forex",
+        "testDir": "C:/GIT/CORPEX/Testing/cueweb/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/tests/forex/exchange/**/*.spec.ts"
+        ],
+        "timeout": 0
+      },
+      {
+        "outputDir": "C:/GIT/CORPEX/Testing/cueweb/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "savestate",
+        "name": "savestate",
+        "testDir": "C:/GIT/CORPEX/Testing/cueweb/setup",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 0
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json",
+        {
+          "outputFile": "test-results/results-2026-01-30.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "always"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "test-results/junit.xml"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "runAgents": "none",
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.58.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "dictionary\\partners\\listFunctional.spec.ts",
+      "file": "dictionary/partners/listFunctional.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Partner List - Filter Functional Validation",
+          "file": "dictionary/partners/listFunctional.spec.ts",
+          "line": 19,
+          "column": 15,
+          "specs": [
+            {
+              "title": "REQ-DIC-PARTNER-FUNC-001 Validate State filter shows only selected state partners",
+              "ok": true,
+              "tags": [
+                "dictionary",
+                "functional"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7004,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "🔐 Starting API login process...\n"
+                        },
+                        {
+                          "text": "username: dani\n"
+                        },
+                        {
+                          "text": "Step 0: Clearing existing session data...\n"
+                        },
+                        {
+                          "text": "Step 1: Getting login page to establish session...\n"
+                        },
+                        {
+                          "text": "Login page response: 200\n"
+                        },
+                        {
+                          "text": "Step 2: Submitting credentials...\n"
+                        },
+                        {
+                          "text": "Login response: 200\n"
+                        },
+                        {
+                          "text": "Step 3: Getting OTP page...\n"
+                        },
+                        {
+                          "text": "OTP page response: 200\n"
+                        },
+                        {
+                          "text": "Step 4: Submitting OTP code...\n"
+                        },
+                        {
+                          "text": "OTP response: 200\n"
+                        },
+                        {
+                          "text": "✅ API login successful! Found 2 auth cookies\n"
+                        },
+                        {
+                          "text": "Detected grid type: DevExpress\n"
+                        },
+                        {
+                          "text": "✅ Verified 2 of 2 rows match State = Authorized\n"
+                        },
+                        {
+                          "text": "✅ Filters cleared\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Apply State filter to \"Authorized\"",
+                          "duration": 1987
+                        },
+                        {
+                          "title": "Verify all visible rows have State = \"Authorized\"",
+                          "duration": 63
+                        }
+                      ],
+                      "startTime": "2026-01-30T07:07:40.274Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "088c3001a1bef327f096-f5ff765acd07aafcea00",
+              "file": "dictionary/partners/listFunctional.spec.ts",
+              "line": 50,
+              "column": 7
+            },
+            {
+              "title": "REQ-DIC-PARTNER-FUNC-002: Validate Beneficiary type filter distinguishes Domestic/Foreign partners",
+              "ok": true,
+              "tags": [
+                "dictionary",
+                "functional"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7391,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Detected grid type: DevExpress\n"
+                        },
+                        {
+                          "text": "✅ Verified 10 of 25 rows match Domestic type\n"
+                        },
+                        {
+                          "text": "✅ Verified Foreign beneficiary type filter\n"
+                        },
+                        {
+                          "text": "✅ Filters cleared\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Apply Beneficiary type filter to \"Domestic\"",
+                          "duration": 1926
+                        },
+                        {
+                          "title": "Verify all visible partners are Domestic type",
+                          "duration": 197
+                        },
+                        {
+                          "title": "Switch filter to \"Foreign\" and verify results",
+                          "duration": 1942
+                        }
+                      ],
+                      "startTime": "2026-01-30T07:07:49.851Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "088c3001a1bef327f096-006e158af88ba7bb74b5",
+              "file": "dictionary/partners/listFunctional.spec.ts",
+              "line": 73,
+              "column": 7
+            },
+            {
+              "title": "REQ-DIC-PARTNER-FUNC-003: Validate Account column shows IBAN format for Domestic partners",
+              "ok": true,
+              "tags": [
+                "dictionary",
+                "functional"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6102,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Detected grid type: DevExpress\n"
+                        },
+                        {
+                          "text": "✅ Verified IBAN format: UA 53 334851 00...\n"
+                        },
+                        {
+                          "text": "✅ Filters cleared\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Filter by Beneficiary type = Domestic",
+                          "duration": 2103
+                        },
+                        {
+                          "title": "Verify Account column shows IBAN format",
+                          "duration": 27
+                        }
+                      ],
+                      "startTime": "2026-01-30T07:07:57.259Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "088c3001a1bef327f096-8bc57955d8adcf92edda",
+              "file": "dictionary/partners/listFunctional.spec.ts",
+              "line": 107,
+              "column": 7
+            },
+            {
+              "title": "REQ-DIC-PARTNER-FUNC-004: Validate Short name filter performs partial text search",
+              "ok": true,
+              "tags": [
+                "dictionary",
+                "functional"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4203,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Detected grid type: DevExpress\n"
+                        },
+                        {
+                          "text": "✅ Verified 1 of 1 rows match Short Name \"autotestshortname\"\n"
+                        },
+                        {
+                          "text": "✅ Filters cleared\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Apply partial Short name filter",
+                          "duration": 722
+                        },
+                        {
+                          "title": "Verify filtered results contain search term",
+                          "duration": 45
+                        }
+                      ],
+                      "startTime": "2026-01-30T07:08:03.376Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "088c3001a1bef327f096-5df7753d5876b36f7eef",
+              "file": "dictionary/partners/listFunctional.spec.ts",
+              "line": 131,
+              "column": 7
+            },
+            {
+              "title": "REQ-DIC-PARTNER-FUNC-005: Validate Trusted signature group type filter",
+              "ok": true,
+              "tags": [
+                "dictionary",
+                "functional"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5868,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Detected grid type: DevExpress\n"
+                        },
+                        {
+                          "text": "✅ Verified 3 of 5 rows match Trusted signature group type\n"
+                        },
+                        {
+                          "text": "✅ Filters cleared\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Apply Trusted signature group type filter",
+                          "duration": 2014
+                        },
+                        {
+                          "title": "Verify Signature Group Type column shows \"Trusted\"",
+                          "duration": 137
+                        }
+                      ],
+                      "startTime": "2026-01-30T07:08:07.593Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "088c3001a1bef327f096-eb8def24ee80b844148f",
+              "file": "dictionary/partners/listFunctional.spec.ts",
+              "line": 158,
+              "column": 7
+            },
+            {
+              "title": "REQ-DIC-PARTNER-FUNC-006: Validate grid shows \"No data\" when filter has no matches",
+              "ok": true,
+              "tags": [
+                "dictionary",
+                "functional"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6216,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Detected grid type: DevExpress\n"
+                        },
+                        {
+                          "text": "✅ Verified \"No data\" message appears for no matching filter results\n"
+                        },
+                        {
+                          "text": "✅ Filters cleared\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Apply filter with impossible criteria",
+                          "duration": 399
+                        },
+                        {
+                          "title": "Verify grid displays \"No data\" message",
+                          "duration": 1942
+                        }
+                      ],
+                      "startTime": "2026-01-30T07:08:13.483Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "088c3001a1bef327f096-df6c5fb613fb548406a2",
+              "file": "dictionary/partners/listFunctional.spec.ts",
+              "line": 183,
+              "column": 7
+            },
+            {
+              "title": "REQ-DIC-PARTNER-FUNC-007: Validate multiple filters work together (AND logic)",
+              "ok": true,
+              "tags": [
+                "dictionary",
+                "functional"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7848,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Detected grid type: DevExpress\n"
+                        },
+                        {
+                          "text": "✅ Found 1 partners matching State=Authorized AND Type=Domestic\n"
+                        },
+                        {
+                          "text": "✅ Filters cleared\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Apply State filter = \"Authorized\"",
+                          "duration": 2068
+                        },
+                        {
+                          "title": "Apply Beneficiary type filter = \"Domestic\"",
+                          "duration": 1934
+                        },
+                        {
+                          "title": "Verify results match BOTH filter criteria",
+                          "duration": 66
+                        }
+                      ],
+                      "startTime": "2026-01-30T07:08:19.708Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "088c3001a1bef327f096-52dd5825a1afcd365d03",
+              "file": "dictionary/partners/listFunctional.spec.ts",
+              "line": 200,
+              "column": 7
+            },
+            {
+              "title": "REQ-DIC-PARTNER-FUNC-008: Validate Account Owner filter performs exact match search just for searched display",
+              "ok": true,
+              "tags": [
+                "dictionary",
+                "functional"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6176,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Detected grid type: DevExpress\n"
+                        },
+                        {
+                          "text": "✅ Verified 25 of 25 rows match Account Owner\n"
+                        },
+                        {
+                          "text": "✅ Filters cleared\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Apply Account Owner filter",
+                          "duration": 800
+                        },
+                        {
+                          "title": "Verify filtered results match Account Owner",
+                          "duration": 997
+                        }
+                      ],
+                      "startTime": "2026-01-30T07:08:27.571Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "088c3001a1bef327f096-2500fb3383dae01844c7",
+              "file": "dictionary/partners/listFunctional.spec.ts",
+              "line": 229,
+              "column": 7
+            },
+            {
+              "title": "REQ-DIC-PARTNER-FUNC-009: Validate Beneficiary Name filter performs partial text search",
+              "ok": true,
+              "tags": [
+                "dictionary",
+                "functional"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6284,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Detected grid type: DevExpress\n"
+                        },
+                        {
+                          "text": "✅ Verified 2 of 2 rows match Beneficiary Name\n"
+                        },
+                        {
+                          "text": "✅ Filters cleared\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Apply Beneficiary Name filter",
+                          "duration": 959
+                        },
+                        {
+                          "title": "Verify filtered results contain Beneficiary Name",
+                          "duration": 144
+                        }
+                      ],
+                      "startTime": "2026-01-30T07:08:33.783Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "088c3001a1bef327f096-161bc839783c7b21a6f6",
+              "file": "dictionary/partners/listFunctional.spec.ts",
+              "line": 254,
+              "column": 7
+            },
+            {
+              "title": "REQ-DIC-PARTNER-FUNC-010: Validate Group Name filter performs partial text search",
+              "ok": true,
+              "tags": [
+                "dictionary",
+                "functional"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5420,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Detected grid type: DevExpress\n"
+                        },
+                        {
+                          "text": "✅ Verified 4 of 4 rows match Group Name\n"
+                        },
+                        {
+                          "text": "✅ Filters cleared\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Apply Group Name filter",
+                          "duration": 1306
+                        },
+                        {
+                          "title": "Verify filtered results contain Group Name",
+                          "duration": 104
+                        }
+                      ],
+                      "startTime": "2026-01-30T07:08:40.088Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "088c3001a1bef327f096-71611c27228500e95eb8",
+              "file": "dictionary/partners/listFunctional.spec.ts",
+              "line": 280,
+              "column": 7
+            },
+            {
+              "title": "REQ-DIC-PARTNER-FUNC-011: Validate Identification Code filter performs exact match search",
+              "ok": true,
+              "tags": [
+                "dictionary",
+                "functional"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5344,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Detected grid type: DevExpress\n"
+                        },
+                        {
+                          "text": "✅ Verified 18 of 18 rows match Identification Code\n"
+                        },
+                        {
+                          "text": "✅ Filters cleared\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Apply Identification Code filter",
+                          "duration": 808
+                        },
+                        {
+                          "title": "Verify filtered results match Identification Code",
+                          "duration": 556
+                        }
+                      ],
+                      "startTime": "2026-01-30T07:08:45.522Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "088c3001a1bef327f096-5fa0f4a4e2aa7839d46a",
+              "file": "dictionary/partners/listFunctional.spec.ts",
+              "line": 307,
+              "column": 7
+            },
+            {
+              "title": "REQ-DIC-PARTNER-FUNC-012: Validate Partner selector checkbox functionality",
+              "ok": true,
+              "tags": [
+                "dictionary",
+                "functional"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5430,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Detected grid type: DevExpress\n"
+                        },
+                        {
+                          "text": "✅ Select All checkbox selected successfully\n"
+                        },
+                        {
+                          "text": "✅ Select All checkbox deselected - all 26 checkboxes unchecked\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Select all partners using Select All checkbox",
+                          "duration": 522
+                        },
+                        {
+                          "title": "Deselect all partners and verify",
+                          "duration": 973
+                        }
+                      ],
+                      "startTime": "2026-01-30T07:08:50.879Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "088c3001a1bef327f096-e51efe780d77d88c0062",
+              "file": "dictionary/partners/listFunctional.spec.ts",
+              "line": 333,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "dictionary\\partners\\listContract.spec.ts",
+      "file": "dictionary/partners/listContract.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Partner List - Backend Filter Contract Validation",
+          "file": "dictionary/partners/listContract.spec.ts",
+          "line": 19,
+          "column": 15,
+          "specs": [
+            {
+              "title": "DISCOVERY - Technology-Agnostic Grid Validation",
+              "ok": true,
+              "tags": [
+                "dictionary"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listContract.spec.ts",
+                        "line": 65,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-30T13:18:30.502Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listContract.spec.ts",
+                            "line": 65,
+                            "column": 8
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "3a245ed5bc5f9febacf5-d3c684a8108534114701",
+              "file": "dictionary/partners/listContract.spec.ts",
+              "line": 65,
+              "column": 8
+            },
+            {
+              "title": "Validate Partner List grid business contracts",
+              "ok": true,
+              "tags": [
+                "dictionary",
+                "contract"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [
+                    {
+                      "type": "req",
+                      "description": "REQ-DIC-PARTNER-001"
+                    },
+                    {
+                      "type": "req",
+                      "description": "REQ-DIC-PARTNER-002"
+                    },
+                    {
+                      "type": "req",
+                      "description": "REQ-DIC-PARTNER-003"
+                    },
+                    {
+                      "type": "req",
+                      "description": "REQ-DIC-PARTNER-004"
+                    },
+                    {
+                      "type": "req",
+                      "description": "REQ-DIC-PARTNER-005"
+                    },
+                    {
+                      "type": "req",
+                      "description": "REQ-DIC-PARTNER-006"
+                    },
+                    {
+                      "type": "req",
+                      "description": "REQ-DIC-PARTNER-007"
+                    },
+                    {
+                      "type": "req",
+                      "description": "REQ-DIC-PARTNER-008"
+                    },
+                    {
+                      "type": "req",
+                      "description": "REQ-DIC-PARTNER-009"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4188,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "🔐 Starting API login process...\n"
+                        },
+                        {
+                          "text": "username: dani\n"
+                        },
+                        {
+                          "text": "Step 0: Clearing existing session data...\n"
+                        },
+                        {
+                          "text": "Step 1: Getting login page to establish session...\n"
+                        },
+                        {
+                          "text": "Login page response: 200\n"
+                        },
+                        {
+                          "text": "Step 2: Submitting credentials...\n"
+                        },
+                        {
+                          "text": "Login response: 200\n"
+                        },
+                        {
+                          "text": "Step 3: Getting OTP page...\n"
+                        },
+                        {
+                          "text": "OTP page response: 200\n"
+                        },
+                        {
+                          "text": "Step 4: Submitting OTP code...\n"
+                        },
+                        {
+                          "text": "OTP response: 200\n"
+                        },
+                        {
+                          "text": "✅ API login successful! Found 2 auth cookies\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "REQ-DIC-PARTNER-001 - Business Contract: User can filter by account owner name",
+                          "duration": 430
+                        },
+                        {
+                          "title": "REQ-DIC-PARTNER-002 - Business Contract: User can filter by partner short name",
+                          "duration": 84
+                        },
+                        {
+                          "title": "REQ-DIC-PARTNER-003 - Business Contract: User can filter by beneficiary full name",
+                          "duration": 35
+                        },
+                        {
+                          "title": "REQ-DIC-PARTNER-004 - Business Contract: User can filter by partner group",
+                          "duration": 33
+                        },
+                        {
+                          "title": "REQ-DIC-PARTNER-005 - Business Contract: User can filter by identification code",
+                          "duration": 36
+                        },
+                        {
+                          "title": "REQ-DIC-PARTNER-006 - Business Contract: User can filter by account number",
+                          "duration": 30
+                        },
+                        {
+                          "title": "REQ-DIC-PARTNER-007 - Business Contract: User can filter by signature group type",
+                          "duration": 56
+                        },
+                        {
+                          "title": "REQ-DIC-PARTNER-008 - Business Contract: User can filter by partner state (Edited/Authorized/etc)",
+                          "duration": 53
+                        },
+                        {
+                          "title": "REQ-DIC-PARTNER-009 - Business Contract: User can filter by beneficiary type (Domestic/Foreign)",
+                          "duration": 56
+                        }
+                      ],
+                      "startTime": "2026-01-30T13:18:30.503Z",
+                      "annotations": [
+                        {
+                          "type": "req",
+                          "description": "REQ-DIC-PARTNER-001"
+                        },
+                        {
+                          "type": "req",
+                          "description": "REQ-DIC-PARTNER-002"
+                        },
+                        {
+                          "type": "req",
+                          "description": "REQ-DIC-PARTNER-003"
+                        },
+                        {
+                          "type": "req",
+                          "description": "REQ-DIC-PARTNER-004"
+                        },
+                        {
+                          "type": "req",
+                          "description": "REQ-DIC-PARTNER-005"
+                        },
+                        {
+                          "type": "req",
+                          "description": "REQ-DIC-PARTNER-006"
+                        },
+                        {
+                          "type": "req",
+                          "description": "REQ-DIC-PARTNER-007"
+                        },
+                        {
+                          "type": "req",
+                          "description": "REQ-DIC-PARTNER-008"
+                        },
+                        {
+                          "type": "req",
+                          "description": "REQ-DIC-PARTNER-009"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3a245ed5bc5f9febacf5-d392581818fdbfac8dec",
+              "file": "dictionary/partners/listContract.spec.ts",
+              "line": 140,
+              "column": 7
+            },
+            {
+              "title": "Validate backend ComboBox filter bindings for Partner List grid",
+              "ok": true,
+              "tags": [
+                "dictionary",
+                "contract"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3412,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\n📦 Grid Technology: DevExpress/Knockout\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Business Contract: Signature Group type filter exists with proper backend binding",
+                          "duration": 118
+                        },
+                        {
+                          "title": "Business Contract: State filter exists with valid options",
+                          "duration": 91
+                        },
+                        {
+                          "title": "Business Contract: Beneficiary type filter distinguishes Domestic/Foreign",
+                          "duration": 84
+                        }
+                      ],
+                      "startTime": "2026-01-30T13:18:37.914Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3a245ed5bc5f9febacf5-0b2f5e147263ea3413db",
+              "file": "dictionary/partners/listContract.spec.ts",
+              "line": 218,
+              "column": 7
+            },
+            {
+              "title": "Validate grid pager backend contracts",
+              "ok": true,
+              "tags": [
+                "dictionary",
+                "contract"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3099,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Ensure top pager has backend page size selector",
+                          "duration": 50
+                        },
+                        {
+                          "title": "Ensure bottom pager has backend page size selector",
+                          "duration": 20
+                        },
+                        {
+                          "title": "Ensure pagination summary displays backend record count",
+                          "duration": 19
+                        }
+                      ],
+                      "startTime": "2026-01-30T13:18:41.341Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3a245ed5bc5f9febacf5-93ed5ef03d853a0c859d",
+              "file": "dictionary/partners/listContract.spec.ts",
+              "line": 269,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "dictionary\\partners\\listFunctional.spec.ts",
+      "file": "dictionary/partners/listFunctional.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Partner List - Filter Functional Validation",
+          "file": "dictionary/partners/listFunctional.spec.ts",
+          "line": 20,
+          "column": 15,
+          "specs": [
+            {
+              "title": "REQ-DIC-PARTNER-FUNC-001 Validate State filter shows only selected state partners",
+              "ok": true,
+              "tags": [
+                "dictionary",
+                "functional"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5509,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Detected grid type: DevExpress\n"
+                        },
+                        {
+                          "text": "✅ Verified 2 of 2 rows match State = Authorized\n"
+                        },
+                        {
+                          "text": "✅ Filters cleared\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Apply State filter to \"Authorized\"",
+                          "duration": 1923
+                        },
+                        {
+                          "title": "Verify all visible rows have State = \"Authorized\"",
+                          "duration": 63
+                        }
+                      ],
+                      "startTime": "2026-01-30T13:18:44.466Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "088c3001a1bef327f096-f5ff765acd07aafcea00",
+              "file": "dictionary/partners/listFunctional.spec.ts",
+              "line": 51,
+              "column": 7
+            },
+            {
+              "title": "REQ-DIC-PARTNER-FUNC-002: Validate Beneficiary type filter distinguishes Domestic/Foreign partners",
+              "ok": true,
+              "tags": [
+                "dictionary",
+                "functional"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7639,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Detected grid type: DevExpress\n"
+                        },
+                        {
+                          "text": "✅ Verified 10 of 25 rows match Domestic type\n"
+                        },
+                        {
+                          "text": "✅ Verified Foreign beneficiary type filter\n"
+                        },
+                        {
+                          "text": "✅ Filters cleared\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Apply Beneficiary type filter to \"Domestic\"",
+                          "duration": 1938
+                        },
+                        {
+                          "title": "Verify all visible partners are Domestic type",
+                          "duration": 155
+                        },
+                        {
+                          "title": "Switch filter to \"Foreign\" and verify results",
+                          "duration": 1893
+                        }
+                      ],
+                      "startTime": "2026-01-30T13:18:49.986Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "088c3001a1bef327f096-006e158af88ba7bb74b5",
+              "file": "dictionary/partners/listFunctional.spec.ts",
+              "line": 74,
+              "column": 7
+            },
+            {
+              "title": "REQ-DIC-PARTNER-FUNC-003: Validate Account column shows IBAN format for Domestic partners",
+              "ok": true,
+              "tags": [
+                "dictionary",
+                "functional"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5174,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Detected grid type: DevExpress\n"
+                        },
+                        {
+                          "text": "✅ Verified IBAN format: UA 75 300614 12...\n"
+                        },
+                        {
+                          "text": "✅ Filters cleared\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Filter by Beneficiary type = Domestic",
+                          "duration": 1906
+                        },
+                        {
+                          "title": "Verify Account column shows IBAN format",
+                          "duration": 37
+                        }
+                      ],
+                      "startTime": "2026-01-30T13:18:57.634Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "088c3001a1bef327f096-8bc57955d8adcf92edda",
+              "file": "dictionary/partners/listFunctional.spec.ts",
+              "line": 108,
+              "column": 7
+            },
+            {
+              "title": "REQ-DIC-PARTNER-FUNC-004: Validate Short name filter performs partial text search",
+              "ok": true,
+              "tags": [
+                "dictionary",
+                "functional"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4059,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Detected grid type: DevExpress\n"
+                        },
+                        {
+                          "text": "✅ Verified 1 of 1 rows match Short Name \"autotestshortname\"\n"
+                        },
+                        {
+                          "text": "✅ Filters cleared\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Apply partial Short name filter",
+                          "duration": 717
+                        },
+                        {
+                          "title": "Verify filtered results contain search term",
+                          "duration": 74
+                        }
+                      ],
+                      "startTime": "2026-01-30T13:19:02.819Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "088c3001a1bef327f096-5df7753d5876b36f7eef",
+              "file": "dictionary/partners/listFunctional.spec.ts",
+              "line": 132,
+              "column": 7
+            },
+            {
+              "title": "REQ-DIC-PARTNER-FUNC-005: Validate Trusted signature group type filter",
+              "ok": true,
+              "tags": [
+                "dictionary",
+                "functional"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5320,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Detected grid type: DevExpress\n"
+                        },
+                        {
+                          "text": "✅ Verified 3 of 4 rows match Trusted signature group type\n"
+                        },
+                        {
+                          "text": "✅ Filters cleared\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Apply Trusted signature group type filter",
+                          "duration": 1921
+                        },
+                        {
+                          "title": "Verify Signature Group Type column shows \"Trusted\"",
+                          "duration": 89
+                        }
+                      ],
+                      "startTime": "2026-01-30T13:19:06.885Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "088c3001a1bef327f096-eb8def24ee80b844148f",
+              "file": "dictionary/partners/listFunctional.spec.ts",
+              "line": 159,
+              "column": 7
+            },
+            {
+              "title": "REQ-DIC-PARTNER-FUNC-006: Validate grid shows \"No data\" when filter has no matches",
+              "ok": true,
+              "tags": [
+                "dictionary",
+                "functional"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5473,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Detected grid type: DevExpress\n"
+                        },
+                        {
+                          "text": "✅ Verified \"No data\" message appears for no matching filter results\n"
+                        },
+                        {
+                          "text": "✅ Filters cleared\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Apply filter with impossible criteria",
+                          "duration": 373
+                        },
+                        {
+                          "title": "Verify grid displays \"No data\" message",
+                          "duration": 1929
+                        }
+                      ],
+                      "startTime": "2026-01-30T13:19:12.216Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "088c3001a1bef327f096-df6c5fb613fb548406a2",
+              "file": "dictionary/partners/listFunctional.spec.ts",
+              "line": 184,
+              "column": 7
+            },
+            {
+              "title": "REQ-DIC-PARTNER-FUNC-007: Validate multiple filters work together (AND logic)",
+              "ok": true,
+              "tags": [
+                "dictionary",
+                "functional"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7634,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Detected grid type: DevExpress\n"
+                        },
+                        {
+                          "text": "✅ Found 1 partners matching State=Authorized AND Type=Domestic\n"
+                        },
+                        {
+                          "text": "✅ Filters cleared\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Apply State filter = \"Authorized\"",
+                          "duration": 1951
+                        },
+                        {
+                          "title": "Apply Beneficiary type filter = \"Domestic\"",
+                          "duration": 1905
+                        },
+                        {
+                          "title": "Verify results match BOTH filter criteria",
+                          "duration": 49
+                        }
+                      ],
+                      "startTime": "2026-01-30T13:19:17.701Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "088c3001a1bef327f096-52dd5825a1afcd365d03",
+              "file": "dictionary/partners/listFunctional.spec.ts",
+              "line": 201,
+              "column": 7
+            },
+            {
+              "title": "REQ-DIC-PARTNER-FUNC-008: Validate Account Owner filter performs exact match search just for searched display",
+              "ok": false,
+              "tags": [
+                "dictionary",
+                "functional"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 16617,
+                      "error": {
+                        "message": "TimeoutError: locator.textContent: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.dxgvDataRow_DxCLIC td:nth-child(2)').nth(24)\u001b[22m\n",
+                        "stack": "TimeoutError: locator.textContent: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.dxgvDataRow_DxCLIC td:nth-child(2)').nth(24)\u001b[22m\n\n    at C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts:247:59\n    at C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts:239:5",
+                        "location": {
+                          "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                          "column": 59,
+                          "line": 247
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 245 |\u001b[39m     \n \u001b[90m 246 |\u001b[39m       \u001b[36mfor\u001b[39m (\u001b[36mlet\u001b[39m i \u001b[33m=\u001b[39m \u001b[35m0\u001b[39m\u001b[33m;\u001b[39m i \u001b[33m<\u001b[39m \u001b[33mMath\u001b[39m\u001b[33m.\u001b[39mmin(cells\u001b[33m,\u001b[39m \u001b[35m25\u001b[39m)\u001b[33m;\u001b[39m i\u001b[33m++\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 247 |\u001b[39m           \u001b[36mconst\u001b[39m cellText \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m accountOwnerCells\u001b[33m.\u001b[39mnth(i)\u001b[33m.\u001b[39mtextContent()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 248 |\u001b[39m           expect(cellText\u001b[33m?\u001b[39m\u001b[33m.\u001b[39mtrim())\u001b[33m.\u001b[39mtoContain(accountOwner)\u001b[33m;\u001b[39m\n \u001b[90m 249 |\u001b[39m         }\n \u001b[90m 250 |\u001b[39m       console\u001b[33m.\u001b[39mlog(\u001b[32m`✅ Verified ${Math.min(cells, 25)} of ${await rows.count()} rows match Account Owner`\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                            "column": 59,
+                            "line": 247
+                          },
+                          "message": "TimeoutError: locator.textContent: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.dxgvDataRow_DxCLIC td:nth-child(2)').nth(24)\u001b[22m\n\n\n\u001b[0m \u001b[90m 245 |\u001b[39m     \n \u001b[90m 246 |\u001b[39m       \u001b[36mfor\u001b[39m (\u001b[36mlet\u001b[39m i \u001b[33m=\u001b[39m \u001b[35m0\u001b[39m\u001b[33m;\u001b[39m i \u001b[33m<\u001b[39m \u001b[33mMath\u001b[39m\u001b[33m.\u001b[39mmin(cells\u001b[33m,\u001b[39m \u001b[35m25\u001b[39m)\u001b[33m;\u001b[39m i\u001b[33m++\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 247 |\u001b[39m           \u001b[36mconst\u001b[39m cellText \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m accountOwnerCells\u001b[33m.\u001b[39mnth(i)\u001b[33m.\u001b[39mtextContent()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 248 |\u001b[39m           expect(cellText\u001b[33m?\u001b[39m\u001b[33m.\u001b[39mtrim())\u001b[33m.\u001b[39mtoContain(accountOwner)\u001b[33m;\u001b[39m\n \u001b[90m 249 |\u001b[39m         }\n \u001b[90m 250 |\u001b[39m       console\u001b[33m.\u001b[39mlog(\u001b[32m`✅ Verified ${Math.min(cells, 25)} of ${await rows.count()} rows match Account Owner`\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts:247:59\u001b[22m\n\u001b[2m    at C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts:239:5\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Detected grid type: DevExpress\n"
+                        },
+                        {
+                          "text": "✅ Filters cleared\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Apply Account Owner filter",
+                          "duration": 705
+                        },
+                        {
+                          "title": "Verify filtered results match Account Owner",
+                          "duration": 12374,
+                          "error": {
+                            "message": "TimeoutError: locator.textContent: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.dxgvDataRow_DxCLIC td:nth-child(2)').nth(24)\u001b[22m\n",
+                            "stack": "TimeoutError: locator.textContent: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.dxgvDataRow_DxCLIC td:nth-child(2)').nth(24)\u001b[22m\n\n    at C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts:247:59\n    at C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts:239:5",
+                            "location": {
+                              "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                              "column": 59,
+                              "line": 247
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 245 |\u001b[39m     \n \u001b[90m 246 |\u001b[39m       \u001b[36mfor\u001b[39m (\u001b[36mlet\u001b[39m i \u001b[33m=\u001b[39m \u001b[35m0\u001b[39m\u001b[33m;\u001b[39m i \u001b[33m<\u001b[39m \u001b[33mMath\u001b[39m\u001b[33m.\u001b[39mmin(cells\u001b[33m,\u001b[39m \u001b[35m25\u001b[39m)\u001b[33m;\u001b[39m i\u001b[33m++\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 247 |\u001b[39m           \u001b[36mconst\u001b[39m cellText \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m accountOwnerCells\u001b[33m.\u001b[39mnth(i)\u001b[33m.\u001b[39mtextContent()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 248 |\u001b[39m           expect(cellText\u001b[33m?\u001b[39m\u001b[33m.\u001b[39mtrim())\u001b[33m.\u001b[39mtoContain(accountOwner)\u001b[33m;\u001b[39m\n \u001b[90m 249 |\u001b[39m         }\n \u001b[90m 250 |\u001b[39m       console\u001b[33m.\u001b[39mlog(\u001b[32m`✅ Verified ${Math.min(cells, 25)} of ${await rows.count()} rows match Account Owner`\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                          }
+                        }
+                      ],
+                      "startTime": "2026-01-30T13:19:25.349Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\GIT\\CORPEX\\Testing\\cueweb\\test-results\\dictionary-partners-listFu-ab617-h-just-for-searched-display-smokeui\\test-failed-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\GIT\\CORPEX\\Testing\\cueweb\\test-results\\dictionary-partners-listFu-ab617-h-just-for-searched-display-smokeui\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                        "column": 59,
+                        "line": 247
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "088c3001a1bef327f096-2500fb3383dae01844c7",
+              "file": "dictionary/partners/listFunctional.spec.ts",
+              "line": 230,
+              "column": 7
+            },
+            {
+              "title": "REQ-DIC-PARTNER-FUNC-009: Validate Beneficiary Name filter performs partial text search",
+              "ok": true,
+              "tags": [
+                "dictionary",
+                "functional"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5946,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "🔐 Starting API login process...\n"
+                        },
+                        {
+                          "text": "username: dani\n"
+                        },
+                        {
+                          "text": "Step 0: Clearing existing session data...\n"
+                        },
+                        {
+                          "text": "Step 1: Getting login page to establish session...\n"
+                        },
+                        {
+                          "text": "Login page response: 200\n"
+                        },
+                        {
+                          "text": "Step 2: Submitting credentials...\n"
+                        },
+                        {
+                          "text": "Login response: 200\n"
+                        },
+                        {
+                          "text": "Step 3: Getting OTP page...\n"
+                        },
+                        {
+                          "text": "OTP page response: 200\n"
+                        },
+                        {
+                          "text": "Step 4: Submitting OTP code...\n"
+                        },
+                        {
+                          "text": "OTP response: 200\n"
+                        },
+                        {
+                          "text": "✅ API login successful! Found 2 auth cookies\n"
+                        },
+                        {
+                          "text": "Detected grid type: DevExpress\n"
+                        },
+                        {
+                          "text": "✅ Verified 2 of 2 rows match Beneficiary Name\n"
+                        },
+                        {
+                          "text": "✅ Filters cleared\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Apply Beneficiary Name filter",
+                          "duration": 697
+                        },
+                        {
+                          "title": "Verify filtered results contain Beneficiary Name",
+                          "duration": 117
+                        }
+                      ],
+                      "startTime": "2026-01-30T13:19:43.892Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "088c3001a1bef327f096-161bc839783c7b21a6f6",
+              "file": "dictionary/partners/listFunctional.spec.ts",
+              "line": 255,
+              "column": 7
+            },
+            {
+              "title": "REQ-DIC-PARTNER-FUNC-010: Validate Group Name filter performs partial text search",
+              "ok": true,
+              "tags": [
+                "dictionary",
+                "functional"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4499,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Detected grid type: DevExpress\n"
+                        },
+                        {
+                          "text": "🔍 Verifying Group groupNameCells filter results for \"locator('.dxgvDataRow_DxCLIC td:nth-child(5)')\"\n"
+                        },
+                        {
+                          "text": "✅ Verified 3 of 3 rows match Group Name\n"
+                        },
+                        {
+                          "text": "✅ Filters cleared\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Apply Group Name filter",
+                          "duration": 1234
+                        },
+                        {
+                          "title": "Verify filtered results contain Group Name",
+                          "duration": 73
+                        }
+                      ],
+                      "startTime": "2026-01-30T13:19:52.467Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "088c3001a1bef327f096-71611c27228500e95eb8",
+              "file": "dictionary/partners/listFunctional.spec.ts",
+              "line": 281,
+              "column": 7
+            },
+            {
+              "title": "REQ-DIC-PARTNER-FUNC-011: Validate Identification Code filter performs exact match search",
+              "ok": true,
+              "tags": [
+                "dictionary",
+                "functional"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4909,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Detected grid type: DevExpress\n"
+                        },
+                        {
+                          "text": "✅ Verified 16 of 16 rows match Identification Code\n"
+                        },
+                        {
+                          "text": "✅ Filters cleared\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Apply Identification Code filter",
+                          "duration": 728
+                        },
+                        {
+                          "title": "Verify filtered results match Identification Code",
+                          "duration": 446
+                        }
+                      ],
+                      "startTime": "2026-01-30T13:19:56.982Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "088c3001a1bef327f096-5fa0f4a4e2aa7839d46a",
+              "file": "dictionary/partners/listFunctional.spec.ts",
+              "line": 309,
+              "column": 7
+            },
+            {
+              "title": "REQ-DIC-PARTNER-FUNC-012: Validate Partner selector checkbox functionality",
+              "ok": true,
+              "tags": [
+                "dictionary",
+                "functional"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4522,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Detected grid type: DevExpress\n"
+                        },
+                        {
+                          "text": "✅ Select All checkbox selected successfully\n"
+                        },
+                        {
+                          "text": "✅ Select All checkbox deselected - all 26 checkboxes unchecked\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Select all partners using Select All checkbox",
+                          "duration": 423
+                        },
+                        {
+                          "title": "Deselect all partners and verify",
+                          "duration": 915
+                        }
+                      ],
+                      "startTime": "2026-01-30T13:20:01.902Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "088c3001a1bef327f096-e51efe780d77d88c0062",
+              "file": "dictionary/partners/listFunctional.spec.ts",
+              "line": 335,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "dictionary\\partners\\listWorkflow.spec.ts",
+      "file": "dictionary/partners/listWorkflow.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Partner List - Workflow Action Validation",
+          "file": "dictionary/partners/listWorkflow.spec.ts",
+          "line": 33,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Export partners downloads file with correct data",
+              "ok": true,
+              "tags": [
+                "dictionary",
+                "workflow"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7793,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "🔍 DB Config - Server: cua-test-db Database: (default)\n"
+                        },
+                        {
+                          "text": "🔌 Attempting database connection...\n"
+                        },
+                        {
+                          "text": "   Server: cua-test-db\n"
+                        },
+                        {
+                          "text": "   Database: (default)\n"
+                        },
+                        {
+                          "text": "   User: sa\n"
+                        },
+                        {
+                          "text": "   Encrypt: false\n"
+                        },
+                        {
+                          "text": "   TrustServerCertificate: true\n"
+                        },
+                        {
+                          "text": "✅ Database connected successfully\n"
+                        },
+                        {
+                          "text": "   Connected to: default database on cua-test-db\n"
+                        },
+                        {
+                          "text": "🔍 Testing database read...\n"
+                        },
+                        {
+                          "text": "✅ Database read successful!\n"
+                        },
+                        {
+                          "text": "   Account ID: 12345678901234\n"
+                        },
+                        {
+                          "text": "   IBAN: UA083006141234567890123456789\n"
+                        },
+                        {
+                          "text": "   Alias: null\n"
+                        },
+                        {
+                          "text": "🔧 Creating test data...\n"
+                        },
+                        {
+                          "text": "Detected grid type: DevExpress\n"
+                        },
+                        {
+                          "text": "✅ Applied State = Authorized filter\n"
+                        },
+                        {
+                          "text": "✅ File saved to: C:\\GIT\\CORPEX\\Testing\\cueweb\\test-downloads\\partnerlistname.xml\n"
+                        },
+                        {
+                          "text": "📁 Files in directory: [partnerlistname.xml]\n"
+                        },
+                        {
+                          "text": "ℹ️ File partnerlistname.xml matches format xml\n"
+                        },
+                        {
+                          "text": "ℹ️ File found: partnerlistname.xml (2230 bytes)\n"
+                        },
+                        {
+                          "text": "✅ File deleted: C:\\GIT\\CORPEX\\Testing\\cueweb\\test-downloads\\partnerlistname.xml\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Apply filter to limit export results",
+                          "duration": 1985
+                        },
+                        {
+                          "title": "Select first row",
+                          "duration": 363
+                        },
+                        {
+                          "title": "Click to export",
+                          "duration": 935
+                        },
+                        {
+                          "title": "Click Export button and verify network",
+                          "duration": 1129,
+                          "steps": [
+                            {
+                              "title": "Validate dowloaded file stats and delete it",
+                              "duration": 778
+                            }
+                          ]
+                        }
+                      ],
+                      "startTime": "2026-01-30T13:20:06.951Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "38de4fc3a61a004ff901-5539480b086fc6008756",
+              "file": "dictionary/partners/listWorkflow.spec.ts",
+              "line": 226,
+              "column": 8
+            },
+            {
+              "title": "Edit partner updates information in grid",
+              "ok": false,
+              "tags": [
+                "dictionary",
+                "workflow"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 17166,
+                      "error": {
+                        "message": "TimeoutError: locator.textContent: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.dxgvDataRow_DxCLIC, tr[data-row]').first().locator('td:nth-child(2)').first()\u001b[22m\n",
+                        "stack": "TimeoutError: locator.textContent: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.dxgvDataRow_DxCLIC, tr[data-row]').first().locator('td:nth-child(2)').first()\u001b[22m\n\n    at TabbleNavigation.getCellText (C:\\GIT\\CORPEX\\Testing\\cueweb\\pages\\webUI\\actions\\tableNavigation.ts:48:24)\n    at C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listWorkflow.spec.ts:284:27",
+                        "location": {
+                          "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\pages\\webUI\\actions\\tableNavigation.ts",
+                          "column": 24,
+                          "line": 48
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\webUI\\actions\\tableNavigation.ts:48\n\n\u001b[0m \u001b[90m 46 |\u001b[39m     \u001b[36mconst\u001b[39m row \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mgetRowByIndex(rowIndex)\u001b[33m;\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m cell \u001b[33m=\u001b[39m row\u001b[33m.\u001b[39mlocator(\u001b[32m`td:nth-child(${columnIndex})`\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 48 |\u001b[39m     \u001b[36mreturn\u001b[39m (\u001b[36mawait\u001b[39m cell\u001b[33m.\u001b[39mtextContent())\u001b[33m?\u001b[39m\u001b[33m.\u001b[39mtrim() \u001b[33m||\u001b[39m \u001b[32m''\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 49 |\u001b[39m   }\n \u001b[90m 50 |\u001b[39m\n \u001b[90m 51 |\u001b[39m   \u001b[90m/**\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\pages\\webUI\\actions\\tableNavigation.ts",
+                            "column": 24,
+                            "line": 48
+                          },
+                          "message": "TimeoutError: locator.textContent: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.dxgvDataRow_DxCLIC, tr[data-row]').first().locator('td:nth-child(2)').first()\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\webUI\\actions\\tableNavigation.ts:48\n\n\u001b[0m \u001b[90m 46 |\u001b[39m     \u001b[36mconst\u001b[39m row \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mgetRowByIndex(rowIndex)\u001b[33m;\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m cell \u001b[33m=\u001b[39m row\u001b[33m.\u001b[39mlocator(\u001b[32m`td:nth-child(${columnIndex})`\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 48 |\u001b[39m     \u001b[36mreturn\u001b[39m (\u001b[36mawait\u001b[39m cell\u001b[33m.\u001b[39mtextContent())\u001b[33m?\u001b[39m\u001b[33m.\u001b[39mtrim() \u001b[33m||\u001b[39m \u001b[32m''\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 49 |\u001b[39m   }\n \u001b[90m 50 |\u001b[39m\n \u001b[90m 51 |\u001b[39m   \u001b[90m/**\u001b[39m\u001b[0m\n\u001b[2m    at TabbleNavigation.getCellText (C:\\GIT\\CORPEX\\Testing\\cueweb\\pages\\webUI\\actions\\tableNavigation.ts:48:24)\u001b[22m\n\u001b[2m    at C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listWorkflow.spec.ts:284:27\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Detected grid type: DevExpress\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Apply Normal signature group type filter",
+                          "duration": 1914
+                        },
+                        {
+                          "title": "Click first partner to open edit form",
+                          "duration": 12025,
+                          "error": {
+                            "message": "TimeoutError: locator.textContent: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.dxgvDataRow_DxCLIC, tr[data-row]').first().locator('td:nth-child(2)').first()\u001b[22m\n",
+                            "stack": "TimeoutError: locator.textContent: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.dxgvDataRow_DxCLIC, tr[data-row]').first().locator('td:nth-child(2)').first()\u001b[22m\n\n    at TabbleNavigation.getCellText (C:\\GIT\\CORPEX\\Testing\\cueweb\\pages\\webUI\\actions\\tableNavigation.ts:48:24)\n    at C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listWorkflow.spec.ts:284:27",
+                            "location": {
+                              "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\pages\\webUI\\actions\\tableNavigation.ts",
+                              "column": 24,
+                              "line": 48
+                            },
+                            "snippet": "\u001b[90m   at \u001b[39m..\\pages\\webUI\\actions\\tableNavigation.ts:48\n\n\u001b[0m \u001b[90m 46 |\u001b[39m     \u001b[36mconst\u001b[39m row \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mgetRowByIndex(rowIndex)\u001b[33m;\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m cell \u001b[33m=\u001b[39m row\u001b[33m.\u001b[39mlocator(\u001b[32m`td:nth-child(${columnIndex})`\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 48 |\u001b[39m     \u001b[36mreturn\u001b[39m (\u001b[36mawait\u001b[39m cell\u001b[33m.\u001b[39mtextContent())\u001b[33m?\u001b[39m\u001b[33m.\u001b[39mtrim() \u001b[33m||\u001b[39m \u001b[32m''\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 49 |\u001b[39m   }\n \u001b[90m 50 |\u001b[39m\n \u001b[90m 51 |\u001b[39m   \u001b[90m/**\u001b[39m\u001b[0m"
+                          }
+                        }
+                      ],
+                      "startTime": "2026-01-30T13:20:15.092Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\GIT\\CORPEX\\Testing\\cueweb\\test-results\\dictionary-partners-listWo-cfa3a-updates-information-in-grid-smokeui\\test-failed-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\GIT\\CORPEX\\Testing\\cueweb\\test-results\\dictionary-partners-listWo-cfa3a-updates-information-in-grid-smokeui\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\pages\\webUI\\actions\\tableNavigation.ts",
+                        "column": 24,
+                        "line": 48
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "38de4fc3a61a004ff901-65fbf83a2b978862609f",
+              "file": "dictionary/partners/listWorkflow.spec.ts",
+              "line": 272,
+              "column": 8
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-01-30T13:18:29.159Z",
+    "duration": 124266.10299999999,
+    "expected": 15,
+    "skipped": 1,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

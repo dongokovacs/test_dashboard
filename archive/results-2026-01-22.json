@@ -1,0 +1,3074 @@
+{
+  "config": {
+    "configFile": "C:\\GIT\\CORPEX\\Testing\\cueweb\\playwright.config.ts",
+    "rootDir": "C:/GIT/CORPEX/Testing/cueweb/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "json",
+        {
+          "outputFile": "test-results/results-2026-01-22.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "always"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "test-results/junit.xml"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/GIT/CORPEX/Testing/cueweb/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "smokeui",
+        "name": "smokeui",
+        "testDir": "C:/GIT/CORPEX/Testing/cueweb/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 0
+      },
+      {
+        "outputDir": "C:/GIT/CORPEX/Testing/cueweb/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "login",
+        "name": "login",
+        "testDir": "C:/GIT/CORPEX/Testing/cueweb/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 0
+      },
+      {
+        "outputDir": "C:/GIT/CORPEX/Testing/cueweb/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "payment",
+        "name": "payment",
+        "testDir": "C:/GIT/CORPEX/Testing/cueweb/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 0
+      },
+      {
+        "outputDir": "C:/GIT/CORPEX/Testing/cueweb/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "forex",
+        "name": "forex",
+        "testDir": "C:/GIT/CORPEX/Testing/cueweb/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/tests/forex/exchange/**/*.spec.ts",
+          "**/tests/dictionary/partners/**/*.spec.ts"
+        ],
+        "timeout": 0
+      },
+      {
+        "outputDir": "C:/GIT/CORPEX/Testing/cueweb/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "savestate",
+        "name": "savestate",
+        "testDir": "C:/GIT/CORPEX/Testing/cueweb/setup",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 0
+      }
+    ],
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.57.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "forex\\exchange\\forexContract.spec.ts",
+      "file": "forex/exchange/forexContract.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Forex Application - Backend Contract Validation",
+          "file": "forex/exchange/forexContract.spec.ts",
+          "line": 21,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Validate backend-required hidden fields for Forex application",
+              "ok": true,
+              "tags": [
+                "forex",
+                "contract"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "forex",
+                  "projectName": "forex",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 16624,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "🔐 Starting API login process...\n"
+                        },
+                        {
+                          "text": "username: dani\n"
+                        },
+                        {
+                          "text": "Step 0: Clearing existing session data...\n"
+                        },
+                        {
+                          "text": "Step 1: Getting login page to establish session...\n"
+                        },
+                        {
+                          "text": "Login page response: 200\n"
+                        },
+                        {
+                          "text": "Step 2: Submitting credentials...\n"
+                        },
+                        {
+                          "text": "Login response: 200\n"
+                        },
+                        {
+                          "text": "Step 3: Getting OTP page...\n"
+                        },
+                        {
+                          "text": "OTP page response: 200\n"
+                        },
+                        {
+                          "text": "Step 4: Submitting OTP code...\n"
+                        },
+                        {
+                          "text": "OTP response: 200\n"
+                        },
+                        {
+                          "text": "✅ API login successful! Found 2 auth cookies\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Ensure product type is \"FxExchange\"",
+                          "duration": 196
+                        },
+                        {
+                          "title": "Ensure application tracks LV system origin",
+                          "duration": 120
+                        },
+                        {
+                          "title": "Ensure order direction is set to \"AmountToSellWasProvided\"",
+                          "duration": 121
+                        },
+                        {
+                          "title": "Ensure application state is \"New\"",
+                          "duration": 148
+                        },
+                        {
+                          "title": "Ensure application confirmation status is \"False\"",
+                          "duration": 168
+                        },
+                        {
+                          "title": "Ensure form is in new entry mode",
+                          "duration": 154
+                        },
+                        {
+                          "title": "Ensure checkbox has hidden false value for form binding",
+                          "duration": 55
+                        }
+                      ],
+                      "startTime": "2026-01-22T07:40:44.473Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "636b675a9359fdb453f4-59aba8630b491cfb2815",
+              "file": "forex/exchange/forexContract.spec.ts",
+              "line": 60,
+              "column": 7
+            },
+            {
+              "title": "Validate backend-required fields for Forex application",
+              "ok": true,
+              "tags": [
+                "forex",
+                "contract"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "forex",
+                  "projectName": "forex",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4667,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "✅ Date comparison contract verified: Input.ValidityPeriod <= Date\n"
+                        },
+                        {
+                          "text": "   Error message: \"Validity period of purchase must be greater or equal than Date\"\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Ensure account owner is required",
+                          "duration": 132
+                        },
+                        {
+                          "title": "Ensure application number is required with max 6 characters",
+                          "duration": 85
+                        },
+                        {
+                          "title": "Ensure application date is required",
+                          "duration": 80
+                        },
+                        {
+                          "title": "Ensure authorized person is required with max 35 characters",
+                          "duration": 88
+                        },
+                        {
+                          "title": "Ensure contact phone is required with max 50 characters",
+                          "duration": 88
+                        },
+                        {
+                          "title": "Ensure settlement type is required",
+                          "duration": 126
+                        },
+                        {
+                          "title": "Ensure currency sale delivery date is required",
+                          "duration": 124
+                        },
+                        {
+                          "title": "Ensure debit account is selected",
+                          "duration": 60
+                        },
+                        {
+                          "title": "Ensure credit account is selected",
+                          "duration": 51
+                        },
+                        {
+                          "title": "Ensure fee account is selected",
+                          "duration": 66
+                        },
+                        {
+                          "title": "Ensure validity period is >= application date",
+                          "duration": 92
+                        }
+                      ],
+                      "startTime": "2026-01-22T07:41:01.317Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "636b675a9359fdb453f4-91466d1dbb831b5ff6a1",
+              "file": "forex/exchange/forexContract.spec.ts",
+              "line": 135,
+              "column": 7
+            },
+            {
+              "title": "Validate backend-allowed character sets for Forex application",
+              "ok": true,
+              "tags": [
+                "forex",
+                "contract"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "forex",
+                  "projectName": "forex",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3398,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Allowed characters from backend: 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzАБВГҐДЕЁЖЗИЙІЇКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄабвгґдеёжзийіїклмнопрстуфхцчшщъыьэюяє !\"#$%&'()*-+,/:;.=?_№\n"
+                        },
+                        {
+                          "text": "✅ Character set verified in backend allowed chars: АБВГҐДЕЁЖЗИЙІЇКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄабвгґдеёжзийіїклмнопрстуфхцчшщъыьэюяє\n"
+                        },
+                        {
+                          "text": "----------------------------------------\n"
+                        },
+                        {
+                          "text": "✅ Character set verified in backend allowed chars: ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz\n"
+                        },
+                        {
+                          "text": "----------------------------------------\n"
+                        },
+                        {
+                          "text": "✅ Character set verified in backend allowed chars: 0123456789\n"
+                        },
+                        {
+                          "text": "----------------------------------------\n"
+                        },
+                        {
+                          "text": "✅ Character set verified in backend allowed chars:  !\"#$%&'()*-+,/:;.=?_№\n"
+                        },
+                        {
+                          "text": "----------------------------------------\n"
+                        },
+                        {
+                          "text": "Allowed characters from backend: АБВГҐДЕЁЖЗИЙІЇКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄабвгґдеёжзийіїклмнопрстуфхцчшщъыьэюяєABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"#$%&'()*+-,/:.;=?_+/ '’‘`()?+№#/%&-,.:!$;\\|_=<>[]{}”“\"«»*@^~\n"
+                        },
+                        {
+                          "text": "✅ Character set verified in backend allowed chars: АБВГҐДЕЁЖЗИЙІЇКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄабвгґдеёжзийіїклмнопрстуфхцчшщъыьэюяє\n"
+                        },
+                        {
+                          "text": "----------------------------------------\n"
+                        },
+                        {
+                          "text": "✅ Character set verified in backend allowed chars: ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz\n"
+                        },
+                        {
+                          "text": "----------------------------------------\n"
+                        },
+                        {
+                          "text": "✅ Character set verified in backend allowed chars: 0123456789\n"
+                        },
+                        {
+                          "text": "----------------------------------------\n"
+                        },
+                        {
+                          "text": "✅ Character set verified in backend allowed chars: |_=<>[]{}”“\"«»*@^~\n"
+                        },
+                        {
+                          "text": "----------------------------------------\n"
+                        },
+                        {
+                          "text": "Allowed characters from backend: АБВГҐДЕЁЖЗИЙІЇКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄабвгґдеёжзийіїклмнопрстуфхцчшщъыьэюяєABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"#$%&'()*+-,/:.;=?_+/ №\n"
+                        },
+                        {
+                          "text": "✅ Character set verified in backend allowed chars: АБВГҐДЕЁЖЗИЙІЇКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄабвгґдеёжзийіїклмнопрстуфхцчшщъыьэюяє\n"
+                        },
+                        {
+                          "text": "----------------------------------------\n"
+                        },
+                        {
+                          "text": "✅ Character set verified in backend allowed chars: ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz\n"
+                        },
+                        {
+                          "text": "----------------------------------------\n"
+                        },
+                        {
+                          "text": "✅ Character set verified in backend allowed chars: 0123456789\n"
+                        },
+                        {
+                          "text": "----------------------------------------\n"
+                        },
+                        {
+                          "text": "✅ Character set verified in backend allowed chars: !\"#$%&'()*+-,/:.;=?_+/ №\n"
+                        },
+                        {
+                          "text": "----------------------------------------\n"
+                        },
+                        {
+                          "text": "Allowed characters from backend: АБВГҐДЕЁЖЗИЙІЇКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄабвгґдеёжзийіїклмнопрстуфхцчшщъыьэюяєABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"#$%&'()*+-,/:.;=?_+/ \n"
+                        },
+                        {
+                          "text": "✅ Character set verified in backend allowed chars: АБВГҐДЕЁЖЗИЙІЇКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЄабвгґдеёжзийіїклмнопрстуфхцчшщъыьэюяє\n"
+                        },
+                        {
+                          "text": "----------------------------------------\n"
+                        },
+                        {
+                          "text": "✅ Character set verified in backend allowed chars: ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz\n"
+                        },
+                        {
+                          "text": "----------------------------------------\n"
+                        },
+                        {
+                          "text": "✅ Character set verified in backend allowed chars: !\"#$%&'()*+-,/:.;=?_+/ \n"
+                        },
+                        {
+                          "text": "----------------------------------------\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Ensure application number accepts Cyrillic, Latin, digits, and special characters",
+                          "duration": 77
+                        },
+                        {
+                          "title": "Ensure details field accepts max 600 characters with extended charset",
+                          "duration": 77
+                        },
+                        {
+                          "title": "Ensure contract remark accepts max 250 characters with Cyrillic",
+                          "duration": 95
+                        },
+                        {
+                          "title": "Ensure authorized person accepts Cyrillic, Latin, and special characters",
+                          "duration": 48
+                        }
+                      ],
+                      "startTime": "2026-01-22T07:41:05.996Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "636b675a9359fdb453f4-4d051dfc14c624705207",
+              "file": "forex/exchange/forexContract.spec.ts",
+              "line": 243,
+              "column": 7
+            },
+            {
+              "title": "Validate backend-conditional validation rules for Forex application",
+              "ok": true,
+              "tags": [
+                "forex",
+                "contract"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "forex",
+                  "projectName": "forex",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4702,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "✅ Date comparison contract verified: Input.Date >= ValidityPeriod\n"
+                        },
+                        {
+                          "text": "   Error message: \"Date must be equal or lesser than Validity period of purchase\"\n"
+                        },
+                        {
+                          "text": "✅ Date comparison contract verified: Input.ValidityPeriod <= Date\n"
+                        },
+                        {
+                          "text": "   Error message: \"Validity period of purchase must be greater or equal than Date\"\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Ensure amount to buy is required if amount to sell is empty",
+                          "duration": 118
+                        },
+                        {
+                          "title": "Ensure amount to sell is required if amount to buy is empty",
+                          "duration": 61
+                        },
+                        {
+                          "title": "Ensure exchange rate is required when \"DefinedByTheClient\"",
+                          "duration": 79
+                        },
+                        {
+                          "title": "Ensure purchase delivery date is required for \"TOM\" or \"SPOT\"",
+                          "duration": 83
+                        },
+                        {
+                          "title": "Ensure application date is <= validity period",
+                          "duration": 94
+                        },
+                        {
+                          "title": "Ensure validity period is >= application date",
+                          "duration": 168
+                        }
+                      ],
+                      "startTime": "2026-01-22T07:41:09.404Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "636b675a9359fdb453f4-b7c4bd101dafe3ab7bd8",
+              "file": "forex/exchange/forexContract.spec.ts",
+              "line": 312,
+              "column": 7
+            },
+            {
+              "title": "Validate backend-decimal constraints for Forex application",
+              "ok": true,
+              "tags": [
+                "forex",
+                "contract"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "forex",
+                  "projectName": "forex",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4163,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Ensure amount to buy has 2 decimals with min \"0.01\"",
+                          "duration": 122
+                        },
+                        {
+                          "title": "Ensure amount to sell has 2 decimals with min \"0.01\"",
+                          "duration": 98
+                        },
+                        {
+                          "title": "Ensure exchange rate has 4 decimals with min \"0.0001\"",
+                          "duration": 90
+                        },
+                        {
+                          "title": "Ensure contract amount has 2 decimals with min \"0.01\"",
+                          "duration": 87
+                        }
+                      ],
+                      "startTime": "2026-01-22T07:41:14.125Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "636b675a9359fdb453f4-37e54282872ca0844353",
+              "file": "forex/exchange/forexContract.spec.ts",
+              "line": 382,
+              "column": 7
+            },
+            {
+              "title": "Validate backend-additional business constraints for Forex application",
+              "ok": true,
+              "tags": [
+                "forex",
+                "contract"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "forex",
+                  "projectName": "forex",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3524,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Selected RateDefinition value: BanksFxRate\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Ensure application number cannot start with space",
+                          "duration": 112
+                        },
+                        {
+                          "title": "Ensure conversion obligation checkbox is required",
+                          "duration": 93
+                        },
+                        {
+                          "title": "Ensure FX rate definition is required with valid default",
+                          "duration": 87
+                        },
+                        {
+                          "title": "Ensure form submits to correct endpoint with server validation",
+                          "duration": 83
+                        },
+                        {
+                          "title": "Ensure anti-forgery token is present for security",
+                          "duration": 59
+                        }
+                      ],
+                      "startTime": "2026-01-22T07:41:18.303Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "636b675a9359fdb453f4-70a332fe6b111778359a",
+              "file": "forex/exchange/forexContract.spec.ts",
+              "line": 428,
+              "column": 7
+            },
+            {
+              "title": "Validate backend-action button declarations for Forex application",
+              "ok": true,
+              "tags": [
+                "forex",
+                "contract"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "forex",
+                  "projectName": "forex",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3478,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Ensure action selector container exists with Knockout binding",
+                          "duration": 105
+                        },
+                        {
+                          "title": "Ensure Save Button exists in category",
+                          "duration": 103
+                        },
+                        {
+                          "title": "Ensure SaveAndNew action exists in category 1",
+                          "duration": 30
+                        },
+                        {
+                          "title": "Ensure Copy action exists in category 1",
+                          "duration": 30
+                        },
+                        {
+                          "title": "Ensure CopyWithLinks action exists in category 1",
+                          "duration": 16
+                        },
+                        {
+                          "title": "Ensure AssignComment action exists in category 1",
+                          "duration": 25
+                        },
+                        {
+                          "title": "Ensure SendToAuthorize action exists in category 1",
+                          "duration": 23
+                        },
+                        {
+                          "title": "Ensure Approve action exists in category 1",
+                          "duration": 32
+                        },
+                        {
+                          "title": "Ensure Authorize action exists in category 1",
+                          "duration": 30
+                        },
+                        {
+                          "title": "Ensure PDF actions exist in category 1",
+                          "duration": 60
+                        },
+                        {
+                          "title": "Ensure action buttons use Knockout data-bind pattern",
+                          "duration": 52
+                        }
+                      ],
+                      "startTime": "2026-01-22T07:41:21.838Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "636b675a9359fdb453f4-335270a180f2ef0f07a6",
+              "file": "forex/exchange/forexContract.spec.ts",
+              "line": 481,
+              "column": 7
+            },
+            {
+              "title": "Validate application date must be >= than Validity period",
+              "ok": true,
+              "tags": [
+                "forex",
+                "proxy"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "forex",
+                  "projectName": "forex",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4198,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "✅ Date comparison contract verified: Input.Date >= ValidityPeriod\n"
+                        },
+                        {
+                          "text": "   Error message: \"Date must be equal or lesser than Validity period of purchase\"\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Enter application date after validity period",
+                          "duration": 1150
+                        },
+                        {
+                          "title": "Ensure system enforces date comparison rule",
+                          "duration": 151
+                        }
+                      ],
+                      "startTime": "2026-01-22T07:41:25.327Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "636b675a9359fdb453f4-9a037034d2dd903a9d8d",
+              "file": "forex/exchange/forexContract.spec.ts",
+              "line": 564,
+              "column": 7
+            },
+            {
+              "title": "Validate documents tab and upload controls exist and table headers",
+              "ok": true,
+              "tags": [
+                "forex",
+                "contract"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "forex",
+                  "projectName": "forex",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4230,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Ensure Documents tab is rendered by backend",
+                          "duration": 73
+                        },
+                        {
+                          "title": "Ensure Add Existing Document action exists",
+                          "duration": 39
+                        },
+                        {
+                          "title": "Ensure Create New Document action exists",
+                          "duration": 32
+                        },
+                        {
+                          "title": "Ensure document grid has required columns",
+                          "duration": 256
+                        },
+                        {
+                          "title": "Ensure empty state message displays when no documents",
+                          "duration": 977
+                        }
+                      ],
+                      "startTime": "2026-01-22T07:41:29.535Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "636b675a9359fdb453f4-241b428a16e3490bf9d9",
+              "file": "forex/exchange/forexContract.spec.ts",
+              "line": 588,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "forex\\exchange\\forexPersistence.spec.ts",
+      "file": "forex/exchange/forexPersistence.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Forex Application - Data Persistence Validation",
+          "file": "forex/exchange/forexPersistence.spec.ts",
+          "line": 25,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Save forex application with all required fields",
+              "ok": true,
+              "tags": [
+                "forex",
+                "persistence"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "forex",
+                  "projectName": "forex",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 13335,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Test Data: {\n  number: \u001b[32m'at_A3x'\u001b[39m,\n  date: \u001b[32m'22.01.2026'\u001b[39m,\n  validityPeriod: \u001b[32m'21.02.2026'\u001b[39m,\n  authorizedPerson: \u001b[32m'John Smith'\u001b[39m,\n  contactPhone: \u001b[32m'+380501234567'\u001b[39m,\n  contractRemark: \u001b[32m'contactRemark Jamal-ЮлДСмшЬ'\u001b[39m,\n  amountToBuy: \u001b[32m'5000.50'\u001b[39m,\n  amountToSell: \u001b[32m'7500.25'\u001b[39m,\n  currencySaleDeliveryDate: \u001b[32m'24.01.2026'\u001b[39m\n}\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Fill required fields with valid data",
+                          "duration": 3384
+                        },
+                        {
+                          "title": "Save application and verify backend response",
+                          "duration": 3300
+                        },
+                        {
+                          "title": "Verify all required fields persisted via SSR",
+                          "duration": 350
+                        },
+                        {
+                          "title": "Delete the application",
+                          "duration": 3375
+                        }
+                      ],
+                      "startTime": "2026-01-22T07:41:34.023Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a7d747c60011082bd503-72dad493a9e94843a015",
+              "file": "forex/exchange/forexPersistence.spec.ts",
+              "line": 42,
+              "column": 7
+            },
+            {
+              "title": "Save with amount to buy only - verify mutual exclusivity",
+              "ok": true,
+              "tags": [
+                "forex",
+                "persistence"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "forex",
+                  "projectName": "forex",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 10467,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Fill form with amount to buy only",
+                          "duration": 2368
+                        },
+                        {
+                          "title": "Save and verify backend accepts single amount field",
+                          "duration": 1805
+                        },
+                        {
+                          "title": "Verify amount to buy persisted and amount to sell remains empty",
+                          "duration": 131
+                        },
+                        {
+                          "title": "Delete the application",
+                          "duration": 3093
+                        }
+                      ],
+                      "startTime": "2026-01-22T07:41:47.373Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a7d747c60011082bd503-82804fcf3ccc526533dd",
+              "file": "forex/exchange/forexPersistence.spec.ts",
+              "line": 92,
+              "column": 7
+            },
+            {
+              "title": "Save with amount to sell only - verify mutual exclusivity",
+              "ok": true,
+              "tags": [
+                "forex",
+                "persistence"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "forex",
+                  "projectName": "forex",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 11666,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Fill form with amount to sell only",
+                          "duration": 2457
+                        },
+                        {
+                          "title": "Save and verify backend accepts single amount field",
+                          "duration": 1942
+                        },
+                        {
+                          "title": "Verify amount to sell persisted and amount to buy remains empty",
+                          "duration": 171
+                        },
+                        {
+                          "title": "Delete the application",
+                          "duration": 4153
+                        }
+                      ],
+                      "startTime": "2026-01-22T07:41:57.851Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a7d747c60011082bd503-3ed8bfe18a639308827a",
+              "file": "forex/exchange/forexPersistence.spec.ts",
+              "line": 139,
+              "column": 7
+            },
+            {
+              "title": "Save with client-defined exchange rate - verify conditional persistence",
+              "ok": true,
+              "tags": [
+                "forex",
+                "persistence"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "forex",
+                  "projectName": "forex",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 12170,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Fill form and select client-defined rate",
+                          "duration": 4044
+                        },
+                        {
+                          "title": "Save and verify backend accepts conditional field",
+                          "duration": 1929
+                        },
+                        {
+                          "title": "Verify exchange rate persisted with 4-decimal precision",
+                          "duration": 155
+                        },
+                        {
+                          "title": "Delete the application",
+                          "duration": 3027
+                        }
+                      ],
+                      "startTime": "2026-01-22T07:42:09.529Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a7d747c60011082bd503-443cc54152c52662fd5e",
+              "file": "forex/exchange/forexPersistence.spec.ts",
+              "line": 186,
+              "column": 7
+            },
+            {
+              "title": "Save with TOM settlement - verify conditional delivery date persistence",
+              "ok": true,
+              "tags": [
+                "forex",
+                "persistence"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "forex",
+                  "projectName": "forex",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 11000,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Fill form and select TOM settlement",
+                          "duration": 3251
+                        },
+                        {
+                          "title": "Save and verify backend accepts TOM settlement",
+                          "duration": 1773
+                        },
+                        {
+                          "title": "Verify settlement and delivery date persisted correctly",
+                          "duration": 158
+                        },
+                        {
+                          "title": "Delete the application",
+                          "duration": 2799
+                        }
+                      ],
+                      "startTime": "2026-01-22T07:42:21.708Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a7d747c60011082bd503-7604bc8695d7780add22",
+              "file": "forex/exchange/forexPersistence.spec.ts",
+              "line": 237,
+              "column": 7
+            },
+            {
+              "title": "Save with additional documents Cyrillic characters - verify character set persistence",
+              "ok": true,
+              "tags": [
+                "forex",
+                "persistence"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "forex",
+                  "projectName": "forex",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 13602,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Fill form with Cyrillic characters",
+                          "duration": 2711
+                        },
+                        {
+                          "title": "Save and verify backend accepts Cyrillic data",
+                          "duration": 1761
+                        },
+                        {
+                          "title": "Verify Cyrillic characters persisted without corruption",
+                          "duration": 136
+                        },
+                        {
+                          "title": "Delete the application",
+                          "duration": 3914
+                        }
+                      ],
+                      "startTime": "2026-01-22T07:42:32.720Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a7d747c60011082bd503-5a8c18ae9358ffa91718",
+              "file": "forex/exchange/forexPersistence.spec.ts",
+              "line": 288,
+              "column": 7
+            },
+            {
+              "title": "Save and verify decimal precision preservation extremeAmountToBuy",
+              "ok": true,
+              "tags": [
+                "forex",
+                "persistence"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "forex",
+                  "projectName": "forex",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 11978,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Fill form with extreme decimal values",
+                          "duration": 5018
+                        },
+                        {
+                          "title": "Save and verify backend accepts extreme decimal values",
+                          "duration": 1833
+                        },
+                        {
+                          "title": "Verify decimal precision preserved for all numeric fields",
+                          "duration": 114
+                        },
+                        {
+                          "title": "Delete the application",
+                          "duration": 1828
+                        }
+                      ],
+                      "startTime": "2026-01-22T07:42:46.335Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a7d747c60011082bd503-e04d2daf64053a4f4db8",
+              "file": "forex/exchange/forexPersistence.spec.ts",
+              "line": 332,
+              "column": 7
+            },
+            {
+              "title": "Save and verify decimal precision preservation extremeAmountToBuy minAmountToSell",
+              "ok": true,
+              "tags": [
+                "forex",
+                "persistence"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "forex",
+                  "projectName": "forex",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 12530,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Fill form with extreme decimal values",
+                          "duration": 3750
+                        },
+                        {
+                          "title": "Save and verify backend accepts extreme decimal values",
+                          "duration": 1814
+                        },
+                        {
+                          "title": "Verify decimal precision preserved for all numeric fields",
+                          "duration": 685
+                        },
+                        {
+                          "title": "Delete the application",
+                          "duration": 2232
+                        }
+                      ],
+                      "startTime": "2026-01-22T07:42:58.329Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a7d747c60011082bd503-8662a6c260465ff13b70",
+              "file": "forex/exchange/forexPersistence.spec.ts",
+              "line": 390,
+              "column": 7
+            },
+            {
+              "title": "Add existing document and verify persistence",
+              "ok": false,
+              "tags": [
+                "forex",
+                "persistence",
+                "documents"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "forex",
+                  "projectName": "forex",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 7277,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/Documents\\s+1\\/[01]/i\u001b[39m\nReceived string:  \u001b[31m\"Documents 0/0\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/Documents\\s+1\\/[01]/i\u001b[39m\nReceived string:  \u001b[31m\"Documents 0/0\"\u001b[39m\n    at C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\forex\\exchange\\forexPersistence.spec.ts:489:23\n    at C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\forex\\exchange\\forexPersistence.spec.ts:486:5",
+                        "location": {
+                          "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\forex\\exchange\\forexPersistence.spec.ts",
+                          "column": 23,
+                          "line": 489
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 487 |\u001b[39m       \u001b[90m//todo lesz testid és annak a szövegét kell amjd csekkolni\u001b[39m\n \u001b[90m 488 |\u001b[39m       \u001b[36mconst\u001b[39m tabText \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'a[href=\"#Links\"]'\u001b[39m)\u001b[33m.\u001b[39mtextContent()\u001b[33m;\u001b[39m  \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 489 |\u001b[39m       expect(tabText)\u001b[33m.\u001b[39mtoMatch(\u001b[35m/Documents\\s+1\\/[01]/i\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 490 |\u001b[39m       \u001b[90m// Business Reason: Backend updated document count from 0/0 to 1/1 or 1/0\u001b[39m\n \u001b[90m 491 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 492 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\forex\\exchange\\forexPersistence.spec.ts",
+                            "column": 23,
+                            "line": 489
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/Documents\\s+1\\/[01]/i\u001b[39m\nReceived string:  \u001b[31m\"Documents 0/0\"\u001b[39m\n\n\u001b[0m \u001b[90m 487 |\u001b[39m       \u001b[90m//todo lesz testid és annak a szövegét kell amjd csekkolni\u001b[39m\n \u001b[90m 488 |\u001b[39m       \u001b[36mconst\u001b[39m tabText \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'a[href=\"#Links\"]'\u001b[39m)\u001b[33m.\u001b[39mtextContent()\u001b[33m;\u001b[39m  \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 489 |\u001b[39m       expect(tabText)\u001b[33m.\u001b[39mtoMatch(\u001b[35m/Documents\\s+1\\/[01]/i\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 490 |\u001b[39m       \u001b[90m// Business Reason: Backend updated document count from 0/0 to 1/1 or 1/0\u001b[39m\n \u001b[90m 491 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 492 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\forex\\exchange\\forexPersistence.spec.ts:489:23\u001b[22m\n\u001b[2m    at C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\forex\\exchange\\forexPersistence.spec.ts:486:5\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Fill and save forex application",
+                          "duration": 1962
+                        },
+                        {
+                          "title": "Switch document tab",
+                          "duration": 497
+                        },
+                        {
+                          "title": "Select existing document",
+                          "duration": 1603
+                        },
+                        {
+                          "title": "Verify document counter updated",
+                          "duration": 81,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/Documents\\s+1\\/[01]/i\u001b[39m\nReceived string:  \u001b[31m\"Documents 0/0\"\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/Documents\\s+1\\/[01]/i\u001b[39m\nReceived string:  \u001b[31m\"Documents 0/0\"\u001b[39m\n    at C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\forex\\exchange\\forexPersistence.spec.ts:489:23\n    at C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\forex\\exchange\\forexPersistence.spec.ts:486:5",
+                            "location": {
+                              "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\forex\\exchange\\forexPersistence.spec.ts",
+                              "column": 23,
+                              "line": 489
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 487 |\u001b[39m       \u001b[90m//todo lesz testid és annak a szövegét kell amjd csekkolni\u001b[39m\n \u001b[90m 488 |\u001b[39m       \u001b[36mconst\u001b[39m tabText \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'a[href=\"#Links\"]'\u001b[39m)\u001b[33m.\u001b[39mtextContent()\u001b[33m;\u001b[39m  \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 489 |\u001b[39m       expect(tabText)\u001b[33m.\u001b[39mtoMatch(\u001b[35m/Documents\\s+1\\/[01]/i\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 490 |\u001b[39m       \u001b[90m// Business Reason: Backend updated document count from 0/0 to 1/1 or 1/0\u001b[39m\n \u001b[90m 491 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 492 |\u001b[39m\u001b[0m"
+                          }
+                        }
+                      ],
+                      "startTime": "2026-01-22T07:43:10.872Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\GIT\\CORPEX\\Testing\\cueweb\\test-results\\forex-exchange-forexPersis-854a4-ment-and-verify-persistence-forex\\test-failed-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\GIT\\CORPEX\\Testing\\cueweb\\test-results\\forex-exchange-forexPersis-854a4-ment-and-verify-persistence-forex\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\forex\\exchange\\forexPersistence.spec.ts",
+                        "column": 23,
+                        "line": 489
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a7d747c60011082bd503-ee83f8d659eb5d376e3f",
+              "file": "forex/exchange/forexPersistence.spec.ts",
+              "line": 449,
+              "column": 7
+            },
+            {
+              "title": "Create new document upload and verify persistence",
+              "ok": true,
+              "tags": [
+                "forex",
+                "persistence",
+                "documents"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "forex",
+                  "projectName": "forex",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 24088,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "🔐 Starting API login process...\n"
+                        },
+                        {
+                          "text": "username: dani\n"
+                        },
+                        {
+                          "text": "Step 0: Clearing existing session data...\n"
+                        },
+                        {
+                          "text": "Step 1: Getting login page to establish session...\n"
+                        },
+                        {
+                          "text": "Login page response: 200\n"
+                        },
+                        {
+                          "text": "Step 2: Submitting credentials...\n"
+                        },
+                        {
+                          "text": "Login response: 200\n"
+                        },
+                        {
+                          "text": "Step 3: Getting OTP page...\n"
+                        },
+                        {
+                          "text": "OTP page response: 200\n"
+                        },
+                        {
+                          "text": "Step 4: Submitting OTP code...\n"
+                        },
+                        {
+                          "text": "OTP response: 200\n"
+                        },
+                        {
+                          "text": "✅ API login successful! Found 2 auth cookies\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Fill and save forex application",
+                          "duration": 2300
+                        },
+                        {
+                          "title": "Switch document tab",
+                          "duration": 421
+                        },
+                        {
+                          "title": "Click Create New Document button",
+                          "duration": 2587
+                        },
+                        {
+                          "title": "Fill document metadata and upload file",
+                          "duration": 5667
+                        },
+                        {
+                          "title": "Upload new document creation and verify upload",
+                          "duration": 3234
+                        },
+                        {
+                          "title": "Delete document",
+                          "duration": 1976
+                        },
+                        {
+                          "title": "Delete the application",
+                          "duration": 2435
+                        }
+                      ],
+                      "startTime": "2026-01-22T07:43:21.375Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a7d747c60011082bd503-75818aff6efdec797388",
+              "file": "forex/exchange/forexPersistence.spec.ts",
+              "line": 533,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "forex\\exchange\\forexProxy.spec.ts",
+      "file": "forex/exchange/forexProxy.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Forex Application - Input Validation Tests",
+          "file": "forex/exchange/forexProxy.spec.ts",
+          "line": 10,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Validate purchase amount accepts valid decimal values",
+              "ok": true,
+              "tags": [
+                "forex",
+                "proxy"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "forex",
+                  "projectName": "forex",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5285,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Enter valid purchase amount",
+                          "duration": 1250
+                        },
+                        {
+                          "title": "Ensure system accepts valid amount",
+                          "duration": 33
+                        }
+                      ],
+                      "startTime": "2026-01-22T07:43:45.594Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "64175d10260e084a5b32-0231e7d5c42351851a8d",
+              "file": "forex/exchange/forexProxy.spec.ts",
+              "line": 23,
+              "column": 7
+            },
+            {
+              "title": "Validate purchase amount rejects values below minimum",
+              "ok": true,
+              "tags": [
+                "forex",
+                "proxy"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "forex",
+                  "projectName": "forex",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4116,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Enter amount below minimum threshold",
+                          "duration": 1091
+                        },
+                        {
+                          "title": "Ensure system rejects amount below minimum",
+                          "duration": 59
+                        }
+                      ],
+                      "startTime": "2026-01-22T07:43:50.890Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "64175d10260e084a5b32-f08f46adf071ba4acfd4",
+              "file": "forex/exchange/forexProxy.spec.ts",
+              "line": 36,
+              "column": 7
+            },
+            {
+              "title": "Validate authorized person accepts Cyrillic names",
+              "ok": true,
+              "tags": [
+                "forex",
+                "proxy"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "forex",
+                  "projectName": "forex",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3696,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Enter Cyrillic name",
+                          "duration": 738
+                        },
+                        {
+                          "title": "Ensure system accepts Cyrillic characters",
+                          "duration": 47
+                        }
+                      ],
+                      "startTime": "2026-01-22T07:43:55.019Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "64175d10260e084a5b32-56f17ca2c7c92194c22b",
+              "file": "forex/exchange/forexProxy.spec.ts",
+              "line": 52,
+              "column": 7
+            },
+            {
+              "title": "Validate authorized person rejects names exceeding maximum length",
+              "ok": true,
+              "tags": [
+                "forex",
+                "proxy"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "forex",
+                  "projectName": "forex",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5370,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Enter name with 36 characters",
+                          "duration": 2446
+                        },
+                        {
+                          "title": "Ensure system contains only \"longname charset\" name exceeding 35 characters so no see the plus char",
+                          "duration": 63
+                        }
+                      ],
+                      "startTime": "2026-01-22T07:43:58.728Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "64175d10260e084a5b32-cdcbb478755dd9c0d5a0",
+              "file": "forex/exchange/forexProxy.spec.ts",
+              "line": 65,
+              "column": 7
+            },
+            {
+              "title": "Validate phone number accepts valid Ukrainian format",
+              "ok": true,
+              "tags": [
+                "forex",
+                "proxy"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "forex",
+                  "projectName": "forex",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4435,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Enter valid Ukrainian phone number",
+                          "duration": 1533
+                        },
+                        {
+                          "title": "Ensure system accepts valid phone format",
+                          "duration": 41
+                        }
+                      ],
+                      "startTime": "2026-01-22T07:44:04.106Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "64175d10260e084a5b32-3d6472568cff19eef306",
+              "file": "forex/exchange/forexProxy.spec.ts",
+              "line": 79,
+              "column": 7
+            },
+            {
+              "title": "Validate exchange rate requires value when client-defined",
+              "ok": true,
+              "tags": [
+                "forex",
+                "proxy"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "forex",
+                  "projectName": "forex",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4791,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Select client-defined rate option",
+                          "duration": 1602
+                        },
+                        {
+                          "title": "Ensure system requires exchange rate when client-defined",
+                          "duration": 69
+                        }
+                      ],
+                      "startTime": "2026-01-22T07:44:08.550Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "64175d10260e084a5b32-a8db545776a078419d86",
+              "file": "forex/exchange/forexProxy.spec.ts",
+              "line": 92,
+              "column": 7
+            },
+            {
+              "title": "Validate exchange rate accepts valid 4-decimal format",
+              "ok": true,
+              "tags": [
+                "forex",
+                "proxy"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "forex",
+                  "projectName": "forex",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5051,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Enter valid exchange rate with 4 decimals",
+                          "duration": 2001
+                        },
+                        {
+                          "title": "Ensure system accepts 4-decimal rate format",
+                          "duration": 50
+                        }
+                      ],
+                      "startTime": "2026-01-22T07:44:13.356Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "64175d10260e084a5b32-990c09c6ef6c8daa1f22",
+              "file": "forex/exchange/forexProxy.spec.ts",
+              "line": 113,
+              "column": 7
+            },
+            {
+              "title": "Validate application number rejects values with leading space",
+              "ok": true,
+              "tags": [
+                "forex",
+                "proxy"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "forex",
+                  "projectName": "forex",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4142,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Enter application number with leading space",
+                          "duration": 1132
+                        },
+                        {
+                          "title": "Ensure system rejects number with leading space",
+                          "duration": 73
+                        }
+                      ],
+                      "startTime": "2026-01-22T07:44:18.418Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "64175d10260e084a5b32-e94a3937bdf00d88d3fa",
+              "file": "forex/exchange/forexProxy.spec.ts",
+              "line": 131,
+              "column": 7
+            },
+            {
+              "title": "Validate purchase delivery date requires value for TOM settlement",
+              "ok": true,
+              "tags": [
+                "forex",
+                "proxy"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "forex",
+                  "projectName": "forex",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4649,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Select TOM settlement without delivery date",
+                          "duration": 1626
+                        },
+                        {
+                          "title": "Ensure system contains date today + 1 day",
+                          "duration": 88
+                        }
+                      ],
+                      "startTime": "2026-01-22T07:44:22.570Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "64175d10260e084a5b32-4319200e54ef3947819b",
+              "file": "forex/exchange/forexProxy.spec.ts",
+              "line": 146,
+              "column": 7
+            },
+            {
+              "title": "Validate additional documents accepts valid text",
+              "ok": true,
+              "tags": [
+                "forex",
+                "proxy"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "forex",
+                  "projectName": "forex",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5892,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Enter valid additional documents text",
+                          "duration": 2978
+                        },
+                        {
+                          "title": "Ensure system accepts additional documents text",
+                          "duration": 39
+                        }
+                      ],
+                      "startTime": "2026-01-22T07:44:27.230Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "64175d10260e084a5b32-5b0625e5a6839814c7d0",
+              "file": "forex/exchange/forexProxy.spec.ts",
+              "line": 166,
+              "column": 7
+            },
+            {
+              "title": "Validate additional documents rejects text exceeding maximum length",
+              "ok": true,
+              "tags": [
+                "forex",
+                "proxy"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "forex",
+                  "projectName": "forex",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 14628,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Enter text with 601 characters",
+                          "duration": 11790
+                        },
+                        {
+                          "title": "Ensure system rejects text exceeding 600 characters",
+                          "duration": 79
+                        }
+                      ],
+                      "startTime": "2026-01-22T07:44:33.133Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "64175d10260e084a5b32-f0ceb07e10415a7e63fd",
+              "file": "forex/exchange/forexProxy.spec.ts",
+              "line": 179,
+              "column": 7
+            },
+            {
+              "title": "Validate contract remark accepts valid Cyrillic text",
+              "ok": true,
+              "tags": [
+                "forex",
+                "proxy"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "forex",
+                  "projectName": "forex",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7000,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Enter Cyrillic contract remark",
+                          "duration": 3902
+                        },
+                        {
+                          "title": "Ensure system accepts Cyrillic contract remark",
+                          "duration": 37
+                        }
+                      ],
+                      "startTime": "2026-01-22T07:44:47.773Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "64175d10260e084a5b32-572687a6f52d0cab4fbb",
+              "file": "forex/exchange/forexProxy.spec.ts",
+              "line": 194,
+              "column": 7
+            },
+            {
+              "title": "Validate sale amount accepts valid decimal values",
+              "ok": true,
+              "tags": [
+                "forex",
+                "proxy"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "forex",
+                  "projectName": "forex",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4265,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Enter valid sale amount",
+                          "duration": 1195
+                        },
+                        {
+                          "title": "Ensure system accepts valid sale amount",
+                          "duration": 41
+                        }
+                      ],
+                      "startTime": "2026-01-22T07:44:54.785Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "64175d10260e084a5b32-a8b49b67de28ddc42c4a",
+              "file": "forex/exchange/forexProxy.spec.ts",
+              "line": 207,
+              "column": 7
+            },
+            {
+              "title": "Validate currency sale delivery date is required",
+              "ok": true,
+              "tags": [
+                "forex",
+                "proxy"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "forex",
+                  "projectName": "forex",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3901,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Clear required delivery date field",
+                          "duration": 765
+                        },
+                        {
+                          "title": "Ensure system requires currency sale delivery date",
+                          "duration": 81
+                        }
+                      ],
+                      "startTime": "2026-01-22T07:44:59.061Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "64175d10260e084a5b32-47cce55e3fdd577544fb",
+              "file": "forex/exchange/forexProxy.spec.ts",
+              "line": 220,
+              "column": 7
+            },
+            {
+              "title": "Validate authorized person accepts names with special and cyrillic characters",
+              "ok": true,
+              "tags": [
+                "forex",
+                "proxy"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "forex",
+                  "projectName": "forex",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5668,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Enter name with hyphens and apostrophes",
+                          "duration": 1969
+                        },
+                        {
+                          "title": "Ensure system accepts special characters in names",
+                          "duration": 70
+                        }
+                      ],
+                      "startTime": "2026-01-22T07:45:02.975Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "64175d10260e084a5b32-c98c58690abe1d473580",
+              "file": "forex/exchange/forexProxy.spec.ts",
+              "line": 235,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "forex\\exchange\\forexWorkflow.spec.ts",
+      "file": "forex/exchange/forexWorkflow.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Forex Application - Workflow Validation",
+          "file": "forex/exchange/forexWorkflow.spec.ts",
+          "line": 25,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Send to authorize",
+              "ok": true,
+              "tags": [
+                "forex",
+                "workflow",
+                "module"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "forex",
+                  "projectName": "forex",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 9710,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "✅ Navigated to URL matching: **/FxApplicationExchange/View/**\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Fill and save forex application",
+                          "duration": 2515
+                        },
+                        {
+                          "title": "Click Send to Authorize action",
+                          "duration": 1940
+                        },
+                        {
+                          "title": "Verify status changed to To authorize",
+                          "duration": 41
+                        },
+                        {
+                          "title": "Delete the application",
+                          "duration": 1957
+                        }
+                      ],
+                      "startTime": "2026-01-22T07:45:08.673Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6817f416a2852a75ff6c-b898c1ccf0ef3346b358",
+              "file": "forex/exchange/forexWorkflow.spec.ts",
+              "line": 41,
+              "column": 7
+            },
+            {
+              "title": "Approve application",
+              "ok": true,
+              "tags": [
+                "forex",
+                "workflow",
+                "module"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "forex",
+                  "projectName": "forex",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 14067,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "✅ Navigated to URL matching: **/FxApplicationExchange/View/**\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Fill and save forex application",
+                          "duration": 4162
+                        },
+                        {
+                          "title": "Send to authorize",
+                          "duration": 2681
+                        },
+                        {
+                          "title": "Verify navigated to View page",
+                          "duration": 1525
+                        },
+                        {
+                          "title": "Delete the application",
+                          "duration": 2595
+                        }
+                      ],
+                      "startTime": "2026-01-22T07:45:18.398Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6817f416a2852a75ff6c-cc260249e860fa7aff5c",
+              "file": "forex/exchange/forexWorkflow.spec.ts",
+              "line": 90,
+              "column": 7
+            },
+            {
+              "title": "Approve application no key - verify final authorized state",
+              "ok": true,
+              "tags": [
+                "forex",
+                "workflow",
+                "module"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\forex\\exchange\\forexWorkflow.spec.ts",
+                        "line": 128,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "forex",
+                  "projectName": "forex",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-22T07:45:32.475Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\forex\\exchange\\forexWorkflow.spec.ts",
+                            "line": 128,
+                            "column": 8
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "6817f416a2852a75ff6c-9a6d800b690109e1455e",
+              "file": "forex/exchange/forexWorkflow.spec.ts",
+              "line": 128,
+              "column": 8
+            },
+            {
+              "title": "SendToAuthorize authorize application - without key",
+              "ok": true,
+              "tags": [
+                "forex",
+                "workflow",
+                "module"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "forex",
+                  "projectName": "forex",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 10472,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Fill form without saving",
+                          "duration": 2198
+                        },
+                        {
+                          "title": "Authorize",
+                          "duration": 1554
+                        },
+                        {
+                          "title": "Authorize",
+                          "duration": 1506
+                        },
+                        {
+                          "title": "Auth without key",
+                          "duration": 2488
+                        }
+                      ],
+                      "startTime": "2026-01-22T07:45:32.476Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6817f416a2852a75ff6c-9916860a50930a249617",
+              "file": "forex/exchange/forexWorkflow.spec.ts",
+              "line": 176,
+              "column": 7
+            },
+            {
+              "title": "Approve cancel signature",
+              "ok": true,
+              "tags": [
+                "forex",
+                "workflow",
+                "module"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "forex",
+                  "projectName": "forex",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 9643,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Fill and approve forex application",
+                          "duration": 5610
+                        },
+                        {
+                          "title": "Cancel signature",
+                          "duration": 1183
+                        },
+                        {
+                          "title": "Validate status row",
+                          "duration": 66
+                        }
+                      ],
+                      "startTime": "2026-01-22T07:45:42.959Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6817f416a2852a75ff6c-ee620e198cac622bcb4c",
+              "file": "forex/exchange/forexWorkflow.spec.ts",
+              "line": 208,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "dictionary\\partners\\listContract.spec.ts",
+      "file": "dictionary/partners/listContract.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Partner List - Backend Filter Contract Validation",
+          "file": "dictionary/partners/listContract.spec.ts",
+          "line": 18,
+          "column": 15,
+          "specs": [
+            {
+              "title": "DISCOVERY - Technology-Agnostic Grid Validation",
+              "ok": false,
+              "tags": [
+                "dictionary"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 14681,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#gvPartnerList_DXFREditorcol5_I')\nExpected: \u001b[32m\"Identification code\"\u001b[39m\nReceived: \u001b[31m\"\"\u001b[39m\nTimeout:  3000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveValue\" with timeout 3000ms\u001b[22m\n\u001b[2m  - waiting for locator('#gvPartnerList_DXFREditorcol5_I')\u001b[22m\n\u001b[2m    7 × locator resolved to <input type=\"text\" autocomplete=\"off\" id=\"gvPartnerList_DXFREditorcol5_I\" name=\"gvPartnerList$DXFREditorcol5\" class=\"dxeEditArea_DxCLIC dxeEditAreaSys\" onchange=\"ASPx.EValueChanged('gvPartnerList_DXFREditorcol5')\"/>\u001b[22m\n\u001b[2m      - unexpected value \"\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#gvPartnerList_DXFREditorcol5_I')\nExpected: \u001b[32m\"Identification code\"\u001b[39m\nReceived: \u001b[31m\"\"\u001b[39m\nTimeout:  3000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveValue\" with timeout 3000ms\u001b[22m\n\u001b[2m  - waiting for locator('#gvPartnerList_DXFREditorcol5_I')\u001b[22m\n\u001b[2m    7 × locator resolved to <input type=\"text\" autocomplete=\"off\" id=\"gvPartnerList_DXFREditorcol5_I\" name=\"gvPartnerList$DXFREditorcol5\" class=\"dxeEditArea_DxCLIC dxeEditAreaSys\" onchange=\"ASPx.EValueChanged('gvPartnerList_DXFREditorcol5')\"/>\u001b[22m\n\u001b[2m      - unexpected value \"\"\u001b[22m\n\n    at C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listContract.spec.ts:90:33",
+                        "location": {
+                          "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listContract.spec.ts",
+                          "column": 33,
+                          "line": 90
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 88 |\u001b[39m       \u001b[90m// DevExpress uses \"Choose Ben. type\" placeholder for Beneficiary type filter\u001b[39m\n \u001b[90m 89 |\u001b[39m       \u001b[36mconst\u001b[39m expectedValue \u001b[33m=\u001b[39m filterDef\u001b[33m.\u001b[39mname \u001b[33m===\u001b[39m \u001b[32m\"Beneficiary type\"\u001b[39m \u001b[33m?\u001b[39m \u001b[32m\"Choose Ben. type\"\u001b[39m \u001b[33m:\u001b[39m filterDef\u001b[33m.\u001b[39mname\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 90 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(filter)\u001b[33m.\u001b[39mtoHaveValue(expectedValue)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 91 |\u001b[39m       console\u001b[33m.\u001b[39mlog(\u001b[32m`✓ ComboBox \"${filterDef.name}\" is editable`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 92 |\u001b[39m       \n \u001b[90m 93 |\u001b[39m       \u001b[36mif\u001b[39m (isDevExpress) {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listContract.spec.ts",
+                            "column": 33,
+                            "line": 90
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#gvPartnerList_DXFREditorcol5_I')\nExpected: \u001b[32m\"Identification code\"\u001b[39m\nReceived: \u001b[31m\"\"\u001b[39m\nTimeout:  3000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveValue\" with timeout 3000ms\u001b[22m\n\u001b[2m  - waiting for locator('#gvPartnerList_DXFREditorcol5_I')\u001b[22m\n\u001b[2m    7 × locator resolved to <input type=\"text\" autocomplete=\"off\" id=\"gvPartnerList_DXFREditorcol5_I\" name=\"gvPartnerList$DXFREditorcol5\" class=\"dxeEditArea_DxCLIC dxeEditAreaSys\" onchange=\"ASPx.EValueChanged('gvPartnerList_DXFREditorcol5')\"/>\u001b[22m\n\u001b[2m      - unexpected value \"\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 88 |\u001b[39m       \u001b[90m// DevExpress uses \"Choose Ben. type\" placeholder for Beneficiary type filter\u001b[39m\n \u001b[90m 89 |\u001b[39m       \u001b[36mconst\u001b[39m expectedValue \u001b[33m=\u001b[39m filterDef\u001b[33m.\u001b[39mname \u001b[33m===\u001b[39m \u001b[32m\"Beneficiary type\"\u001b[39m \u001b[33m?\u001b[39m \u001b[32m\"Choose Ben. type\"\u001b[39m \u001b[33m:\u001b[39m filterDef\u001b[33m.\u001b[39mname\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 90 |\u001b[39m       \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(filter)\u001b[33m.\u001b[39mtoHaveValue(expectedValue)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 91 |\u001b[39m       console\u001b[33m.\u001b[39mlog(\u001b[32m`✓ ComboBox \"${filterDef.name}\" is editable`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 92 |\u001b[39m       \n \u001b[90m 93 |\u001b[39m       \u001b[36mif\u001b[39m (isDevExpress) {\u001b[0m\n\u001b[2m    at C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listContract.spec.ts:90:33\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "🔐 Starting API login process...\n"
+                        },
+                        {
+                          "text": "username: dani\n"
+                        },
+                        {
+                          "text": "Step 0: Clearing existing session data...\n"
+                        },
+                        {
+                          "text": "Step 1: Getting login page to establish session...\n"
+                        },
+                        {
+                          "text": "Login page response: 200\n"
+                        },
+                        {
+                          "text": "Step 2: Submitting credentials...\n"
+                        },
+                        {
+                          "text": "Login response: 200\n"
+                        },
+                        {
+                          "text": "Step 3: Getting OTP page...\n"
+                        },
+                        {
+                          "text": "OTP page response: 200\n"
+                        },
+                        {
+                          "text": "Step 4: Submitting OTP code...\n"
+                        },
+                        {
+                          "text": "OTP response: 200\n"
+                        },
+                        {
+                          "text": "✅ API login successful! Found 2 auth cookies\n"
+                        },
+                        {
+                          "text": "\n═══════════════════════════════════════════════════════════\n"
+                        },
+                        {
+                          "text": "🔍 TECHNOLOGY-AGNOSTIC DISCOVERY (Works in DevExpress & Angular)\n"
+                        },
+                        {
+                          "text": "═══════════════════════════════════════════════════════════\n"
+                        },
+                        {
+                          "text": "\n📦 Grid Technology: Angular\n"
+                        },
+                        {
+                          "text": "\n🔍 FILTER INPUTS (Technology-Agnostic)\n"
+                        },
+                        {
+                          "text": "═══════════════════════════════════════════════════════════\n"
+                        },
+                        {
+                          "text": "✓ Filter \"Account owner\" is editable\n"
+                        },
+                        {
+                          "text": "✓ Filter \"Short name\" is editable\n"
+                        },
+                        {
+                          "text": "✓ Filter \"Beneficiary name\" is editable\n"
+                        },
+                        {
+                          "text": "✓ Filter \"Group name\" is editable\n"
+                        },
+                        {
+                          "text": "✓ Filter \"Identification code\" is editable\n"
+                        },
+                        {
+                          "text": "✓ Filter \"Account\" is editable\n"
+                        },
+                        {
+                          "text": "✓ Filter \"Sig. Group type\" is editable\n"
+                        },
+                        {
+                          "text": "✓ Filter \"State\" is editable\n"
+                        },
+                        {
+                          "text": "✓ Filter \"Beneficiary type\" is editable\n"
+                        },
+                        {
+                          "text": "✓ ComboBox \"Account owner\" is editable\n"
+                        },
+                        {
+                          "text": "✓ ComboBox \"Short name\" is editable\n"
+                        },
+                        {
+                          "text": "✓ ComboBox \"Beneficiary name\" is editable\n"
+                        },
+                        {
+                          "text": "✓ ComboBox \"Group name\" is editable\n"
+                        },
+                        {
+                          "text": "✓ ComboBox \"Identification code\" is editable\n"
+                        },
+                        {
+                          "text": "✓ ComboBox \"Account\" is editable\n"
+                        },
+                        {
+                          "text": "✓ ComboBox \"Sig. Group type\" is editable\n"
+                        },
+                        {
+                          "text": "✓ ComboBox \"State\" is editable\n"
+                        },
+                        {
+                          "text": "✓ ComboBox \"Beneficiary type\" is editable\n"
+                        },
+                        {
+                          "text": "\n🎯 ACTION BUTTONS (Technology-Agnostic)\n"
+                        },
+                        {
+                          "text": "═══════════════════════════════════════════════════════════\n"
+                        },
+                        {
+                          "text": "✓ \"Delete\" button = \"Delete\"\n"
+                        },
+                        {
+                          "text": "✓ \"Assign comment\" button = \"Assign Comment\"\n"
+                        },
+                        {
+                          "text": "✓ \"Export\" button = \"Export\"\n"
+                        },
+                        {
+                          "text": "✓ \"Import\" button = \"Import\"\n"
+                        },
+                        {
+                          "text": "✓ \"Move to group\" button = \"Move to group\"\n"
+                        },
+                        {
+                          "text": "✓ \"Remove from group\" button = \"Remove from group\"\n"
+                        },
+                        {
+                          "text": "✓ \"Cancel signature\" button = \"Cancel Own Signature\"\n"
+                        },
+                        {
+                          "text": "✓ \"Send to auth.\" button = \"Send to Authorize\"\n"
+                        },
+                        {
+                          "text": "✓ \"Approve\" button = \"Approve\"\n"
+                        },
+                        {
+                          "text": "✓ \"Authorize\" button = \"Authorize\"\n"
+                        },
+                        {
+                          "text": "✓ \"Back to edit\" button = \"Back To Edit\"\n"
+                        },
+                        {
+                          "text": "\n═══════════════════════════════════════════════════════════\n"
+                        },
+                        {
+                          "text": "✅ All grid elements validated successfully\n"
+                        },
+                        {
+                          "text": "═══════════════════════════════════════════════════════════\n\n"
+                        },
+                        {
+                          "text": "\n🤖 AI Bug Analyst Running...\n\n"
+                        },
+                        {
+                          "text": "═══════════════════════════════════════════════════════════\n"
+                        },
+                        {
+                          "text": "🔍 AI FAILURE ANALYSIS\n"
+                        },
+                        {
+                          "text": "═══════════════════════════════════════════════════════════\n"
+                        },
+                        {
+                          "text": "- **Category:** [FLAKY/SELECTOR]\n- **Root Cause:** The test is failing because the expected value of the input field identified by the locator `#gvPartnerList_DXFREditorcol5_I` is not present, resulting in an empty string being received instead of \"Identification code\". This could be due to a timing issue where the value is not set before the assertion is made.\n- **Proposed Fix:** Introduce a wait condition to ensure that the input field has the expected value before asserting, such as using `await locator('#gvPartnerList_DXFREditorcol5_I').waitFor({ state: 'attached' });` followed by a retry mechanism for the value check.\n- **Confidence Level:** 85%\n"
+                        },
+                        {
+                          "text": "═══════════════════════════════════════════════════════════\n\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-22T08:27:29.452Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\GIT\\CORPEX\\Testing\\cueweb\\test-results\\dictionary-partners-listCo-10ad2-gy-Agnostic-Grid-Validation-smokeui\\test-failed-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\GIT\\CORPEX\\Testing\\cueweb\\test-results\\dictionary-partners-listCo-10ad2-gy-Agnostic-Grid-Validation-smokeui\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listContract.spec.ts",
+                        "column": 33,
+                        "line": 90
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "3a245ed5bc5f9febacf5-d3c684a8108534114701",
+              "file": "dictionary/partners/listContract.spec.ts",
+              "line": 54,
+              "column": 7
+            },
+            {
+              "title": "Validate Partner List grid business contracts",
+              "ok": true,
+              "tags": [
+                "dictionary",
+                "contract"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6786,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "🔐 Starting API login process...\n"
+                        },
+                        {
+                          "text": "username: dani\n"
+                        },
+                        {
+                          "text": "Step 0: Clearing existing session data...\n"
+                        },
+                        {
+                          "text": "Step 1: Getting login page to establish session...\n"
+                        },
+                        {
+                          "text": "Login page response: 200\n"
+                        },
+                        {
+                          "text": "Step 2: Submitting credentials...\n"
+                        },
+                        {
+                          "text": "Login response: 200\n"
+                        },
+                        {
+                          "text": "Step 3: Getting OTP page...\n"
+                        },
+                        {
+                          "text": "OTP page response: 200\n"
+                        },
+                        {
+                          "text": "Step 4: Submitting OTP code...\n"
+                        },
+                        {
+                          "text": "OTP response: 200\n"
+                        },
+                        {
+                          "text": "✅ API login successful! Found 2 auth cookies\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Business Contract: User can filter by account owner name",
+                          "duration": 550
+                        },
+                        {
+                          "title": "Business Contract: User can filter by partner short name",
+                          "duration": 116
+                        },
+                        {
+                          "title": "Business Contract: User can filter by beneficiary full name",
+                          "duration": 48
+                        },
+                        {
+                          "title": "Business Contract: User can filter by partner group",
+                          "duration": 42
+                        },
+                        {
+                          "title": "Business Contract: User can filter by identification code",
+                          "duration": 42
+                        },
+                        {
+                          "title": "Business Contract: User can filter by account number",
+                          "duration": 50
+                        },
+                        {
+                          "title": "Business Contract: User can filter by signature group type",
+                          "duration": 76
+                        },
+                        {
+                          "title": "Business Contract: User can filter by partner state (Edited/Authorized/etc)",
+                          "duration": 68
+                        },
+                        {
+                          "title": "Business Contract: User can filter by beneficiary type (Domestic/Foreign)",
+                          "duration": 56
+                        }
+                      ],
+                      "startTime": "2026-01-22T08:27:46.239Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3a245ed5bc5f9febacf5-d392581818fdbfac8dec",
+              "file": "dictionary/partners/listContract.spec.ts",
+              "line": 129,
+              "column": 7
+            },
+            {
+              "title": "Validate backend ComboBox filter bindings for Partner List grid",
+              "ok": true,
+              "tags": [
+                "dictionary",
+                "contract"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3389,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\n📦 Grid Technology: DevExpress/Knockout\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Business Contract: Signature Group type filter exists with proper backend binding",
+                          "duration": 125
+                        },
+                        {
+                          "title": "Business Contract: State filter exists with valid options",
+                          "duration": 84
+                        },
+                        {
+                          "title": "Business Contract: Beneficiary type filter distinguishes Domestic/Foreign",
+                          "duration": 82
+                        }
+                      ],
+                      "startTime": "2026-01-22T08:27:53.359Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3a245ed5bc5f9febacf5-0b2f5e147263ea3413db",
+              "file": "dictionary/partners/listContract.spec.ts",
+              "line": 198,
+              "column": 7
+            },
+            {
+              "title": "Validate grid pager backend contracts",
+              "ok": true,
+              "tags": [
+                "dictionary",
+                "contract"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3140,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Ensure top pager has backend page size selector",
+                          "duration": 153
+                        },
+                        {
+                          "title": "Ensure bottom pager has backend page size selector",
+                          "duration": 60
+                        },
+                        {
+                          "title": "Ensure pagination summary displays backend record count",
+                          "duration": 25
+                        }
+                      ],
+                      "startTime": "2026-01-22T08:27:56.770Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3a245ed5bc5f9febacf5-93ed5ef03d853a0c859d",
+              "file": "dictionary/partners/listContract.spec.ts",
+              "line": 249,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-01-22T08:27:28.493Z",
+    "duration": 31864.497,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

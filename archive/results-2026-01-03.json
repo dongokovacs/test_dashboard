@@ -1,0 +1,959 @@
+{
+  "config": {
+    "configFile": "C:\\GIT\\cua\\playwright.config.ts",
+    "rootDir": "C:/GIT/cua/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "json",
+        {
+          "outputFile": "test-results/results-2026-01-03.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "always"
+        }
+      ],
+      [
+        "dot",
+        null
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "test-results/junit.xml"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/GIT/cua/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "smokeui",
+        "name": "smokeui",
+        "testDir": "C:/GIT/cua/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 0
+      },
+      {
+        "outputDir": "C:/GIT/cua/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "login",
+        "name": "login",
+        "testDir": "C:/GIT/cua/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 0
+      },
+      {
+        "outputDir": "C:/GIT/cua/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "regtest",
+        "name": "regtest",
+        "testDir": "C:/GIT/cua/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 0
+      },
+      {
+        "outputDir": "C:/GIT/cua/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "savestate",
+        "name": "savestate",
+        "testDir": "C:/GIT/cua/setup",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 0
+      }
+    ],
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.57.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "payments.spec.ts",
+      "file": "payments.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Domestic payment quick actions",
+          "file": "payments.spec.ts",
+          "line": 26,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Create and delete a simple payment",
+              "ok": true,
+              "tags": [
+                "payment"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "regtest",
+                  "projectName": "regtest",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 47468,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "🔐 Starting API login process...\n"
+                        },
+                        {
+                          "text": "username: dani\n"
+                        },
+                        {
+                          "text": "Step 0: Clearing existing session data...\n"
+                        },
+                        {
+                          "text": "Step 1: Getting login page to establish session...\n"
+                        },
+                        {
+                          "text": "Login page response: 200\n"
+                        },
+                        {
+                          "text": "Step 2: Submitting credentials...\n"
+                        },
+                        {
+                          "text": "Login response: 200\n"
+                        },
+                        {
+                          "text": "Step 3: Getting OTP page...\n"
+                        },
+                        {
+                          "text": "OTP page response: 200\n"
+                        },
+                        {
+                          "text": "Step 4: Submitting OTP code...\n"
+                        },
+                        {
+                          "text": "OTP response: 200\n"
+                        },
+                        {
+                          "text": "✅ API login successful! Found 2 auth cookies\n"
+                        },
+                        {
+                          "text": "{\n  fromAccount: \u001b[32m'UA 61 300614'\u001b[39m,\n  amount: \u001b[32m'443'\u001b[39m,\n  searchName: \u001b[32m'aloha'\u001b[39m,\n  contactPerson: \u001b[32m'contactPersonKayli-рьЫЫъат'\u001b[39m,\n  details: \u001b[32m'Payment of AUD 25.64 for withdrawal at Schiller LLC, processed with card ending ****9982 linked to account ***2485.--\"_|/'\u001b[39m,\n  benificiaryAccountNumber: \u001b[32m'SwivK9dBoT2WHeWHbP9hWayQoeB7dWhhSD'\u001b[39m,\n  swiftBankName: \u001b[32m'france'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "Save Response URL: https://cuatest.egroup.hu/Domestic/Save Response Status: \u001b[33m302\u001b[39m Method: POST\n"
+                        },
+                        {
+                          "text": "✅ Amount validation passed: 443.00 (expected: 443.00 or 443.00)\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Navigate to Accounts",
+                          "duration": 1778,
+                          "steps": [
+                            {
+                              "title": "Navigate to New domestic payment Domestic",
+                              "duration": 1777
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Fill the obligatory fields",
+                          "duration": 27361,
+                          "steps": [
+                            {
+                              "title": "Search for name",
+                              "duration": 4519
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Verify input values after saved state",
+                          "duration": 1087
+                        },
+                        {
+                          "title": "Delete the payment",
+                          "duration": 8128
+                        }
+                      ],
+                      "startTime": "2026-01-03T11:35:22.230Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\GIT\\cua\\test-results\\payments-Domestic-payment--6e77b-and-delete-a-simple-payment-regtest\\test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\GIT\\cua\\test-results\\payments-Domestic-payment--6e77b-and-delete-a-simple-payment-regtest\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bd51122182d9e4115608-ee088179ed6b7a528d27",
+              "file": "payments.spec.ts",
+              "line": 41,
+              "column": 7
+            },
+            {
+              "title": "Create COPY and delete the payment",
+              "ok": true,
+              "tags": [
+                "payment"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "regtest",
+                  "projectName": "regtest",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 48703,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Save Response URL: https://cuatest.egroup.hu/Domestic/Save Response Status: \u001b[33m302\u001b[39m Method: POST\n"
+                        },
+                        {
+                          "text": "✅ Amount validation passed: 6004.00 (expected: 6004.00 or 6,004.00)\n"
+                        },
+                        {
+                          "text": "Original ID: 919fc863-637a-4067-8b30-20e9dccfb502\n"
+                        },
+                        {
+                          "text": "Copied ID: 00ffe87e-809d-4584-8e38-70fe1a9df501\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Navigate to Accounts",
+                          "duration": 1633,
+                          "steps": [
+                            {
+                              "title": "Navigate to New domestic payment Domestic",
+                              "duration": 1632
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Fill the obligatory fields",
+                          "duration": 23652,
+                          "steps": [
+                            {
+                              "title": "Search for name",
+                              "duration": 4614
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Copy payment",
+                          "duration": 10373
+                        },
+                        {
+                          "title": "Verify input values are NOT empty",
+                          "duration": 813
+                        },
+                        {
+                          "title": "Check copy was successful",
+                          "duration": 231
+                        },
+                        {
+                          "title": "Delete the payment",
+                          "duration": 7682
+                        }
+                      ],
+                      "startTime": "2026-01-03T11:36:15.855Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\GIT\\cua\\test-results\\payments-Domestic-payment--dea29-COPY-and-delete-the-payment-regtest\\test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\GIT\\cua\\test-results\\payments-Domestic-payment--dea29-COPY-and-delete-the-payment-regtest\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bd51122182d9e4115608-b958d2260718abf4e4b8",
+              "file": "payments.spec.ts",
+              "line": 65,
+              "column": 7
+            },
+            {
+              "title": "Create TEMPLATE and delete the payment (Qase ID: 3)",
+              "ok": true,
+              "tags": [
+                "payment"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "regtest",
+                  "projectName": "regtest",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 49080,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Save Response URL: https://cuatest.egroup.hu/Domestic/Save Response Status: \u001b[33m302\u001b[39m Method: POST\n"
+                        },
+                        {
+                          "text": "✅ Amount validation passed: 7,586.00 (expected: 7586.00 or 7,586.00)\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Navigate to Accounts",
+                          "duration": 1668,
+                          "steps": [
+                            {
+                              "title": "Navigate to New domestic payment Domestic",
+                              "duration": 1668
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Fill the obligatory fields",
+                          "duration": 23869,
+                          "steps": [
+                            {
+                              "title": "Search for name",
+                              "duration": 4271
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Create template from payment",
+                          "duration": 6006
+                        },
+                        {
+                          "title": "Verify input values are NOT empty",
+                          "duration": 2861
+                        },
+                        {
+                          "title": "Add template name",
+                          "duration": 5623
+                        },
+                        {
+                          "title": "Delete the payment",
+                          "duration": 5636
+                        }
+                      ],
+                      "startTime": "2026-01-03T11:37:10.712Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\GIT\\cua\\test-results\\payments-Domestic-payment--a23bf-lete-the-payment-Qase-ID-3--regtest\\test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\GIT\\cua\\test-results\\payments-Domestic-payment--a23bf-lete-the-payment-Qase-ID-3--regtest\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bd51122182d9e4115608-262aa0ae4618452ff69a",
+              "file": "payments.spec.ts",
+              "line": 104,
+              "column": 7
+            },
+            {
+              "title": "Create ASSIGN COMMENT and delete the payment (Qase ID: 4)",
+              "ok": true,
+              "tags": [
+                "payment"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "regtest",
+                  "projectName": "regtest",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 38600,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Navigate to Accounts",
+                          "duration": 1723,
+                          "steps": [
+                            {
+                              "title": "Navigate to New domestic payment Domestic",
+                              "duration": 1722
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Fill the obligatory fields",
+                          "duration": 18265,
+                          "steps": [
+                            {
+                              "title": "Search for name",
+                              "duration": 4725
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Create template from payment",
+                          "duration": 4101
+                        },
+                        {
+                          "title": "Verify assign comment screen",
+                          "duration": 6229
+                        },
+                        {
+                          "title": "Delete the payment",
+                          "duration": 4815
+                        }
+                      ],
+                      "startTime": "2026-01-03T11:38:06.122Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\GIT\\cua\\test-results\\payments-Domestic-payment--ac1ac-lete-the-payment-Qase-ID-4--regtest\\test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\GIT\\cua\\test-results\\payments-Domestic-payment--ac1ac-lete-the-payment-Qase-ID-4--regtest\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bd51122182d9e4115608-83af21b1e9fea3d40e6b",
+              "file": "payments.spec.ts",
+              "line": 140,
+              "column": 7
+            },
+            {
+              "title": "Create EXPORT XML and delete the payment (Qase ID: 5)",
+              "ok": true,
+              "tags": [
+                "payment"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "regtest",
+                  "projectName": "regtest",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 43549,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "{\n  fromAccount: \u001b[32m'UA 61 300614'\u001b[39m,\n  amount: \u001b[32m'8562'\u001b[39m,\n  searchName: \u001b[32m'aloha'\u001b[39m,\n  contactPerson: \u001b[32m'contactPersonMathew-ЩЁЩЇгяҐ'\u001b[39m,\n  details: \u001b[32m\"deposit confirmed at Cummerata Group for BYN 240.85, card ending in ****6655 associated with account ***4149.--'»»)\"\u001b[39m,\n  benificiaryAccountNumber: \u001b[32m'0T2Tqo0PwBXvvmT2vR4AhAFEBq65kgOPIk'\u001b[39m,\n  swiftBankName: \u001b[32m'france'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "--- Response Headers ---\n"
+                        },
+                        {
+                          "text": "📎 Content-Disposition: attachment; filename*=UTF-8''en%D0%AC%D0%AD%D0%AE%D0%AF%D0%84%D0%B0%D0%B1.xml\n"
+                        },
+                        {
+                          "text": "Decoded filename: enЬЭЮЯЄаб.xml\n"
+                        },
+                        {
+                          "text": "✅ File saved to: C:\\GIT\\cua\\test-downloads\\enЬЭЮЯЄаб.xml\n"
+                        },
+                        {
+                          "text": "📁 Files in directory: [enЬЭЮЯЄаб.xml]\n"
+                        },
+                        {
+                          "text": "ℹ️ File enЬЭЮЯЄаб.xml matches format xml\n"
+                        },
+                        {
+                          "text": "ℹ️ File found: enЬЭЮЯЄаб.xml (8544 bytes)\n"
+                        },
+                        {
+                          "text": "testdata.contactPerson: contactPersonMathew-ЩЁЩЇгяҐ\n"
+                        },
+                        {
+                          "text": "✅ File deleted: C:\\GIT\\cua\\test-downloads\\enЬЭЮЯЄаб.xml\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Navigate to Accounts",
+                          "duration": 1579,
+                          "steps": [
+                            {
+                              "title": "Navigate to New domestic payment Domestic",
+                              "duration": 1578
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Fill the obligatory fields",
+                          "duration": 17594,
+                          "steps": [
+                            {
+                              "title": "Search for name",
+                              "duration": 4548
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Export quick action ",
+                          "duration": 5568
+                        },
+                        {
+                          "title": "Export and validate the XML",
+                          "duration": 1065,
+                          "steps": [
+                            {
+                              "title": "Stats",
+                              "duration": 2
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Scan xml inside",
+                          "duration": 11,
+                          "steps": [
+                            {
+                              "title": "Delete the file",
+                              "duration": 2
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Delete the payment",
+                          "duration": 13624
+                        }
+                      ],
+                      "startTime": "2026-01-03T11:38:50.352Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\GIT\\cua\\test-results\\payments-Domestic-payment--a897b-lete-the-payment-Qase-ID-5--regtest\\test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\GIT\\cua\\test-results\\payments-Domestic-payment--a897b-lete-the-payment-Qase-ID-5--regtest\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bd51122182d9e4115608-ad872d6c0c9dd49c3654",
+              "file": "payments.spec.ts",
+              "line": 171,
+              "column": 7
+            },
+            {
+              "title": "Create SAVE PDF and delete the payment (Qase ID: 6)",
+              "ok": true,
+              "tags": [
+                "payment"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "regtest",
+                  "projectName": "regtest",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 40154,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "{\n  fromAccount: \u001b[32m'UA 61 300614'\u001b[39m,\n  amount: \u001b[32m'9448'\u001b[39m,\n  searchName: \u001b[32m'aloha'\u001b[39m,\n  contactPerson: \u001b[32m'contactPersonCelestine-ЛшЭйдЗФ'\u001b[39m,\n  details: \u001b[32m`withdrawal transaction at Homenick, Hayes and Bailey using card ending with ****2575 for SRD 242.16 in account ***0243.--'\"№[`\u001b[39m,\n  benificiaryAccountNumber: \u001b[32m'i7baTcmodieSfWB2IEPZO9bDX1ZvdWOmG9'\u001b[39m,\n  swiftBankName: \u001b[32m'france'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "Encoded filename: DomesticOrder_20260103_124010.pdf\n"
+                        },
+                        {
+                          "text": "📁 Files in directory: [DomesticOrder_20260103_124010.pdf]\n"
+                        },
+                        {
+                          "text": "ℹ️ File DomesticOrder_20260103_124010.pdf matches format pdf\n"
+                        },
+                        {
+                          "text": "ℹ️ File found: DomesticOrder_20260103_124010.pdf (80208 bytes)\n"
+                        },
+                        {
+                          "text": "✅ File deleted: C:\\GIT\\cua\\test-downloads\\DomesticOrder_20260103_124010.pdf\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Navigate to Accounts",
+                          "duration": 1690,
+                          "steps": [
+                            {
+                              "title": "Navigate to New domestic payment Domestic",
+                              "duration": 1689
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Fill the obligatory fields",
+                          "duration": 18742,
+                          "steps": [
+                            {
+                              "title": "Search for name",
+                              "duration": 4671
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Save as pdf quick action",
+                          "duration": 6969,
+                          "steps": [
+                            {
+                              "title": "Delete the file",
+                              "duration": 3
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Delete the payment",
+                          "duration": 8306
+                        }
+                      ],
+                      "startTime": "2026-01-03T11:39:40.268Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\GIT\\cua\\test-results\\payments-Domestic-payment--e3b0e-lete-the-payment-Qase-ID-6--regtest\\test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\GIT\\cua\\test-results\\payments-Domestic-payment--e3b0e-lete-the-payment-Qase-ID-6--regtest\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bd51122182d9e4115608-f2028e8cfa402774b669",
+              "file": "payments.spec.ts",
+              "line": 256,
+              "column": 7
+            },
+            {
+              "title": "BackEnd logging test",
+              "ok": true,
+              "tags": [
+                "payment"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "C:\\GIT\\cua\\tests\\payments.spec.ts",
+                        "line": 307,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "regtest",
+                  "projectName": "regtest",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-03T11:40:26.897Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "location": {
+                            "file": "C:\\GIT\\cua\\tests\\payments.spec.ts",
+                            "line": 307,
+                            "column": 8
+                          }
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\GIT\\cua\\test-results\\payments-Domestic-payment-quick-actions-BackEnd-logging-test-regtest\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "bd51122182d9e4115608-7d886295c1e5f8a415b9",
+              "file": "payments.spec.ts",
+              "line": 307,
+              "column": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "paymentsForeign.spec.ts",
+      "file": "paymentsForeign.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Foreign payment quick actions",
+          "file": "paymentsForeign.spec.ts",
+          "line": 26,
+          "column": 15,
+          "specs": [
+            {
+              "title": "Create and delete FOREIGN payment",
+              "ok": true,
+              "tags": [
+                "payment",
+                "foreign"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "C:\\GIT\\cua\\tests\\paymentsForeign.spec.ts",
+                        "line": 26,
+                        "column": 15
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "regtest",
+                  "projectName": "regtest",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-03T11:40:26.923Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "location": {
+                            "file": "C:\\GIT\\cua\\tests\\paymentsForeign.spec.ts",
+                            "line": 26,
+                            "column": 15
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "982b07c0321e7747ac74-f99b557685e29ebad842",
+              "file": "paymentsForeign.spec.ts",
+              "line": 44,
+              "column": 7
+            },
+            {
+              "title": "Create COPY and delete FOREIGN payment",
+              "ok": true,
+              "tags": [
+                "payment",
+                "foreign"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "C:\\GIT\\cua\\tests\\paymentsForeign.spec.ts",
+                        "line": 26,
+                        "column": 15
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "regtest",
+                  "projectName": "regtest",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-03T11:40:26.923Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "location": {
+                            "file": "C:\\GIT\\cua\\tests\\paymentsForeign.spec.ts",
+                            "line": 26,
+                            "column": 15
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "982b07c0321e7747ac74-88f8019f41322860f0c7",
+              "file": "paymentsForeign.spec.ts",
+              "line": 67,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-01-03T11:35:19.093Z",
+    "duration": 309077.776,
+    "expected": 6,
+    "skipped": 3,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

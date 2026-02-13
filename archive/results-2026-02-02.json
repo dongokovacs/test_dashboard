@@ -1,0 +1,2702 @@
+{
+  "config": {
+    "configFile": "C:\\GIT\\CORPEX\\Testing\\cueweb\\playwright.config.ts",
+    "rootDir": "C:/GIT/CORPEX/Testing/cueweb/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/GIT/CORPEX/Testing/cueweb/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "smokeui",
+        "name": "smokeui",
+        "testDir": "C:/GIT/CORPEX/Testing/cueweb/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 0
+      },
+      {
+        "outputDir": "C:/GIT/CORPEX/Testing/cueweb/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "login",
+        "name": "login",
+        "testDir": "C:/GIT/CORPEX/Testing/cueweb/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 0
+      },
+      {
+        "outputDir": "C:/GIT/CORPEX/Testing/cueweb/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "payment",
+        "name": "payment",
+        "testDir": "C:/GIT/CORPEX/Testing/cueweb/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 0
+      },
+      {
+        "outputDir": "C:/GIT/CORPEX/Testing/cueweb/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "forex",
+        "name": "forex",
+        "testDir": "C:/GIT/CORPEX/Testing/cueweb/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/tests/forex/exchange/**/*.spec.ts"
+        ],
+        "timeout": 0
+      },
+      {
+        "outputDir": "C:/GIT/CORPEX/Testing/cueweb/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "savestate",
+        "name": "savestate",
+        "testDir": "C:/GIT/CORPEX/Testing/cueweb/setup",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 0
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json",
+        {
+          "outputFile": "test-results/results-2026-02-02.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "always"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "test-results/junit.xml"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "runAgents": "none",
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.58.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "dictionary\\partners\\listContract.spec.ts",
+      "file": "dictionary/partners/listContract.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Partner List - UI Filter Capability Contract",
+          "file": "dictionary/partners/listContract.spec.ts",
+          "line": 25,
+          "column": 15,
+          "specs": [
+            {
+              "title": "DISCOVERY - Technology-Agnostic Grid Validation",
+              "ok": true,
+              "tags": [
+                "dictionary"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listContract.spec.ts",
+                        "line": 71,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-02T14:22:07.098Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listContract.spec.ts",
+                            "line": 71,
+                            "column": 8
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "3a245ed5bc5f9febacf5-106400f85f7477c4be67",
+              "file": "dictionary/partners/listContract.spec.ts",
+              "line": 71,
+              "column": 8
+            },
+            {
+              "title": "Validate Partner List grid business contracts",
+              "ok": true,
+              "tags": [
+                "dictionary",
+                "contract"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [
+                    {
+                      "type": "req",
+                      "description": "REQ-DIC-PARTNER-001"
+                    },
+                    {
+                      "type": "req",
+                      "description": "REQ-DIC-PARTNER-002"
+                    },
+                    {
+                      "type": "req",
+                      "description": "REQ-DIC-PARTNER-003"
+                    },
+                    {
+                      "type": "req",
+                      "description": "REQ-DIC-PARTNER-004"
+                    },
+                    {
+                      "type": "req",
+                      "description": "REQ-DIC-PARTNER-005"
+                    },
+                    {
+                      "type": "req",
+                      "description": "REQ-DIC-PARTNER-006"
+                    },
+                    {
+                      "type": "req",
+                      "description": "REQ-DIC-PARTNER-007"
+                    },
+                    {
+                      "type": "req",
+                      "description": "REQ-DIC-PARTNER-008"
+                    },
+                    {
+                      "type": "req",
+                      "description": "REQ-DIC-PARTNER-009"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4494,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "🔐 Starting API login process...\n"
+                        },
+                        {
+                          "text": "username: dani\n"
+                        },
+                        {
+                          "text": "Step 0: Clearing existing session data...\n"
+                        },
+                        {
+                          "text": "Step 1: Getting login page to establish session...\n"
+                        },
+                        {
+                          "text": "Login page response: 200\n"
+                        },
+                        {
+                          "text": "Step 2: Submitting credentials...\n"
+                        },
+                        {
+                          "text": "Login response: 200\n"
+                        },
+                        {
+                          "text": "Step 3: Getting OTP page...\n"
+                        },
+                        {
+                          "text": "OTP page response: 200\n"
+                        },
+                        {
+                          "text": "Step 4: Submitting OTP code...\n"
+                        },
+                        {
+                          "text": "OTP response: 200\n"
+                        },
+                        {
+                          "text": "✅ API login successful! Found 2 auth cookies\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "REQ-DIC-PARTNER-001 - Business Contract: User can filter by account owner name",
+                          "duration": 462
+                        },
+                        {
+                          "title": "REQ-DIC-PARTNER-002 - Business Contract: User can filter by partner short name",
+                          "duration": 97
+                        },
+                        {
+                          "title": "REQ-DIC-PARTNER-003 - Business Contract: User can filter by beneficiary full name",
+                          "duration": 38
+                        },
+                        {
+                          "title": "REQ-DIC-PARTNER-004 - Business Contract: User can filter by partner group",
+                          "duration": 39
+                        },
+                        {
+                          "title": "REQ-DIC-PARTNER-005 - Business Contract: User can filter by identification code",
+                          "duration": 43
+                        },
+                        {
+                          "title": "REQ-DIC-PARTNER-006 - Business Contract: User can filter by account number",
+                          "duration": 33
+                        },
+                        {
+                          "title": "REQ-DIC-PARTNER-007 - Business Contract: User can filter by signature group type",
+                          "duration": 77
+                        },
+                        {
+                          "title": "REQ-DIC-PARTNER-008 - Business Contract: User can filter by partner state (Edited/Authorized/etc)",
+                          "duration": 78
+                        },
+                        {
+                          "title": "REQ-DIC-PARTNER-009 - Business Contract: User can filter by beneficiary type (Domestic/Foreign)",
+                          "duration": 65
+                        }
+                      ],
+                      "startTime": "2026-02-02T14:22:07.099Z",
+                      "annotations": [
+                        {
+                          "type": "req",
+                          "description": "REQ-DIC-PARTNER-001"
+                        },
+                        {
+                          "type": "req",
+                          "description": "REQ-DIC-PARTNER-002"
+                        },
+                        {
+                          "type": "req",
+                          "description": "REQ-DIC-PARTNER-003"
+                        },
+                        {
+                          "type": "req",
+                          "description": "REQ-DIC-PARTNER-004"
+                        },
+                        {
+                          "type": "req",
+                          "description": "REQ-DIC-PARTNER-005"
+                        },
+                        {
+                          "type": "req",
+                          "description": "REQ-DIC-PARTNER-006"
+                        },
+                        {
+                          "type": "req",
+                          "description": "REQ-DIC-PARTNER-007"
+                        },
+                        {
+                          "type": "req",
+                          "description": "REQ-DIC-PARTNER-008"
+                        },
+                        {
+                          "type": "req",
+                          "description": "REQ-DIC-PARTNER-009"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3a245ed5bc5f9febacf5-22b076d84a36b59397be",
+              "file": "dictionary/partners/listContract.spec.ts",
+              "line": 146,
+              "column": 7
+            },
+            {
+              "title": "Validate backend ComboBox filter bindings for Partner List grid",
+              "ok": true,
+              "tags": [
+                "dictionary",
+                "contract"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3160,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\n📦 Grid Technology: DevExpress/Knockout\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Business Contract: Signature Group type filter exists with proper backend binding",
+                          "duration": 125
+                        },
+                        {
+                          "title": "Business Contract: State filter exists with valid options",
+                          "duration": 99
+                        },
+                        {
+                          "title": "Business Contract: Beneficiary type filter distinguishes Domestic/Foreign",
+                          "duration": 92
+                        }
+                      ],
+                      "startTime": "2026-02-02T14:22:14.679Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3a245ed5bc5f9febacf5-a1a20e82681a35cebc28",
+              "file": "dictionary/partners/listContract.spec.ts",
+              "line": 224,
+              "column": 7
+            },
+            {
+              "title": "Validate grid pager backend contracts",
+              "ok": true,
+              "tags": [
+                "dictionary",
+                "contract"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2869,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Ensure top pager has backend page size selector",
+                          "duration": 44
+                        },
+                        {
+                          "title": "Ensure bottom pager has backend page size selector",
+                          "duration": 15
+                        },
+                        {
+                          "title": "Ensure pagination summary displays backend record count",
+                          "duration": 19
+                        }
+                      ],
+                      "startTime": "2026-02-02T14:22:17.852Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3a245ed5bc5f9febacf5-b03dd69d0a162d078069",
+              "file": "dictionary/partners/listContract.spec.ts",
+              "line": 275,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "dictionary\\partners\\listFunctional.spec.ts",
+      "file": "dictionary/partners/listFunctional.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Partner List - Filter Functional Validation",
+          "file": "dictionary/partners/listFunctional.spec.ts",
+          "line": 20,
+          "column": 15,
+          "specs": [
+            {
+              "title": "Validate State filter shows only selected state partners",
+              "ok": true,
+              "tags": [
+                "dictionary",
+                "functional"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [
+                    {
+                      "type": "specification",
+                      "description": "https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                        "line": 20,
+                        "column": 15
+                      }
+                    },
+                    {
+                      "type": "feature",
+                      "description": "Partner List Grid Filters",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                        "line": 20,
+                        "column": 15
+                      }
+                    },
+                    {
+                      "type": "requirement",
+                      "description": "REQ-DIC-PARTNER-FUNC-001",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                        "line": 56,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5370,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Detected grid type: DevExpress\n"
+                        },
+                        {
+                          "text": "✅ Verified 1 of 1 rows match State = Authorized\n"
+                        },
+                        {
+                          "text": "✅ Filters cleared\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Apply State filter to \"Authorized\"",
+                          "duration": 1991
+                        },
+                        {
+                          "title": "Verify all visible rows have State = \"Authorized\"",
+                          "duration": 53
+                        }
+                      ],
+                      "startTime": "2026-02-02T14:22:20.741Z",
+                      "annotations": [
+                        {
+                          "type": "specification",
+                          "description": "https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                            "line": 20,
+                            "column": 15
+                          }
+                        },
+                        {
+                          "type": "feature",
+                          "description": "Partner List Grid Filters",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                            "line": 20,
+                            "column": 15
+                          }
+                        },
+                        {
+                          "type": "requirement",
+                          "description": "REQ-DIC-PARTNER-FUNC-001",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                            "line": 56,
+                            "column": 7
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "088c3001a1bef327f096-8552811b815ae0c904be",
+              "file": "dictionary/partners/listFunctional.spec.ts",
+              "line": 56,
+              "column": 7
+            },
+            {
+              "title": "Validate Beneficiary type filter distinguishes Domestic/Foreign partners",
+              "ok": true,
+              "tags": [
+                "dictionary",
+                "functional"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [
+                    {
+                      "type": "specification",
+                      "description": "https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                        "line": 20,
+                        "column": 15
+                      }
+                    },
+                    {
+                      "type": "feature",
+                      "description": "Partner List Grid Filters",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                        "line": 20,
+                        "column": 15
+                      }
+                    },
+                    {
+                      "type": "requirement",
+                      "description": "REQ-DIC-PARTNER-FUNC-002",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                        "line": 84,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7269,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Detected grid type: DevExpress\n"
+                        },
+                        {
+                          "text": "✅ Verified 10 of 25 rows match Domestic type\n"
+                        },
+                        {
+                          "text": "✅ Verified Foreign beneficiary type filter\n"
+                        },
+                        {
+                          "text": "✅ Filters cleared\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Apply Beneficiary type filter to \"Domestic\"",
+                          "duration": 1920
+                        },
+                        {
+                          "title": "Verify all visible partners are Domestic type",
+                          "duration": 167
+                        },
+                        {
+                          "title": "Switch filter to \"Foreign\" and verify results",
+                          "duration": 1880
+                        }
+                      ],
+                      "startTime": "2026-02-02T14:22:26.129Z",
+                      "annotations": [
+                        {
+                          "type": "specification",
+                          "description": "https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                            "line": 20,
+                            "column": 15
+                          }
+                        },
+                        {
+                          "type": "feature",
+                          "description": "Partner List Grid Filters",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                            "line": 20,
+                            "column": 15
+                          }
+                        },
+                        {
+                          "type": "requirement",
+                          "description": "REQ-DIC-PARTNER-FUNC-002",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                            "line": 84,
+                            "column": 7
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "088c3001a1bef327f096-dedc0d9ad385ba864913",
+              "file": "dictionary/partners/listFunctional.spec.ts",
+              "line": 84,
+              "column": 7
+            },
+            {
+              "title": "Validate Account column shows IBAN format for Domestic partners",
+              "ok": true,
+              "tags": [
+                "dictionary",
+                "functional"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [
+                    {
+                      "type": "specification",
+                      "description": "https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                        "line": 20,
+                        "column": 15
+                      }
+                    },
+                    {
+                      "type": "feature",
+                      "description": "Partner List Grid Filters",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                        "line": 20,
+                        "column": 15
+                      }
+                    },
+                    {
+                      "type": "requirement",
+                      "description": "REQ-DIC-PARTNER-FUNC-003",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                        "line": 123,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5240,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Detected grid type: DevExpress\n"
+                        },
+                        {
+                          "text": "✅ Verified IBAN format: UA 25 300614 14...\n"
+                        },
+                        {
+                          "text": "✅ Filters cleared\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Filter by Beneficiary type = Domestic",
+                          "duration": 1939
+                        },
+                        {
+                          "title": "Verify Account column shows IBAN format",
+                          "duration": 24
+                        }
+                      ],
+                      "startTime": "2026-02-02T14:22:33.411Z",
+                      "annotations": [
+                        {
+                          "type": "specification",
+                          "description": "https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                            "line": 20,
+                            "column": 15
+                          }
+                        },
+                        {
+                          "type": "feature",
+                          "description": "Partner List Grid Filters",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                            "line": 20,
+                            "column": 15
+                          }
+                        },
+                        {
+                          "type": "requirement",
+                          "description": "REQ-DIC-PARTNER-FUNC-003",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                            "line": 123,
+                            "column": 7
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "088c3001a1bef327f096-552fa1d6289aeea6852d",
+              "file": "dictionary/partners/listFunctional.spec.ts",
+              "line": 123,
+              "column": 7
+            },
+            {
+              "title": "Validate Short name filter performs partial text search",
+              "ok": true,
+              "tags": [
+                "dictionary",
+                "functional"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [
+                    {
+                      "type": "specification",
+                      "description": "https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                        "line": 20,
+                        "column": 15
+                      }
+                    },
+                    {
+                      "type": "feature",
+                      "description": "Partner List Grid Filters",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                        "line": 20,
+                        "column": 15
+                      }
+                    },
+                    {
+                      "type": "requirement",
+                      "description": "REQ-DIC-PARTNER-FUNC-004",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                        "line": 152,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4308,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Detected grid type: DevExpress\n"
+                        },
+                        {
+                          "text": "✅ Verified 1 of 1 rows match Short Name \"autotestshortname\"\n"
+                        },
+                        {
+                          "text": "✅ Filters cleared\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Apply partial Short name filter",
+                          "duration": 714
+                        },
+                        {
+                          "title": "Verify filtered results contain search term",
+                          "duration": 46
+                        }
+                      ],
+                      "startTime": "2026-02-02T14:22:38.661Z",
+                      "annotations": [
+                        {
+                          "type": "specification",
+                          "description": "https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                            "line": 20,
+                            "column": 15
+                          }
+                        },
+                        {
+                          "type": "feature",
+                          "description": "Partner List Grid Filters",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                            "line": 20,
+                            "column": 15
+                          }
+                        },
+                        {
+                          "type": "requirement",
+                          "description": "REQ-DIC-PARTNER-FUNC-004",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                            "line": 152,
+                            "column": 7
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "088c3001a1bef327f096-6717759da1c34f1e4495",
+              "file": "dictionary/partners/listFunctional.spec.ts",
+              "line": 152,
+              "column": 7
+            },
+            {
+              "title": "Validate Trusted signature group type filter",
+              "ok": true,
+              "tags": [
+                "dictionary",
+                "functional"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [
+                    {
+                      "type": "specification",
+                      "description": "https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                        "line": 20,
+                        "column": 15
+                      }
+                    },
+                    {
+                      "type": "feature",
+                      "description": "Partner List Grid Filters",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                        "line": 20,
+                        "column": 15
+                      }
+                    },
+                    {
+                      "type": "requirement",
+                      "description": "REQ-DIC-PARTNER-FUNC-005",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                        "line": 184,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5452,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Detected grid type: DevExpress\n"
+                        },
+                        {
+                          "text": "✅ Verified 2 of 2 rows match Trusted signature group type\n"
+                        },
+                        {
+                          "text": "✅ Filters cleared\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Apply Trusted signature group type filter",
+                          "duration": 1907
+                        },
+                        {
+                          "title": "Verify Signature Group Type column shows \"Trusted\"",
+                          "duration": 56
+                        }
+                      ],
+                      "startTime": "2026-02-02T14:22:42.979Z",
+                      "annotations": [
+                        {
+                          "type": "specification",
+                          "description": "https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                            "line": 20,
+                            "column": 15
+                          }
+                        },
+                        {
+                          "type": "feature",
+                          "description": "Partner List Grid Filters",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                            "line": 20,
+                            "column": 15
+                          }
+                        },
+                        {
+                          "type": "requirement",
+                          "description": "REQ-DIC-PARTNER-FUNC-005",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                            "line": 184,
+                            "column": 7
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "088c3001a1bef327f096-ad97f23c10c574716b16",
+              "file": "dictionary/partners/listFunctional.spec.ts",
+              "line": 184,
+              "column": 7
+            },
+            {
+              "title": "Validate grid shows \"No data\" when filter has no matches",
+              "ok": true,
+              "tags": [
+                "dictionary",
+                "functional"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [
+                    {
+                      "type": "specification",
+                      "description": "https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                        "line": 20,
+                        "column": 15
+                      }
+                    },
+                    {
+                      "type": "feature",
+                      "description": "Partner List Grid Filters",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                        "line": 20,
+                        "column": 15
+                      }
+                    },
+                    {
+                      "type": "requirement",
+                      "description": "REQ-DIC-PARTNER-FUNC-006",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                        "line": 214,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5693,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Detected grid type: DevExpress\n"
+                        },
+                        {
+                          "text": "✅ Verified \"No data\" message appears for no matching filter results\n"
+                        },
+                        {
+                          "text": "✅ Filters cleared\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Apply filter with impossible criteria",
+                          "duration": 397
+                        },
+                        {
+                          "title": "Verify grid displays \"No data\" message",
+                          "duration": 1942
+                        }
+                      ],
+                      "startTime": "2026-02-02T14:22:48.441Z",
+                      "annotations": [
+                        {
+                          "type": "specification",
+                          "description": "https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                            "line": 20,
+                            "column": 15
+                          }
+                        },
+                        {
+                          "type": "feature",
+                          "description": "Partner List Grid Filters",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                            "line": 20,
+                            "column": 15
+                          }
+                        },
+                        {
+                          "type": "requirement",
+                          "description": "REQ-DIC-PARTNER-FUNC-006",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                            "line": 214,
+                            "column": 7
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "088c3001a1bef327f096-e05a7f99c4e03f5699ac",
+              "file": "dictionary/partners/listFunctional.spec.ts",
+              "line": 214,
+              "column": 7
+            },
+            {
+              "title": "Validate multiple filters work together (AND logic)",
+              "ok": true,
+              "tags": [
+                "dictionary",
+                "functional"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [
+                    {
+                      "type": "specification",
+                      "description": "https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                        "line": 20,
+                        "column": 15
+                      }
+                    },
+                    {
+                      "type": "feature",
+                      "description": "Partner List Grid Filters",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                        "line": 20,
+                        "column": 15
+                      }
+                    },
+                    {
+                      "type": "requirement",
+                      "description": "REQ-DIC-PARTNER-FUNC-007",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                        "line": 236,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7870,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Detected grid type: DevExpress\n"
+                        },
+                        {
+                          "text": "⏭️  No Authorized Domestic partners in test data Validate multiple filters work together (AND logic)\n"
+                        },
+                        {
+                          "text": "✅ Filters cleared\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Apply State filter = \"Authorized\"",
+                          "duration": 2067
+                        },
+                        {
+                          "title": "Apply Beneficiary type filter = \"Domestic\"",
+                          "duration": 1987
+                        },
+                        {
+                          "title": "Verify results match BOTH filter criteria",
+                          "duration": 18
+                        }
+                      ],
+                      "startTime": "2026-02-02T14:22:54.148Z",
+                      "annotations": [
+                        {
+                          "type": "specification",
+                          "description": "https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                            "line": 20,
+                            "column": 15
+                          }
+                        },
+                        {
+                          "type": "feature",
+                          "description": "Partner List Grid Filters",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                            "line": 20,
+                            "column": 15
+                          }
+                        },
+                        {
+                          "type": "requirement",
+                          "description": "REQ-DIC-PARTNER-FUNC-007",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                            "line": 236,
+                            "column": 7
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "088c3001a1bef327f096-7ca989b6f0b80b05cb3c",
+              "file": "dictionary/partners/listFunctional.spec.ts",
+              "line": 236,
+              "column": 7
+            },
+            {
+              "title": "Validate Account Owner filter performs exact match search just for searched display",
+              "ok": true,
+              "tags": [
+                "dictionary",
+                "functional"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [
+                    {
+                      "type": "specification",
+                      "description": "https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                        "line": 20,
+                        "column": 15
+                      }
+                    },
+                    {
+                      "type": "feature",
+                      "description": "Partner List Grid Filters",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                        "line": 20,
+                        "column": 15
+                      }
+                    },
+                    {
+                      "type": "requirement",
+                      "description": "REQ-DIC-PARTNER-FUNC-008",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                        "line": 270,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5908,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Detected grid type: DevExpress\n"
+                        },
+                        {
+                          "text": "✅ Verified 20 of 20 rows match Account Owner\n"
+                        },
+                        {
+                          "text": "✅ Filters cleared\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Apply Account Owner filter",
+                          "duration": 1965
+                        },
+                        {
+                          "title": "Verify filtered results match Account Owner",
+                          "duration": 377
+                        }
+                      ],
+                      "startTime": "2026-02-02T14:23:02.033Z",
+                      "annotations": [
+                        {
+                          "type": "specification",
+                          "description": "https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                            "line": 20,
+                            "column": 15
+                          }
+                        },
+                        {
+                          "type": "feature",
+                          "description": "Partner List Grid Filters",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                            "line": 20,
+                            "column": 15
+                          }
+                        },
+                        {
+                          "type": "requirement",
+                          "description": "REQ-DIC-PARTNER-FUNC-008",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                            "line": 270,
+                            "column": 7
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "088c3001a1bef327f096-0b2968a87982e0071cde",
+              "file": "dictionary/partners/listFunctional.spec.ts",
+              "line": 270,
+              "column": 7
+            },
+            {
+              "title": "Validate Group Name filter performs partial text search",
+              "ok": true,
+              "tags": [
+                "dictionary",
+                "functional"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [
+                    {
+                      "type": "specification",
+                      "description": "https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                        "line": 20,
+                        "column": 15
+                      }
+                    },
+                    {
+                      "type": "feature",
+                      "description": "Partner List Grid Filters",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                        "line": 20,
+                        "column": 15
+                      }
+                    },
+                    {
+                      "type": "requirement",
+                      "description": "REQ-DIC-PARTNER-FUNC-010",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                        "line": 301,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5596,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Detected grid type: DevExpress\n"
+                        },
+                        {
+                          "text": "🔍 Verifying Group groupNameCells filter results for \"locator('.dxgvDataRow_DxCLIC td:nth-child(5)')\"\n"
+                        },
+                        {
+                          "text": "✅ Verified 1 of 1 rows match Group Name\n"
+                        },
+                        {
+                          "text": "✅ Filters cleared\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Apply Group Name filter",
+                          "duration": 1955
+                        },
+                        {
+                          "title": "Verify filtered results contain Group Name",
+                          "duration": 58
+                        }
+                      ],
+                      "startTime": "2026-02-02T14:23:07.957Z",
+                      "annotations": [
+                        {
+                          "type": "specification",
+                          "description": "https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                            "line": 20,
+                            "column": 15
+                          }
+                        },
+                        {
+                          "type": "feature",
+                          "description": "Partner List Grid Filters",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                            "line": 20,
+                            "column": 15
+                          }
+                        },
+                        {
+                          "type": "requirement",
+                          "description": "REQ-DIC-PARTNER-FUNC-010",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                            "line": 301,
+                            "column": 7
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "088c3001a1bef327f096-6d6eeef30116a529a3ca",
+              "file": "dictionary/partners/listFunctional.spec.ts",
+              "line": 301,
+              "column": 7
+            },
+            {
+              "title": "Validate Identification Code filter performs exact match search",
+              "ok": true,
+              "tags": [
+                "dictionary",
+                "functional"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [
+                    {
+                      "type": "specification",
+                      "description": "https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                        "line": 20,
+                        "column": 15
+                      }
+                    },
+                    {
+                      "type": "feature",
+                      "description": "Partner List Grid Filters",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                        "line": 20,
+                        "column": 15
+                      }
+                    },
+                    {
+                      "type": "requirement",
+                      "description": "REQ-DIC-PARTNER-FUNC-011",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                        "line": 334,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5619,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Detected grid type: DevExpress\n"
+                        },
+                        {
+                          "text": "✅ Verified 15 of 15 rows match Identification Code\n"
+                        },
+                        {
+                          "text": "✅ Filters cleared\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Apply Identification Code filter",
+                          "duration": 1931
+                        },
+                        {
+                          "title": "Verify filtered results match Identification Code",
+                          "duration": 247
+                        }
+                      ],
+                      "startTime": "2026-02-02T14:23:13.565Z",
+                      "annotations": [
+                        {
+                          "type": "specification",
+                          "description": "https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                            "line": 20,
+                            "column": 15
+                          }
+                        },
+                        {
+                          "type": "feature",
+                          "description": "Partner List Grid Filters",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                            "line": 20,
+                            "column": 15
+                          }
+                        },
+                        {
+                          "type": "requirement",
+                          "description": "REQ-DIC-PARTNER-FUNC-011",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                            "line": 334,
+                            "column": 7
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "088c3001a1bef327f096-aedc8c1727eac45517d3",
+              "file": "dictionary/partners/listFunctional.spec.ts",
+              "line": 334,
+              "column": 7
+            },
+            {
+              "title": "Validate Partner selector checkbox functionality",
+              "ok": true,
+              "tags": [
+                "dictionary",
+                "functional"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [
+                    {
+                      "type": "specification",
+                      "description": "https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                        "line": 20,
+                        "column": 15
+                      }
+                    },
+                    {
+                      "type": "feature",
+                      "description": "Partner List Grid Filters",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                        "line": 20,
+                        "column": 15
+                      }
+                    },
+                    {
+                      "type": "requirement",
+                      "description": "REQ-DIC-PARTNER-FUNC-012",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                        "line": 365,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4227,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Detected grid type: DevExpress\n"
+                        },
+                        {
+                          "text": "✅ Select All checkbox selected successfully\n"
+                        },
+                        {
+                          "text": "✅ Select All checkbox deselected - all 26 checkboxes unchecked\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Select all partners using Select All checkbox",
+                          "duration": 422
+                        },
+                        {
+                          "title": "Deselect all partners and verify",
+                          "duration": 887
+                        }
+                      ],
+                      "startTime": "2026-02-02T14:23:19.192Z",
+                      "annotations": [
+                        {
+                          "type": "specification",
+                          "description": "https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                            "line": 20,
+                            "column": 15
+                          }
+                        },
+                        {
+                          "type": "feature",
+                          "description": "Partner List Grid Filters",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                            "line": 20,
+                            "column": 15
+                          }
+                        },
+                        {
+                          "type": "requirement",
+                          "description": "REQ-DIC-PARTNER-FUNC-012",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listFunctional.spec.ts",
+                            "line": 365,
+                            "column": 7
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "088c3001a1bef327f096-9ef5a546cec4ca87fd14",
+              "file": "dictionary/partners/listFunctional.spec.ts",
+              "line": 365,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "dictionary\\partners\\listWorkflow.spec.ts",
+      "file": "dictionary/partners/listWorkflow.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Partner List Actions - Workflow Action Validation",
+          "file": "dictionary/partners/listWorkflow.spec.ts",
+          "line": 35,
+          "column": 15,
+          "specs": [
+            {
+              "title": "Export partners downloads file with correct data",
+              "ok": true,
+              "tags": [
+                "dictionary",
+                "functional"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [
+                    {
+                      "type": "specification",
+                      "description": "https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listWorkflow.spec.ts",
+                        "line": 35,
+                        "column": 15
+                      }
+                    },
+                    {
+                      "type": "feature",
+                      "description": "Partner List Actions",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listWorkflow.spec.ts",
+                        "line": 35,
+                        "column": 15
+                      }
+                    },
+                    {
+                      "type": "requirement",
+                      "description": "REQ-DIC-PARTNER-FLOW-002",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listWorkflow.spec.ts",
+                        "line": 176,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7180,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "🔍 DB Config - Server: cua-test-db Database: (default)\n"
+                        },
+                        {
+                          "text": "🔌 Attempting database connection...\n"
+                        },
+                        {
+                          "text": "   Server: cua-test-db\n"
+                        },
+                        {
+                          "text": "   Database: (default)\n"
+                        },
+                        {
+                          "text": "   User: sa\n"
+                        },
+                        {
+                          "text": "   Encrypt: false\n"
+                        },
+                        {
+                          "text": "   TrustServerCertificate: true\n"
+                        },
+                        {
+                          "text": "✅ Database connected successfully\n"
+                        },
+                        {
+                          "text": "   Connected to: default database on cua-test-db\n"
+                        },
+                        {
+                          "text": "🔍 Testing database read...\n"
+                        },
+                        {
+                          "text": "✅ Database read successful!\n"
+                        },
+                        {
+                          "text": "   Account ID: 12345678901234\n"
+                        },
+                        {
+                          "text": "   IBAN: UA083006141234567890123456789\n"
+                        },
+                        {
+                          "text": "   Alias: null\n"
+                        },
+                        {
+                          "text": "🔧 Creating test data...\n"
+                        },
+                        {
+                          "text": "Detected grid type: DevExpress\n"
+                        },
+                        {
+                          "text": "✅ Applied State = Authorized filter\n"
+                        },
+                        {
+                          "text": "✅ File saved to: C:\\GIT\\CORPEX\\Testing\\cueweb\\test-downloads\\partnerlistname.XML\n"
+                        },
+                        {
+                          "text": "📁 Files in directory: [partnerlistname.XML]\n"
+                        },
+                        {
+                          "text": "ℹ️ File partnerlistname.XML matches format XML\n"
+                        },
+                        {
+                          "text": "ℹ️ File found: partnerlistname.XML (1284 bytes)\n"
+                        },
+                        {
+                          "text": "✅ File deleted: C:\\GIT\\CORPEX\\Testing\\cueweb\\test-downloads\\partnerlistname.XML\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Apply filter to limit export results",
+                          "duration": 1945
+                        },
+                        {
+                          "title": "Select first row",
+                          "duration": 344
+                        },
+                        {
+                          "title": "Click to export",
+                          "duration": 1058
+                        },
+                        {
+                          "title": "Click Export button and verify network",
+                          "duration": 898,
+                          "steps": [
+                            {
+                              "title": "Validate dowloaded file stats and delete it",
+                              "duration": 547
+                            }
+                          ]
+                        }
+                      ],
+                      "startTime": "2026-02-02T14:23:23.839Z",
+                      "annotations": [
+                        {
+                          "type": "specification",
+                          "description": "https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listWorkflow.spec.ts",
+                            "line": 35,
+                            "column": 15
+                          }
+                        },
+                        {
+                          "type": "feature",
+                          "description": "Partner List Actions",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listWorkflow.spec.ts",
+                            "line": 35,
+                            "column": 15
+                          }
+                        },
+                        {
+                          "type": "requirement",
+                          "description": "REQ-DIC-PARTNER-FLOW-002",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listWorkflow.spec.ts",
+                            "line": 176,
+                            "column": 7
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "38de4fc3a61a004ff901-7d658185955e6efb8390",
+              "file": "dictionary/partners/listWorkflow.spec.ts",
+              "line": 176,
+              "column": 7
+            },
+            {
+              "title": "Edit partner updates information in grid",
+              "ok": false,
+              "tags": [
+                "dictionary",
+                "functional"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [
+                    {
+                      "type": "specification",
+                      "description": "https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listWorkflow.spec.ts",
+                        "line": 35,
+                        "column": 15
+                      }
+                    },
+                    {
+                      "type": "feature",
+                      "description": "Partner List Actions",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listWorkflow.spec.ts",
+                        "line": 35,
+                        "column": 15
+                      }
+                    },
+                    {
+                      "type": "requirement",
+                      "description": "REQ-DIC-PARTNER-FLOW-003",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listWorkflow.spec.ts",
+                        "line": 228,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 20070,
+                      "error": {
+                        "message": "TimeoutError: locator.textContent: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.dxgvDataRow_DxCLIC, tr[data-row]').first().locator('td:nth-child(2)').first()\u001b[22m\n",
+                        "stack": "TimeoutError: locator.textContent: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.dxgvDataRow_DxCLIC, tr[data-row]').first().locator('td:nth-child(2)').first()\u001b[22m\n\n    at TabbleNavigation.getCellText (C:\\GIT\\CORPEX\\Testing\\cueweb\\pages\\webUI\\actions\\tableNavigation.ts:48:24)\n    at C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listWorkflow.spec.ts:245:27",
+                        "location": {
+                          "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\pages\\webUI\\actions\\tableNavigation.ts",
+                          "column": 24,
+                          "line": 48
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\webUI\\actions\\tableNavigation.ts:48\n\n\u001b[0m \u001b[90m 46 |\u001b[39m     \u001b[36mconst\u001b[39m row \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mgetRowByIndex(rowIndex)\u001b[33m;\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m cell \u001b[33m=\u001b[39m row\u001b[33m.\u001b[39mlocator(\u001b[32m`td:nth-child(${columnIndex})`\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 48 |\u001b[39m     \u001b[36mreturn\u001b[39m (\u001b[36mawait\u001b[39m cell\u001b[33m.\u001b[39mtextContent())\u001b[33m?\u001b[39m\u001b[33m.\u001b[39mtrim() \u001b[33m||\u001b[39m \u001b[32m''\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 49 |\u001b[39m   }\n \u001b[90m 50 |\u001b[39m\n \u001b[90m 51 |\u001b[39m   \u001b[90m/**\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\pages\\webUI\\actions\\tableNavigation.ts",
+                            "column": 24,
+                            "line": 48
+                          },
+                          "message": "TimeoutError: locator.textContent: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.dxgvDataRow_DxCLIC, tr[data-row]').first().locator('td:nth-child(2)').first()\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\webUI\\actions\\tableNavigation.ts:48\n\n\u001b[0m \u001b[90m 46 |\u001b[39m     \u001b[36mconst\u001b[39m row \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mgetRowByIndex(rowIndex)\u001b[33m;\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m cell \u001b[33m=\u001b[39m row\u001b[33m.\u001b[39mlocator(\u001b[32m`td:nth-child(${columnIndex})`\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 48 |\u001b[39m     \u001b[36mreturn\u001b[39m (\u001b[36mawait\u001b[39m cell\u001b[33m.\u001b[39mtextContent())\u001b[33m?\u001b[39m\u001b[33m.\u001b[39mtrim() \u001b[33m||\u001b[39m \u001b[32m''\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 49 |\u001b[39m   }\n \u001b[90m 50 |\u001b[39m\n \u001b[90m 51 |\u001b[39m   \u001b[90m/**\u001b[39m\u001b[0m\n\u001b[2m    at TabbleNavigation.getCellText (C:\\GIT\\CORPEX\\Testing\\cueweb\\pages\\webUI\\actions\\tableNavigation.ts:48:24)\u001b[22m\n\u001b[2m    at C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listWorkflow.spec.ts:245:27\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Detected grid type: DevExpress\n"
+                        },
+                        {
+                          "text": "✅ Filters cleared\n"
+                        },
+                        {
+                          "text": "\n🤖 AI Bug Analyst Running...\n\n"
+                        },
+                        {
+                          "text": "═══════════════════════════════════════════════════════════\n"
+                        },
+                        {
+                          "text": "🔍 AI FAILURE ANALYSIS\n"
+                        },
+                        {
+                          "text": "═══════════════════════════════════════════════════════════\n"
+                        },
+                        {
+                          "text": "- **Category:** [FLAKY/SELECTOR]\n- **Root Cause:** The test is encountering a timeout while waiting for a specific table cell to become available, indicating a potential race condition or stale selector issue. The locator may not be able to find the element due to it not being rendered in time or being removed from the DOM.\n- **Proposed Fix:** Implement an explicit wait for the table to be fully loaded before attempting to access the cell, using `await page.waitForSelector('.dxgvDataRow_DxCLIC, tr[data-row]')` before the locator call.\n- **Confidence Level:** 85%\n"
+                        },
+                        {
+                          "text": "═══════════════════════════════════════════════════════════\n\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Apply Normal signature group type filter",
+                          "duration": 1888
+                        },
+                        {
+                          "title": "Click first partner to open edit form",
+                          "duration": 12026,
+                          "error": {
+                            "message": "TimeoutError: locator.textContent: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.dxgvDataRow_DxCLIC, tr[data-row]').first().locator('td:nth-child(2)').first()\u001b[22m\n",
+                            "stack": "TimeoutError: locator.textContent: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.dxgvDataRow_DxCLIC, tr[data-row]').first().locator('td:nth-child(2)').first()\u001b[22m\n\n    at TabbleNavigation.getCellText (C:\\GIT\\CORPEX\\Testing\\cueweb\\pages\\webUI\\actions\\tableNavigation.ts:48:24)\n    at C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listWorkflow.spec.ts:245:27",
+                            "location": {
+                              "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\pages\\webUI\\actions\\tableNavigation.ts",
+                              "column": 24,
+                              "line": 48
+                            },
+                            "snippet": "\u001b[90m   at \u001b[39m..\\pages\\webUI\\actions\\tableNavigation.ts:48\n\n\u001b[0m \u001b[90m 46 |\u001b[39m     \u001b[36mconst\u001b[39m row \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mgetRowByIndex(rowIndex)\u001b[33m;\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m cell \u001b[33m=\u001b[39m row\u001b[33m.\u001b[39mlocator(\u001b[32m`td:nth-child(${columnIndex})`\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 48 |\u001b[39m     \u001b[36mreturn\u001b[39m (\u001b[36mawait\u001b[39m cell\u001b[33m.\u001b[39mtextContent())\u001b[33m?\u001b[39m\u001b[33m.\u001b[39mtrim() \u001b[33m||\u001b[39m \u001b[32m''\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 49 |\u001b[39m   }\n \u001b[90m 50 |\u001b[39m\n \u001b[90m 51 |\u001b[39m   \u001b[90m/**\u001b[39m\u001b[0m"
+                          }
+                        }
+                      ],
+                      "startTime": "2026-02-02T14:23:31.438Z",
+                      "annotations": [
+                        {
+                          "type": "specification",
+                          "description": "https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listWorkflow.spec.ts",
+                            "line": 35,
+                            "column": 15
+                          }
+                        },
+                        {
+                          "type": "feature",
+                          "description": "Partner List Actions",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listWorkflow.spec.ts",
+                            "line": 35,
+                            "column": 15
+                          }
+                        },
+                        {
+                          "type": "requirement",
+                          "description": "REQ-DIC-PARTNER-FLOW-003",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listWorkflow.spec.ts",
+                            "line": 228,
+                            "column": 7
+                          }
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\GIT\\CORPEX\\Testing\\cueweb\\test-results\\dictionary-partners-listWo-86cad-updates-information-in-grid-smokeui\\test-failed-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\GIT\\CORPEX\\Testing\\cueweb\\test-results\\dictionary-partners-listWo-86cad-updates-information-in-grid-smokeui\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\pages\\webUI\\actions\\tableNavigation.ts",
+                        "column": 24,
+                        "line": 48
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "38de4fc3a61a004ff901-6a3e155623f720b8a92d",
+              "file": "dictionary/partners/listWorkflow.spec.ts",
+              "line": 228,
+              "column": 7
+            },
+            {
+              "title": "Select multiple partners and perform bulk move group and remove from",
+              "ok": true,
+              "tags": [
+                "dictionary",
+                "functional"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [
+                    {
+                      "type": "specification",
+                      "description": "https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listWorkflow.spec.ts",
+                        "line": 35,
+                        "column": 15
+                      }
+                    },
+                    {
+                      "type": "feature",
+                      "description": "Partner List Actions",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listWorkflow.spec.ts",
+                        "line": 35,
+                        "column": 15
+                      }
+                    },
+                    {
+                      "type": "requirement",
+                      "description": "REQ-DIC-PARTNER-FLOW-004",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listWorkflow.spec.ts",
+                        "line": 297,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 10770,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "🔍 DB Config - Server: cua-test-db Database: (default)\n"
+                        },
+                        {
+                          "text": "🔌 Attempting database connection...\n"
+                        },
+                        {
+                          "text": "   Server: cua-test-db\n"
+                        },
+                        {
+                          "text": "   Database: (default)\n"
+                        },
+                        {
+                          "text": "   User: sa\n"
+                        },
+                        {
+                          "text": "   Encrypt: false\n"
+                        },
+                        {
+                          "text": "   TrustServerCertificate: true\n"
+                        },
+                        {
+                          "text": "✅ Database connected successfully\n"
+                        },
+                        {
+                          "text": "   Connected to: default database on cua-test-db\n"
+                        },
+                        {
+                          "text": "🔍 Testing database read...\n"
+                        },
+                        {
+                          "text": "✅ Database read successful!\n"
+                        },
+                        {
+                          "text": "   Account ID: 12345678901234\n"
+                        },
+                        {
+                          "text": "   IBAN: UA083006141234567890123456789\n"
+                        },
+                        {
+                          "text": "   Alias: null\n"
+                        },
+                        {
+                          "text": "🔧 Creating test data...\n"
+                        },
+                        {
+                          "text": "🔐 Starting API login process...\n"
+                        },
+                        {
+                          "text": "username: dani\n"
+                        },
+                        {
+                          "text": "Step 0: Clearing existing session data...\n"
+                        },
+                        {
+                          "text": "Step 1: Getting login page to establish session...\n"
+                        },
+                        {
+                          "text": "Login page response: 200\n"
+                        },
+                        {
+                          "text": "Step 2: Submitting credentials...\n"
+                        },
+                        {
+                          "text": "Login response: 200\n"
+                        },
+                        {
+                          "text": "Step 3: Getting OTP page...\n"
+                        },
+                        {
+                          "text": "OTP page response: 200\n"
+                        },
+                        {
+                          "text": "Step 4: Submitting OTP code...\n"
+                        },
+                        {
+                          "text": "OTP response: 200\n"
+                        },
+                        {
+                          "text": "✅ API login successful! Found 2 auth cookies\n"
+                        },
+                        {
+                          "text": "Detected grid type: DevExpress\n"
+                        },
+                        {
+                          "text": "✅ Selected 3 partners\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Select first 3 partners",
+                          "duration": 1458
+                        },
+                        {
+                          "title": "Execute bulk action move to group",
+                          "duration": 2335
+                        },
+                        {
+                          "title": "Execute bulk action move to group",
+                          "duration": 2845
+                        }
+                      ],
+                      "startTime": "2026-02-02T14:23:54.070Z",
+                      "annotations": [
+                        {
+                          "type": "specification",
+                          "description": "https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listWorkflow.spec.ts",
+                            "line": 35,
+                            "column": 15
+                          }
+                        },
+                        {
+                          "type": "feature",
+                          "description": "Partner List Actions",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listWorkflow.spec.ts",
+                            "line": 35,
+                            "column": 15
+                          }
+                        },
+                        {
+                          "type": "requirement",
+                          "description": "REQ-DIC-PARTNER-FLOW-004",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listWorkflow.spec.ts",
+                            "line": 297,
+                            "column": 7
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "38de4fc3a61a004ff901-e40568a77ae9ecfa2964",
+              "file": "dictionary/partners/listWorkflow.spec.ts",
+              "line": 297,
+              "column": 7
+            },
+            {
+              "title": "Import partner from file search it then delete",
+              "ok": true,
+              "tags": [
+                "dictionary",
+                "functional"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [
+                    {
+                      "type": "specification",
+                      "description": "https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listWorkflow.spec.ts",
+                        "line": 35,
+                        "column": 15
+                      }
+                    },
+                    {
+                      "type": "feature",
+                      "description": "Partner List Actions",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listWorkflow.spec.ts",
+                        "line": 35,
+                        "column": 15
+                      }
+                    },
+                    {
+                      "type": "requirement",
+                      "description": "REQ-DIC-PARTNER-FLOW-006",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listWorkflow.spec.ts",
+                        "line": 334,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 10542,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Detected grid type: DevExpress\n"
+                        },
+                        {
+                          "text": "✅ Import dialog opened\n"
+                        },
+                        {
+                          "text": "✅ Filters cleared\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Click Import button",
+                          "duration": 1339
+                        },
+                        {
+                          "title": "Upload partnerlist-import.xml file",
+                          "duration": 1169
+                        },
+                        {
+                          "title": "Execute bulk action move to group",
+                          "duration": 1051
+                        },
+                        {
+                          "title": "Filter for uploaded partner",
+                          "duration": 1957
+                        },
+                        {
+                          "title": "Delete the partner",
+                          "duration": 1577
+                        }
+                      ],
+                      "startTime": "2026-02-02T14:24:07.613Z",
+                      "annotations": [
+                        {
+                          "type": "specification",
+                          "description": "https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listWorkflow.spec.ts",
+                            "line": 35,
+                            "column": 15
+                          }
+                        },
+                        {
+                          "type": "feature",
+                          "description": "Partner List Actions",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listWorkflow.spec.ts",
+                            "line": 35,
+                            "column": 15
+                          }
+                        },
+                        {
+                          "type": "requirement",
+                          "description": "REQ-DIC-PARTNER-FLOW-006",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listWorkflow.spec.ts",
+                            "line": 334,
+                            "column": 7
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "38de4fc3a61a004ff901-10c57026b38916c4ca2c",
+              "file": "dictionary/partners/listWorkflow.spec.ts",
+              "line": 334,
+              "column": 7
+            },
+            {
+              "title": "Assign comment to selected partner",
+              "ok": true,
+              "tags": [
+                "dictionary",
+                "functional"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [
+                    {
+                      "type": "specification",
+                      "description": "https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listWorkflow.spec.ts",
+                        "line": 35,
+                        "column": 15
+                      }
+                    },
+                    {
+                      "type": "feature",
+                      "description": "Partner List Actions",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listWorkflow.spec.ts",
+                        "line": 35,
+                        "column": 15
+                      }
+                    },
+                    {
+                      "type": "requirement",
+                      "description": "REQ-DIC-PARTNER-FLOW-007",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listWorkflow.spec.ts",
+                        "line": 389,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5806,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Detected grid type: DevExpress\n"
+                        },
+                        {
+                          "text": "✅ Selected partner for comment\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Select partner for comment assignment",
+                          "duration": 376
+                        },
+                        {
+                          "title": "Click Assign Comment button",
+                          "duration": 934
+                        },
+                        {
+                          "title": "Enter comment and save",
+                          "duration": 1385
+                        },
+                        {
+                          "title": "Verify comment saved successfully",
+                          "duration": 50
+                        }
+                      ],
+                      "startTime": "2026-02-02T14:24:18.170Z",
+                      "annotations": [
+                        {
+                          "type": "specification",
+                          "description": "https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listWorkflow.spec.ts",
+                            "line": 35,
+                            "column": 15
+                          }
+                        },
+                        {
+                          "type": "feature",
+                          "description": "Partner List Actions",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listWorkflow.spec.ts",
+                            "line": 35,
+                            "column": 15
+                          }
+                        },
+                        {
+                          "type": "requirement",
+                          "description": "REQ-DIC-PARTNER-FLOW-007",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listWorkflow.spec.ts",
+                            "line": 389,
+                            "column": 7
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "38de4fc3a61a004ff901-54f1236ef69b30589d07",
+              "file": "dictionary/partners/listWorkflow.spec.ts",
+              "line": 389,
+              "column": 7
+            },
+            {
+              "title": "Revert authorized partner back to edit state",
+              "ok": true,
+              "tags": [
+                "dictionary",
+                "functional"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [
+                    {
+                      "type": "specification",
+                      "description": "https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listWorkflow.spec.ts",
+                        "line": 35,
+                        "column": 15
+                      }
+                    },
+                    {
+                      "type": "feature",
+                      "description": "Partner List Actions",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listWorkflow.spec.ts",
+                        "line": 35,
+                        "column": 15
+                      }
+                    },
+                    {
+                      "type": "requirement",
+                      "description": "REQ-DIC-PARTNER-FLOW-009",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listWorkflow.spec.ts",
+                        "line": 424,
+                        "column": 8
+                      }
+                    },
+                    {
+                      "type": "fixme",
+                      "location": {
+                        "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listWorkflow.spec.ts",
+                        "line": 424,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "smokeui",
+                  "projectName": "smokeui",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-02T14:24:23.991Z",
+                      "annotations": [
+                        {
+                          "type": "specification",
+                          "description": "https://egroupicthu.sharepoint.com/:w:/s/CorpexCAU/IQCBdG7gEax7TLCTUCHZ3zkWATJWShXqHal4wAdJtM8hbFI?e=62ZxTR",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listWorkflow.spec.ts",
+                            "line": 35,
+                            "column": 15
+                          }
+                        },
+                        {
+                          "type": "feature",
+                          "description": "Partner List Actions",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listWorkflow.spec.ts",
+                            "line": 35,
+                            "column": 15
+                          }
+                        },
+                        {
+                          "type": "requirement",
+                          "description": "REQ-DIC-PARTNER-FLOW-009",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listWorkflow.spec.ts",
+                            "line": 424,
+                            "column": 8
+                          }
+                        },
+                        {
+                          "type": "fixme",
+                          "location": {
+                            "file": "C:\\GIT\\CORPEX\\Testing\\cueweb\\tests\\dictionary\\partners\\listWorkflow.spec.ts",
+                            "line": 424,
+                            "column": 8
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "38de4fc3a61a004ff901-2c4f8503312d4c4a5b1a",
+              "file": "dictionary/partners/listWorkflow.spec.ts",
+              "line": 424,
+              "column": 8
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-02-02T14:22:05.727Z",
+    "duration": 138675.367,
+    "expected": 18,
+    "skipped": 2,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,1913 @@
+{
+  "config": {
+    "configFile": "C:\\GIT\\cua\\playwright.config.ts",
+    "rootDir": "C:/GIT/cua/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "json",
+        {
+          "outputFile": "test-results/results-2026-01-09.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "always"
+        }
+      ],
+      [
+        "dot",
+        null
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "test-results/junit.xml"
+        }
+      ],
+      [
+        "C:\\GIT\\cua\\node_modules\\playwright-qase-reporter\\dist\\index.js",
+        {
+          "mode": "testops",
+          "testops": {
+            "api": {
+              "token": "80188ea2d02b5cd5a3d1474087ee42920c20b8d1e3d2b15e99d158ba4b7188e3"
+            },
+            "project": "CW",
+            "run": {
+              "complete": true
+            }
+          }
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/GIT/cua/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "smokeui",
+        "name": "smokeui",
+        "testDir": "C:/GIT/cua/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 0
+      },
+      {
+        "outputDir": "C:/GIT/cua/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "login",
+        "name": "login",
+        "testDir": "C:/GIT/cua/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 0
+      },
+      {
+        "outputDir": "C:/GIT/cua/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "payment",
+        "name": "payment",
+        "testDir": "C:/GIT/cua/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 0
+      },
+      {
+        "outputDir": "C:/GIT/cua/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "forex",
+        "name": "forex",
+        "testDir": "C:/GIT/cua/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 0
+      },
+      {
+        "outputDir": "C:/GIT/cua/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "savestate",
+        "name": "savestate",
+        "testDir": "C:/GIT/cua/setup",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 0
+      }
+    ],
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.57.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "payments.spec.ts",
+      "file": "payments.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Domestic payment quick actions",
+          "file": "payments.spec.ts",
+          "line": 26,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Create and delete a simple payment",
+              "ok": true,
+              "tags": [
+                "payment"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "payment",
+                  "projectName": "payment",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 33316,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "🔐 Starting API login process...\n"
+                        },
+                        {
+                          "text": "username: dani\n"
+                        },
+                        {
+                          "text": "Step 0: Clearing existing session data...\n"
+                        },
+                        {
+                          "text": "Step 1: Getting login page to establish session...\n"
+                        },
+                        {
+                          "text": "Login page response: 200\n"
+                        },
+                        {
+                          "text": "Step 2: Submitting credentials...\n"
+                        },
+                        {
+                          "text": "Login response: 200\n"
+                        },
+                        {
+                          "text": "Step 3: Getting OTP page...\n"
+                        },
+                        {
+                          "text": "OTP page response: 200\n"
+                        },
+                        {
+                          "text": "Step 4: Submitting OTP code...\n"
+                        },
+                        {
+                          "text": "OTP response: 200\n"
+                        },
+                        {
+                          "text": "✅ API login successful! Found 2 auth cookies\n"
+                        },
+                        {
+                          "text": "{\n  fromAccount: \u001b[32m'UA 61 300614'\u001b[39m,\n  amount: \u001b[32m'691'\u001b[39m,\n  searchName: \u001b[32m'aloha'\u001b[39m,\n  contactPerson: \u001b[32m'contactPersonNikolas-пДжЫпРС'\u001b[39m,\n  details: \u001b[32m\"Your withdrawal of PGK 901.63 at Kuphal, Gleichner and Bergstrom was successful. Charged via card ****3566 to account ***5948.--'`!%\"\u001b[39m,\n  benificiaryAccountNumber: \u001b[32m'tuPQcDidCAOn11emiJAUy8CZjMqW53F0aF'\u001b[39m,\n  swiftBankName: \u001b[32m'france'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "Save Response URL: https://cuatest.egroup.hu/Domestic/Save Response Status: \u001b[33m302\u001b[39m Method: POST\n"
+                        },
+                        {
+                          "text": "✅ Amount validation passed: 691.00 (expected: 691.00 or 691.00)\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Navigate to Accounts",
+                          "duration": 1469,
+                          "steps": [
+                            {
+                              "title": "Navigate to New domestic payment Domestic",
+                              "duration": 1469
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Fill the obligatory fields",
+                          "duration": 18765,
+                          "steps": [
+                            {
+                              "title": "Search for name",
+                              "duration": 4143
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Verify input values after saved state",
+                          "duration": 286
+                        },
+                        {
+                          "title": "Delete the payment",
+                          "duration": 7257
+                        }
+                      ],
+                      "startTime": "2026-01-09T17:28:44.057Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\GIT\\cua\\test-results\\payments-Domestic-payment--6e77b-and-delete-a-simple-payment-payment\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bd51122182d9e4115608-dab7671e994b807351b2",
+              "file": "payments.spec.ts",
+              "line": 41,
+              "column": 7
+            },
+            {
+              "title": "Create COPY and delete the payment",
+              "ok": true,
+              "tags": [
+                "payment"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "payment",
+                  "projectName": "payment",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 35525,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Save Response URL: https://cuatest.egroup.hu/Domestic/Save Response Status: \u001b[33m302\u001b[39m Method: POST\n"
+                        },
+                        {
+                          "text": "✅ Amount validation passed: 512.00 (expected: 512.00 or 512.00)\n"
+                        },
+                        {
+                          "text": "Original ID: 04090cde-301e-49be-b205-a6d61f42ea14\n"
+                        },
+                        {
+                          "text": "Copied ID: b127c4ae-9ad0-4c42-bd03-88da558d5918\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Navigate to Accounts",
+                          "duration": 1806,
+                          "steps": [
+                            {
+                              "title": "Navigate to New domestic payment Domestic",
+                              "duration": 1804
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Fill the obligatory fields",
+                          "duration": 16055,
+                          "steps": [
+                            {
+                              "title": "Search for name",
+                              "duration": 3796
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Copy payment",
+                          "duration": 8176
+                        },
+                        {
+                          "title": "Verify input values are NOT empty",
+                          "duration": 355
+                        },
+                        {
+                          "title": "Check copy was successful",
+                          "duration": 54
+                        },
+                        {
+                          "title": "Delete the payment",
+                          "duration": 6615
+                        }
+                      ],
+                      "startTime": "2026-01-09T17:29:17.611Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\GIT\\cua\\test-results\\payments-Domestic-payment--dea29-COPY-and-delete-the-payment-payment\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bd51122182d9e4115608-74b3507accb581ae13a4",
+              "file": "payments.spec.ts",
+              "line": 65,
+              "column": 7
+            },
+            {
+              "title": "Create TEMPLATE and delete the payment",
+              "ok": true,
+              "tags": [
+                "payment"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "payment",
+                  "projectName": "payment",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 29973,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Save Response URL: https://cuatest.egroup.hu/Domestic/Save Response Status: \u001b[33m302\u001b[39m Method: POST\n"
+                        },
+                        {
+                          "text": "✅ Amount validation passed: 2,412.00 (expected: 2412.00 or 2,412.00)\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Navigate to Accounts",
+                          "duration": 1280,
+                          "steps": [
+                            {
+                              "title": "Navigate to New domestic payment Domestic",
+                              "duration": 1279
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Fill the obligatory fields",
+                          "duration": 14929,
+                          "steps": [
+                            {
+                              "title": "Search for name",
+                              "duration": 3827
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Create template from payment",
+                          "duration": 3481
+                        },
+                        {
+                          "title": "Verify input values are NOT empty",
+                          "duration": 697
+                        },
+                        {
+                          "title": "Add template name",
+                          "duration": 3687
+                        },
+                        {
+                          "title": "Delete the payment",
+                          "duration": 3387
+                        }
+                      ],
+                      "startTime": "2026-01-09T17:29:53.155Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\GIT\\cua\\test-results\\payments-Domestic-payment--e35e5-LATE-and-delete-the-payment-payment\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bd51122182d9e4115608-8d47bf149807ae89fa4e",
+              "file": "payments.spec.ts",
+              "line": 104,
+              "column": 7
+            },
+            {
+              "title": "Create ASSIGN COMMENT and delete the payment",
+              "ok": true,
+              "tags": [
+                "payment"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "payment",
+                  "projectName": "payment",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 27831,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Navigate to Accounts",
+                          "duration": 1343,
+                          "steps": [
+                            {
+                              "title": "Navigate to New domestic payment Domestic",
+                              "duration": 1343
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Fill the obligatory fields",
+                          "duration": 12676,
+                          "steps": [
+                            {
+                              "title": "Search for name",
+                              "duration": 3837
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Create template from payment",
+                          "duration": 3090
+                        },
+                        {
+                          "title": "Verify assign comment screen",
+                          "duration": 4007
+                        },
+                        {
+                          "title": "Delete the payment",
+                          "duration": 3733
+                        }
+                      ],
+                      "startTime": "2026-01-09T17:30:23.166Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\GIT\\cua\\test-results\\payments-Domestic-payment--084a8-MENT-and-delete-the-payment-payment\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bd51122182d9e4115608-e9b0c4dc8e194eb30675",
+              "file": "payments.spec.ts",
+              "line": 140,
+              "column": 7
+            },
+            {
+              "title": "Create EXPORT XML and delete the payment",
+              "ok": true,
+              "tags": [
+                "payment"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "payment",
+                  "projectName": "payment",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 31990,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "{\n  fromAccount: \u001b[32m'UA 61 300614'\u001b[39m,\n  amount: \u001b[32m'5425'\u001b[39m,\n  searchName: \u001b[32m'aloha'\u001b[39m,\n  contactPerson: \u001b[32m'contactPersonMya-ьоєыіёУ'\u001b[39m,\n  details: \u001b[32m'Transaction alert: deposit at Kilback - Dickens using card ending ****9454 for an amount of BTN 379.12 on account ***7496.--><;>'\u001b[39m,\n  benificiaryAccountNumber: \u001b[32m'iBC9q71nEuC4ARWZBbxEuVMowoZ69rdz7A'\u001b[39m,\n  swiftBankName: \u001b[32m'france'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "--- Response Headers ---\n"
+                        },
+                        {
+                          "text": "📎 Content-Disposition: attachment; filename*=UTF-8''en%D0%AC%D0%AD%D0%AE%D0%AF%D0%84%D0%B0%D0%B1.xml\n"
+                        },
+                        {
+                          "text": "Decoded filename: enЬЭЮЯЄаб.xml\n"
+                        },
+                        {
+                          "text": "✅ File saved to: C:\\GIT\\cua\\test-downloads\\enЬЭЮЯЄаб.xml\n"
+                        },
+                        {
+                          "text": "📁 Files in directory: [enЬЭЮЯЄаб.xml]\n"
+                        },
+                        {
+                          "text": "ℹ️ File enЬЭЮЯЄаб.xml matches format xml\n"
+                        },
+                        {
+                          "text": "ℹ️ File found: enЬЭЮЯЄаб.xml (8538 bytes)\n"
+                        },
+                        {
+                          "text": "testdata.contactPerson: contactPersonMya-ьоєыіёУ\n"
+                        },
+                        {
+                          "text": "✅ File deleted: C:\\GIT\\cua\\test-downloads\\enЬЭЮЯЄаб.xml\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Navigate to Accounts",
+                          "duration": 1451,
+                          "steps": [
+                            {
+                              "title": "Navigate to New domestic payment Domestic",
+                              "duration": 1451
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Fill the obligatory fields",
+                          "duration": 11956,
+                          "steps": [
+                            {
+                              "title": "Search for name",
+                              "duration": 3913
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Export quick action ",
+                          "duration": 3187
+                        },
+                        {
+                          "title": "Export and validate the XML",
+                          "duration": 2552,
+                          "steps": [
+                            {
+                              "title": "Stats",
+                              "duration": 1
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Scan xml inside",
+                          "duration": 3,
+                          "steps": [
+                            {
+                              "title": "Delete the file",
+                              "duration": 1
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Delete the payment",
+                          "duration": 10431
+                        }
+                      ],
+                      "startTime": "2026-01-09T17:30:51.011Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\GIT\\cua\\test-results\\payments-Domestic-payment--feb3f--XML-and-delete-the-payment-payment\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bd51122182d9e4115608-459649cccb5edcbbc52d",
+              "file": "payments.spec.ts",
+              "line": 171,
+              "column": 7
+            },
+            {
+              "title": "Create SAVE PDF and delete the payment",
+              "ok": true,
+              "tags": [
+                "payment"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "payment",
+                  "projectName": "payment",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 34816,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "{\n  fromAccount: \u001b[32m'UA 61 300614'\u001b[39m,\n  amount: \u001b[32m'1512'\u001b[39m,\n  searchName: \u001b[32m'aloha'\u001b[39m,\n  contactPerson: \u001b[32m'contactPersonReynold-ҐіШНҐэЮ'\u001b[39m,\n  details: \u001b[32m'Transaction alert: deposit at Reilly - Hills using card ending ****0772 for an amount of ANG 390.44 on account ***8532.--(?+:'\u001b[39m,\n  benificiaryAccountNumber: \u001b[32m'vWlTsciC4bkkZdrbJcRpdUqaQANp9HQfCZ'\u001b[39m,\n  swiftBankName: \u001b[32m'france'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "Encoded filename: DomesticOrder_20260109_183144.pdf\n"
+                        },
+                        {
+                          "text": "📁 Files in directory: [DomesticOrder_20260109_183144.pdf]\n"
+                        },
+                        {
+                          "text": "ℹ️ File DomesticOrder_20260109_183144.pdf matches format pdf\n"
+                        },
+                        {
+                          "text": "ℹ️ File found: DomesticOrder_20260109_183144.pdf (80242 bytes)\n"
+                        },
+                        {
+                          "text": "✅ File deleted: C:\\GIT\\cua\\test-downloads\\DomesticOrder_20260109_183144.pdf\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Navigate to Accounts",
+                          "duration": 1446,
+                          "steps": [
+                            {
+                              "title": "Navigate to New domestic payment Domestic",
+                              "duration": 1445
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Fill the obligatory fields",
+                          "duration": 12285,
+                          "steps": [
+                            {
+                              "title": "Search for name",
+                              "duration": 3507
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Save as pdf quick action",
+                          "duration": 11223,
+                          "steps": [
+                            {
+                              "title": "Delete the file",
+                              "duration": 1
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Delete the payment",
+                          "duration": 7151
+                        }
+                      ],
+                      "startTime": "2026-01-09T17:31:23.013Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\GIT\\cua\\test-results\\payments-Domestic-payment--70c5e--PDF-and-delete-the-payment-payment\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bd51122182d9e4115608-69de613c8821b2da9bc5",
+              "file": "payments.spec.ts",
+              "line": 256,
+              "column": 7
+            },
+            {
+              "title": "BackEnd logging test",
+              "ok": true,
+              "tags": [
+                "payment"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "C:\\GIT\\cua\\tests\\payments.spec.ts",
+                        "line": 307,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "payment",
+                  "projectName": "payment",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-09T17:31:57.842Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "location": {
+                            "file": "C:\\GIT\\cua\\tests\\payments.spec.ts",
+                            "line": 307,
+                            "column": 8
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "bd51122182d9e4115608-49500f761a22381aa81e",
+              "file": "payments.spec.ts",
+              "line": 307,
+              "column": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "paymentsForeign.spec.ts",
+      "file": "paymentsForeign.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Foreign payment quick actions",
+          "file": "paymentsForeign.spec.ts",
+          "line": 27,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Create and delete FOREIGN payment",
+              "ok": true,
+              "tags": [
+                "payment",
+                "foreign"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "payment",
+                  "projectName": "payment",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 25366,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "{\n  fromAccount: \u001b[32m'UA 09 300614'\u001b[39m,\n  amount: \u001b[32m'9252'\u001b[39m,\n  searchName: \u001b[32m'aloha'\u001b[39m,\n  contactPerson: \u001b[32m'contactPersonKayla-ЁВИафЛя'\u001b[39m,\n  details: \u001b[32m\"2WLP5L9xh1RSCGGIw57TZjxjVD72EQh5ErIQ5t1KxqkOg79CUB--+'-'\"\u001b[39m,\n  benificiaryAccountNumber: \u001b[32m'0ua7Haxbj2jECx2rpMhyK46V8ofVroIQ0e'\u001b[39m,\n  swiftBankName: \u001b[32m'france'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "Save Response URL: https://cuatest.egroup.hu/Swift/GetTextAmountInWords Response Status: \u001b[33m200\u001b[39m Method: POST\n"
+                        },
+                        {
+                          "text": "Save Response URL: https://cuatest.egroup.hu/Swift/GetTextAmountInWords Response Status: \u001b[33m200\u001b[39m Method: POST\n"
+                        },
+                        {
+                          "text": "Save Response URL: https://cuatest.egroup.hu/Swift/GetTextAmountInWords Response Status: \u001b[33m200\u001b[39m Method: POST\n"
+                        },
+                        {
+                          "text": "Save Response URL: https://cuatest.egroup.hu/Swift/Save Response Status: \u001b[33m302\u001b[39m Method: POST\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Navigate to Accounts",
+                          "duration": 1876,
+                          "steps": [
+                            {
+                              "title": "Navigate to New foreign payment Foreign",
+                              "duration": 1757
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Fill the obligatory fields",
+                          "duration": 13633,
+                          "steps": [
+                            {
+                              "title": "Search for name",
+                              "duration": 3965
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Delete the payment",
+                          "duration": 7199
+                        }
+                      ],
+                      "startTime": "2026-01-09T17:31:57.858Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\GIT\\cua\\test-results\\paymentsForeign-Foreign-pa-29eb2--and-delete-FOREIGN-payment-payment\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "982b07c0321e7747ac74-9bec8d5332e58b66da19",
+              "file": "paymentsForeign.spec.ts",
+              "line": 45,
+              "column": 7
+            },
+            {
+              "title": "Create COPY and delete FOREIGN payment",
+              "ok": true,
+              "tags": [
+                "payment",
+                "foreign"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "payment",
+                  "projectName": "payment",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 37224,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "{\n  fromAccount: \u001b[32m'UA 09 300614'\u001b[39m,\n  amount: \u001b[32m'1100'\u001b[39m,\n  searchName: \u001b[32m'aloha'\u001b[39m,\n  contactPerson: \u001b[32m'contactPersonKaylin-ООпЄоЙЖ'\u001b[39m,\n  details: \u001b[32m'dIHJXcjYVw8VsCMSZdfFgT6sfs8ucZcTW6i3JFBod4xSjwVD9M--/?+('\u001b[39m,\n  benificiaryAccountNumber: \u001b[32m'mHn28ya422icSkHcmXPsjnysMyUX1qADNU'\u001b[39m,\n  swiftBankName: \u001b[32m'france'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "Save Response URL: https://cuatest.egroup.hu/Swift/GetTextAmountInWords Response Status: \u001b[33m200\u001b[39m Method: POST\n"
+                        },
+                        {
+                          "text": "Save Response URL: https://cuatest.egroup.hu/Swift/GetTextAmountInWords Response Status: \u001b[33m200\u001b[39m Method: POST\n"
+                        },
+                        {
+                          "text": "Save Response URL: https://cuatest.egroup.hu/Swift/ValidateBicCode Response Status: \u001b[33m200\u001b[39m Method: POST\n"
+                        },
+                        {
+                          "text": "Save Response URL: https://cuatest.egroup.hu/Swift/Save Response Status: \u001b[33m302\u001b[39m Method: POST\n"
+                        },
+                        {
+                          "text": "✅ Amount validation passed: 1100.00 (expected: 1100.00 or 1,100.00)\n"
+                        },
+                        {
+                          "text": "Original ID: b8a1a0d9-5fc8-4941-b99e-dece8f5fa9a1\n"
+                        },
+                        {
+                          "text": "Copied ID: 12852e28-97f4-49e2-b07b-5c55d9a2689b\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Navigate to Accounts",
+                          "duration": 1998,
+                          "steps": [
+                            {
+                              "title": "Navigate to New foreign payment Foreign",
+                              "duration": 1854
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Fill the obligatory fields",
+                          "duration": 12192,
+                          "steps": [
+                            {
+                              "title": "Search for name",
+                              "duration": 4140
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Copy payment",
+                          "duration": 6082
+                        },
+                        {
+                          "title": "Verify input values are NOT empty",
+                          "duration": 285
+                        },
+                        {
+                          "title": "Check copy was successful",
+                          "duration": 78
+                        },
+                        {
+                          "title": "Delete the payment",
+                          "duration": 14066
+                        }
+                      ],
+                      "startTime": "2026-01-09T17:32:23.237Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\GIT\\cua\\test-results\\paymentsForeign-Foreign-pa-7095e--and-delete-FOREIGN-payment-payment\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "982b07c0321e7747ac74-fb749a73680405c7491d",
+              "file": "paymentsForeign.spec.ts",
+              "line": 71,
+              "column": 7
+            },
+            {
+              "title": "Create EXPORT XML and delete the payment",
+              "ok": true,
+              "tags": [
+                "payment",
+                "foreign"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "payment",
+                  "projectName": "payment",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 31849,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "{\n  fromAccount: \u001b[32m'UA 09 300614'\u001b[39m,\n  amount: \u001b[32m'2119'\u001b[39m,\n  searchName: \u001b[32m'aloha'\u001b[39m,\n  contactPerson: \u001b[32m'contactPersonLyda-УТчКЄфї'\u001b[39m,\n  details: \u001b[32m'P6QRJPipuBxod62RCAju1oOA0DJz0ncR18IFtxgSsfnxtrOKoC--: -/'\u001b[39m,\n  benificiaryAccountNumber: \u001b[32m'BsdM2kEPtITuyaN8Ew9t403awErOuuHtLY'\u001b[39m,\n  swiftBankName: \u001b[32m'france'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "Save Response URL: https://cuatest.egroup.hu/Swift/GetTextAmountInWords Response Status: \u001b[33m200\u001b[39m Method: POST\n"
+                        },
+                        {
+                          "text": "Save Response URL: https://cuatest.egroup.hu/Swift/Save Response Status: \u001b[33m302\u001b[39m Method: POST\n"
+                        },
+                        {
+                          "text": "   /   202601090037006A   \n"
+                        },
+                        {
+                          "text": "--- Response Headers ---\n"
+                        },
+                        {
+                          "text": "📎 Content-Disposition: attachment; filename*=UTF-8''swift_%D0%AC%D0%AD%D0%AE%D0%AF%D0%84%D0%B0%D0%B1.xml\n"
+                        },
+                        {
+                          "text": "Decoded swift xml filename: swift_ЬЭЮЯЄаб.xml\n"
+                        },
+                        {
+                          "text": "✅ File saved to: C:\\GIT\\cua\\test-downloads\\swift_ЬЭЮЯЄаб.xml\n"
+                        },
+                        {
+                          "text": "📁 Files in directory: [swift_ЬЭЮЯЄаб.xml]\n"
+                        },
+                        {
+                          "text": "ℹ️ File swift_ЬЭЮЯЄаб.xml matches format xml\n"
+                        },
+                        {
+                          "text": "ℹ️ File found: swift_ЬЭЮЯЄаб.xml (2458 bytes)\n"
+                        },
+                        {
+                          "text": "TransID for XML validation: 202601090037006A\n"
+                        },
+                        {
+                          "text": "✅ File deleted: C:\\GIT\\cua\\test-downloads\\swift_ЬЭЮЯЄаб.xml\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Navigate to Accounts",
+                          "duration": 1790,
+                          "steps": [
+                            {
+                              "title": "Navigate to New foreign payment Foreign",
+                              "duration": 1790
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Fill the obligatory fields",
+                          "duration": 12205,
+                          "steps": [
+                            {
+                              "title": "Search for name",
+                              "duration": 3831
+                            },
+                            {
+                              "title": "Get the TRANSID",
+                              "duration": 412
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Export quick action ",
+                          "duration": 3834
+                        },
+                        {
+                          "title": "Export and validate the XML",
+                          "duration": 862,
+                          "steps": [
+                            {
+                              "title": "Stats",
+                              "duration": 0
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Scan xml inside PARTNERNAME, PARTNERACCOUNT, TRANSID, CURRENCY",
+                          "duration": 9,
+                          "steps": [
+                            {
+                              "title": "Delete the file",
+                              "duration": 2
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Delete the payment",
+                          "duration": 10581
+                        }
+                      ],
+                      "startTime": "2026-01-09T17:33:00.476Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\GIT\\cua\\test-results\\paymentsForeign-Foreign-pa-c5b14--XML-and-delete-the-payment-payment\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "982b07c0321e7747ac74-bd4431ac6b4cad6eba20",
+              "file": "paymentsForeign.spec.ts",
+              "line": 121,
+              "column": 7
+            },
+            {
+              "title": "Create SAVE PDF and delete the payment",
+              "ok": true,
+              "tags": [
+                "payment",
+                "foreign"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "payment",
+                  "projectName": "payment",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 29724,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "{\n  fromAccount: \u001b[32m'UA 09 300614'\u001b[39m,\n  amount: \u001b[32m'3015'\u001b[39m,\n  searchName: \u001b[32m'aloha'\u001b[39m,\n  contactPerson: \u001b[32m'contactPersonJaquan-КЖзсЗНу'\u001b[39m,\n  details: \u001b[32m'bCXA5KMoyzWEBYx8VD5p8cwzov7TfWwh3cIbJkdJNhRKvafRmE--:/?('\u001b[39m,\n  benificiaryAccountNumber: \u001b[32m'cbXwewIGvN06hBaoeFTib9PL2eEdT1Y9B9'\u001b[39m,\n  swiftBankName: \u001b[32m'france'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "Save Response URL: https://cuatest.egroup.hu/Swift/GetTextAmountInWords Response Status: \u001b[33m200\u001b[39m Method: POST\n"
+                        },
+                        {
+                          "text": "Save Response URL: https://cuatest.egroup.hu/Swift/GetTextAmountInWords Response Status: \u001b[33m200\u001b[39m Method: POST\n"
+                        },
+                        {
+                          "text": "Save Response URL: https://cuatest.egroup.hu/Swift/GetTextAmountInWords Response Status: \u001b[33m200\u001b[39m Method: POST\n"
+                        },
+                        {
+                          "text": "Save Response URL: https://cuatest.egroup.hu/Swift/Save Response Status: \u001b[33m302\u001b[39m Method: POST\n"
+                        },
+                        {
+                          "text": "Encoded filename: HCPO_20260109_183354.pdf\n"
+                        },
+                        {
+                          "text": "📁 Files in directory: [HCPO_20260109_183354.pdf]\n"
+                        },
+                        {
+                          "text": "ℹ️ File HCPO_20260109_183354.pdf matches format pdf\n"
+                        },
+                        {
+                          "text": "ℹ️ File found: HCPO_20260109_183354.pdf (152614 bytes)\n"
+                        },
+                        {
+                          "text": "✅ File deleted: C:\\GIT\\cua\\test-downloads\\HCPO_20260109_183354.pdf\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Navigate to Accounts",
+                          "duration": 1856,
+                          "steps": [
+                            {
+                              "title": "Navigate to New foreign payment Foreign",
+                              "duration": 1855
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Fill the obligatory fields",
+                          "duration": 12583,
+                          "steps": [
+                            {
+                              "title": "Search for name",
+                              "duration": 4317
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Save as pdf quick action",
+                          "duration": 5943,
+                          "steps": [
+                            {
+                              "title": "Delete the file",
+                              "duration": 0
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Delete the payment",
+                          "duration": 6771
+                        }
+                      ],
+                      "startTime": "2026-01-09T17:33:32.340Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\GIT\\cua\\test-results\\paymentsForeign-Foreign-pa-e5adc--PDF-and-delete-the-payment-payment\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "982b07c0321e7747ac74-3ca54e1d3ba5d3b19835",
+              "file": "paymentsForeign.spec.ts",
+              "line": 217,
+              "column": 7
+            },
+            {
+              "title": "Create UPLOAD DOC and delete FOREIGN payment",
+              "ok": false,
+              "tags": [
+                "payment",
+                "foreign"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "payment",
+                  "projectName": "payment",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 22741,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#FXSwiftTab')\nTimeout: 3000ms\n\u001b[32m- Expected substring  - 1\u001b[39m\n\u001b[31m+ Received string     + 9\u001b[39m\n\n\u001b[32m- Documents 1/0\u001b[39m\n\u001b[31m+\u001b[39m\n\u001b[31m+\u001b[39m\n\u001b[31m+ \u001b[43m            \u001b[49m\u001b[39m\n\u001b[31m+                 Payment\u001b[39m\n\u001b[31m+ \u001b[43m            \u001b[49m\u001b[39m\n\u001b[31m+ \u001b[43m            \u001b[49m\u001b[39m\n\u001b[31m+                 Documents 1/1\u001b[39m\n\u001b[31m+ \u001b[43m            \u001b[49m\u001b[39m\n\u001b[31m+ \u001b[43m    \u001b[49m\u001b[39m\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 3000ms\u001b[22m\n\u001b[2m  - waiting for locator('#FXSwiftTab')\u001b[22m\n\u001b[2m    6 × locator resolved to <ul id=\"FXSwiftTab\" data-tabs=\"tabs\" class=\"tftab-container nav nav-tabs col-md-10 col-xs-9\">…</ul>\u001b[22m\n\u001b[2m      - unexpected value \"\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                Payment\u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                Documents 1/1\u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m    \"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#FXSwiftTab')\nTimeout: 3000ms\n\u001b[32m- Expected substring  - 1\u001b[39m\n\u001b[31m+ Received string     + 9\u001b[39m\n\n\u001b[32m- Documents 1/0\u001b[39m\n\u001b[31m+\u001b[39m\n\u001b[31m+\u001b[39m\n\u001b[31m+ \u001b[43m            \u001b[49m\u001b[39m\n\u001b[31m+                 Payment\u001b[39m\n\u001b[31m+ \u001b[43m            \u001b[49m\u001b[39m\n\u001b[31m+ \u001b[43m            \u001b[49m\u001b[39m\n\u001b[31m+                 Documents 1/1\u001b[39m\n\u001b[31m+ \u001b[43m            \u001b[49m\u001b[39m\n\u001b[31m+ \u001b[43m    \u001b[49m\u001b[39m\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 3000ms\u001b[22m\n\u001b[2m  - waiting for locator('#FXSwiftTab')\u001b[22m\n\u001b[2m    6 × locator resolved to <ul id=\"FXSwiftTab\" data-tabs=\"tabs\" class=\"tftab-container nav nav-tabs col-md-10 col-xs-9\">…</ul>\u001b[22m\n\u001b[2m      - unexpected value \"\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                Payment\u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                Documents 1/1\u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m    \"\u001b[22m\n\n    at C:\\GIT\\cua\\tests\\paymentsForeign.spec.ts:292:49\n    at C:\\GIT\\cua\\tests\\paymentsForeign.spec.ts:290:5",
+                        "location": {
+                          "file": "C:\\GIT\\cua\\tests\\paymentsForeign.spec.ts",
+                          "column": 49,
+                          "line": 292
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 290 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Save the payment and check the document number'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 291 |\u001b[39m       \u001b[36mawait\u001b[39m paymentsSwiftPage\u001b[33m.\u001b[39msaveSwiftPayment()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 292 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'#FXSwiftTab'\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m'Documents 1/0'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 293 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 294 |\u001b[39m\n \u001b[90m 295 |\u001b[39m     \u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\GIT\\cua\\tests\\paymentsForeign.spec.ts",
+                            "column": 49,
+                            "line": 292
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#FXSwiftTab')\nTimeout: 3000ms\n\u001b[32m- Expected substring  - 1\u001b[39m\n\u001b[31m+ Received string     + 9\u001b[39m\n\n\u001b[32m- Documents 1/0\u001b[39m\n\u001b[31m+\u001b[39m\n\u001b[31m+\u001b[39m\n\u001b[31m+ \u001b[43m            \u001b[49m\u001b[39m\n\u001b[31m+                 Payment\u001b[39m\n\u001b[31m+ \u001b[43m            \u001b[49m\u001b[39m\n\u001b[31m+ \u001b[43m            \u001b[49m\u001b[39m\n\u001b[31m+                 Documents 1/1\u001b[39m\n\u001b[31m+ \u001b[43m            \u001b[49m\u001b[39m\n\u001b[31m+ \u001b[43m    \u001b[49m\u001b[39m\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 3000ms\u001b[22m\n\u001b[2m  - waiting for locator('#FXSwiftTab')\u001b[22m\n\u001b[2m    6 × locator resolved to <ul id=\"FXSwiftTab\" data-tabs=\"tabs\" class=\"tftab-container nav nav-tabs col-md-10 col-xs-9\">…</ul>\u001b[22m\n\u001b[2m      - unexpected value \"\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                Payment\u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                Documents 1/1\u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m    \"\u001b[22m\n\n\n\u001b[0m \u001b[90m 290 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Save the payment and check the document number'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 291 |\u001b[39m       \u001b[36mawait\u001b[39m paymentsSwiftPage\u001b[33m.\u001b[39msaveSwiftPayment()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 292 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'#FXSwiftTab'\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m'Documents 1/0'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 293 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 294 |\u001b[39m\n \u001b[90m 295 |\u001b[39m     \u001b[0m\n\u001b[2m    at C:\\GIT\\cua\\tests\\paymentsForeign.spec.ts:292:49\u001b[22m\n\u001b[2m    at C:\\GIT\\cua\\tests\\paymentsForeign.spec.ts:290:5\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "{\n  fromAccount: \u001b[32m'UA 09 300614'\u001b[39m,\n  amount: \u001b[32m'9910'\u001b[39m,\n  searchName: \u001b[32m'aloha'\u001b[39m,\n  contactPerson: \u001b[32m'contactPersonHolden-ТоїХпзЭ'\u001b[39m,\n  details: \u001b[32m'OmyZcJJyoVvXxr8tid9GsS6db9PxQcI0xWRaCzduHw949VB9pR--:((-'\u001b[39m,\n  benificiaryAccountNumber: \u001b[32m'iim09ZvWG6LUJxsDGNanMw8UErqTWL1fzH'\u001b[39m,\n  swiftBankName: \u001b[32m'france'\u001b[39m\n}\n"
+                        },
+                        {
+                          "text": "Save Response URL: https://cuatest.egroup.hu/Swift/GetTextAmountInWords Response Status: \u001b[33m200\u001b[39m Method: POST\n"
+                        },
+                        {
+                          "text": "Save Response URL: https://cuatest.egroup.hu/Swift/Save Response Status: \u001b[33m302\u001b[39m Method: POST\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Navigate to Accounts",
+                          "duration": 1874,
+                          "steps": [
+                            {
+                              "title": "Navigate to New foreign payment Foreign",
+                              "duration": 1738
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Fill the obligatory fields",
+                          "duration": 7195,
+                          "steps": [
+                            {
+                              "title": "Search for name",
+                              "duration": 4125
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Switch tab",
+                          "duration": 518
+                        },
+                        {
+                          "title": "Select existed document",
+                          "duration": 2604
+                        },
+                        {
+                          "title": "Save the payment and check the document number",
+                          "duration": 8435,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#FXSwiftTab')\nTimeout: 3000ms\n\u001b[32m- Expected substring  - 1\u001b[39m\n\u001b[31m+ Received string     + 9\u001b[39m\n\n\u001b[32m- Documents 1/0\u001b[39m\n\u001b[31m+\u001b[39m\n\u001b[31m+\u001b[39m\n\u001b[31m+ \u001b[43m            \u001b[49m\u001b[39m\n\u001b[31m+                 Payment\u001b[39m\n\u001b[31m+ \u001b[43m            \u001b[49m\u001b[39m\n\u001b[31m+ \u001b[43m            \u001b[49m\u001b[39m\n\u001b[31m+                 Documents 1/1\u001b[39m\n\u001b[31m+ \u001b[43m            \u001b[49m\u001b[39m\n\u001b[31m+ \u001b[43m    \u001b[49m\u001b[39m\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 3000ms\u001b[22m\n\u001b[2m  - waiting for locator('#FXSwiftTab')\u001b[22m\n\u001b[2m    6 × locator resolved to <ul id=\"FXSwiftTab\" data-tabs=\"tabs\" class=\"tftab-container nav nav-tabs col-md-10 col-xs-9\">…</ul>\u001b[22m\n\u001b[2m      - unexpected value \"\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                Payment\u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                Documents 1/1\u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m    \"\u001b[22m\n",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#FXSwiftTab')\nTimeout: 3000ms\n\u001b[32m- Expected substring  - 1\u001b[39m\n\u001b[31m+ Received string     + 9\u001b[39m\n\n\u001b[32m- Documents 1/0\u001b[39m\n\u001b[31m+\u001b[39m\n\u001b[31m+\u001b[39m\n\u001b[31m+ \u001b[43m            \u001b[49m\u001b[39m\n\u001b[31m+                 Payment\u001b[39m\n\u001b[31m+ \u001b[43m            \u001b[49m\u001b[39m\n\u001b[31m+ \u001b[43m            \u001b[49m\u001b[39m\n\u001b[31m+                 Documents 1/1\u001b[39m\n\u001b[31m+ \u001b[43m            \u001b[49m\u001b[39m\n\u001b[31m+ \u001b[43m    \u001b[49m\u001b[39m\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 3000ms\u001b[22m\n\u001b[2m  - waiting for locator('#FXSwiftTab')\u001b[22m\n\u001b[2m    6 × locator resolved to <ul id=\"FXSwiftTab\" data-tabs=\"tabs\" class=\"tftab-container nav nav-tabs col-md-10 col-xs-9\">…</ul>\u001b[22m\n\u001b[2m      - unexpected value \"\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                Payment\u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                Documents 1/1\u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m    \"\u001b[22m\n\n    at C:\\GIT\\cua\\tests\\paymentsForeign.spec.ts:292:49\n    at C:\\GIT\\cua\\tests\\paymentsForeign.spec.ts:290:5",
+                            "location": {
+                              "file": "C:\\GIT\\cua\\tests\\paymentsForeign.spec.ts",
+                              "column": 49,
+                              "line": 292
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 290 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Save the payment and check the document number'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 291 |\u001b[39m       \u001b[36mawait\u001b[39m paymentsSwiftPage\u001b[33m.\u001b[39msaveSwiftPayment()\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 292 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'#FXSwiftTab'\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m'Documents 1/0'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 293 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 294 |\u001b[39m\n \u001b[90m 295 |\u001b[39m     \u001b[0m"
+                          }
+                        }
+                      ],
+                      "startTime": "2026-01-09T17:34:02.078Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\GIT\\cua\\test-results\\paymentsForeign-Foreign-pa-3316d--and-delete-FOREIGN-payment-payment\\test-failed-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\GIT\\cua\\test-results\\paymentsForeign-Foreign-pa-3316d--and-delete-FOREIGN-payment-payment\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\GIT\\cua\\tests\\paymentsForeign.spec.ts",
+                        "column": 49,
+                        "line": 292
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "982b07c0321e7747ac74-50dfd174de22939fd2a2",
+              "file": "paymentsForeign.spec.ts",
+              "line": 268,
+              "column": 7
+            },
+            {
+              "title": "Create UPLOAD NEW DOC and delete FOREIGN payment",
+              "ok": true,
+              "tags": [
+                "payment",
+                "foreign"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "payment",
+                  "projectName": "payment",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 37791,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "🔐 Starting API login process...\n"
+                        },
+                        {
+                          "text": "username: dani\n"
+                        },
+                        {
+                          "text": "Step 0: Clearing existing session data...\n"
+                        },
+                        {
+                          "text": "Step 1: Getting login page to establish session...\n"
+                        },
+                        {
+                          "text": "Login page response: 200\n"
+                        },
+                        {
+                          "text": "Step 2: Submitting credentials...\n"
+                        },
+                        {
+                          "text": "Login response: 200\n"
+                        },
+                        {
+                          "text": "Step 3: Getting OTP page...\n"
+                        },
+                        {
+                          "text": "OTP page response: 200\n"
+                        },
+                        {
+                          "text": "Step 4: Submitting OTP code...\n"
+                        },
+                        {
+                          "text": "OTP response: 200\n"
+                        },
+                        {
+                          "text": "✅ API login successful! Found 2 auth cookies\n"
+                        },
+                        {
+                          "text": "{\n  fromAccount: \u001b[32m'UA 09 300614'\u001b[39m,\n  amount: \u001b[32m'4526'\u001b[39m,\n  searchName: \u001b[32m'aloha'\u001b[39m,\n  contactPerson: \u001b[32m'contactPersonEric-зААЛЪШҐ'\u001b[39m,\n  details: \u001b[32m\"A6YN1m3fJ931EnjGBTkJdy8XWdGsC4Uk3xr7H46WhiGp8msosE--''?.\"\u001b[39m,\n  benificiaryAccountNumber: \u001b[32m'VMjYRhRUPEZwHD10AbhhdZ7dLMhDiATVZm'\u001b[39m,\n  swiftBankName: \u001b[32m'france'\u001b[39m\n}\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Navigate to Accounts",
+                          "duration": 1998,
+                          "steps": [
+                            {
+                              "title": "Navigate to New foreign payment Foreign",
+                              "duration": 1859
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Fill the obligatory fields",
+                          "duration": 7230,
+                          "steps": [
+                            {
+                              "title": "Search for name",
+                              "duration": 4011
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Switch tab",
+                          "duration": 473
+                        },
+                        {
+                          "title": "Select new document",
+                          "duration": 2680
+                        },
+                        {
+                          "title": "Create new document (+upload pdf)",
+                          "duration": 6210
+                        },
+                        {
+                          "title": "Save and delete the new document",
+                          "duration": 6621
+                        },
+                        {
+                          "title": "Delete the payment",
+                          "duration": 7005
+                        }
+                      ],
+                      "startTime": "2026-01-09T17:34:29.138Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\GIT\\cua\\test-results\\paymentsForeign-Foreign-pa-fa4a7--and-delete-FOREIGN-payment-payment\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "982b07c0321e7747ac74-4d1a8a9806106bfde198",
+              "file": "paymentsForeign.spec.ts",
+              "line": 306,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "forex.spec.ts",
+      "file": "forex.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Forex list tests",
+          "file": "forex.spec.ts",
+          "line": 27,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Verify forex application list loads with backend data",
+              "ok": true,
+              "tags": [
+                "forex"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "C:\\GIT\\cua\\tests\\forex.spec.ts",
+                        "line": 44,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "forex",
+                  "projectName": "forex",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-09T17:35:08.319Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "location": {
+                            "file": "C:\\GIT\\cua\\tests\\forex.spec.ts",
+                            "line": 44,
+                            "column": 8
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b7ce6779995a4e66feef-7c9347cc74ccdbaed03a",
+              "file": "forex.spec.ts",
+              "line": 44,
+              "column": 8
+            },
+            {
+              "title": "Verify forex application search/filter functionality",
+              "ok": true,
+              "tags": [
+                "forex"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "C:\\GIT\\cua\\tests\\forex.spec.ts",
+                        "line": 78,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "forex",
+                  "projectName": "forex",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-09T17:35:08.320Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "location": {
+                            "file": "C:\\GIT\\cua\\tests\\forex.spec.ts",
+                            "line": 78,
+                            "column": 8
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b7ce6779995a4e66feef-f7f857220a9129b62581",
+              "file": "forex.spec.ts",
+              "line": 78,
+              "column": 8
+            },
+            {
+              "title": "Verify forex application details navigation",
+              "ok": true,
+              "tags": [
+                "forex"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "C:\\GIT\\cua\\tests\\forex.spec.ts",
+                        "line": 103,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "forex",
+                  "projectName": "forex",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-09T17:35:08.320Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "location": {
+                            "file": "C:\\GIT\\cua\\tests\\forex.spec.ts",
+                            "line": 103,
+                            "column": 8
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b7ce6779995a4e66feef-902b5c3ee77822989491",
+              "file": "forex.spec.ts",
+              "line": 103,
+              "column": 8
+            },
+            {
+              "title": "Verify forex application list pagination",
+              "ok": true,
+              "tags": [
+                "forex"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "forex",
+                  "projectName": "forex",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7130,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "🔐 Starting API login process...\n"
+                        },
+                        {
+                          "text": "username: dani\n"
+                        },
+                        {
+                          "text": "Step 0: Clearing existing session data...\n"
+                        },
+                        {
+                          "text": "Step 1: Getting login page to establish session...\n"
+                        },
+                        {
+                          "text": "Login page response: 200\n"
+                        },
+                        {
+                          "text": "Step 2: Submitting credentials...\n"
+                        },
+                        {
+                          "text": "Login response: 200\n"
+                        },
+                        {
+                          "text": "Step 3: Getting OTP page...\n"
+                        },
+                        {
+                          "text": "OTP page response: 200\n"
+                        },
+                        {
+                          "text": "Step 4: Submitting OTP code...\n"
+                        },
+                        {
+                          "text": "OTP response: 200\n"
+                        },
+                        {
+                          "text": "✅ API login successful! Found 2 auth cookies\n"
+                        },
+                        {
+                          "text": "Backend rendered grid state object with pagination config\n"
+                        },
+                        {
+                          "text": "Backend pageRowCount: 4\n"
+                        },
+                        {
+                          "text": "Backend pageRowSize: 25\n"
+                        },
+                        {
+                          "text": "Backend pageIndex: 0\n"
+                        },
+                        {
+                          "text": "Backend pageCount: 1\n"
+                        },
+                        {
+                          "text": "Backend pagination summary: Page 1 of 1 (4 items)\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Navigate to Forex Application List",
+                          "duration": 2763,
+                          "steps": [
+                            {
+                              "title": "Navigate to Forex Operations",
+                              "duration": 442
+                            },
+                            {
+                              "title": "Navigate to List of forex application",
+                              "duration": 2236
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Contract Verification - Backend Pagination State",
+                          "duration": 74
+                        }
+                      ],
+                      "startTime": "2026-01-09T17:35:08.320Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\GIT\\cua\\test-results\\forex-Forex-list-tests-Ver-eaf79-application-list-pagination-forex\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b7ce6779995a4e66feef-8eea44a81dcffce6e2a4",
+              "file": "forex.spec.ts",
+              "line": 129,
+              "column": 7
+            },
+            {
+              "title": "Verify forex application status/state filtering",
+              "ok": true,
+              "tags": [
+                "forex"
+              ],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "forex",
+                  "projectName": "forex",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7506,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Backend default status filter: [ \u001b[32m'ToEdit'\u001b[39m, \u001b[32m'ToAuth'\u001b[39m, \u001b[32m'UnderAuthorization'\u001b[39m, \u001b[32m'Authorized'\u001b[39m ]\n"
+                        },
+                        {
+                          "text": "Backend responded with status: 200\n"
+                        },
+                        {
+                          "text": "Backend returned 1 filtered row(s)\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Navigate to Forex Application List",
+                          "duration": 3030,
+                          "steps": [
+                            {
+                              "title": "Navigate to Forex Operations",
+                              "duration": 424
+                            },
+                            {
+                              "title": "Navigate to List of forex application",
+                              "duration": 2489
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Contract Verification - Backend Filter Field Binding",
+                          "duration": 89
+                        },
+                        {
+                          "title": "Data Feeding - Change Filter Selection to ToAuth",
+                          "duration": 36
+                        },
+                        {
+                          "title": "Proxy Validation - Submit Filter to Backend",
+                          "duration": 2549
+                        },
+                        {
+                          "title": "Persistence Check - Verify Backend Filtered Results",
+                          "duration": 181
+                        }
+                      ],
+                      "startTime": "2026-01-09T17:35:15.687Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\GIT\\cua\\test-results\\forex-Forex-list-tests-Ver-3e45e-tion-status-state-filtering-forex\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b7ce6779995a4e66feef-17a7806511ffa5824f21",
+              "file": "forex.spec.ts",
+              "line": 176,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-01-09T17:28:43.190Z",
+    "duration": 400269.216,
+    "expected": 13,
+    "skipped": 4,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}
